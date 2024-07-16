@@ -1,0 +1,33 @@
+---
+import Favicons from "./Favicons.astro";
+import FooterScripts from "./FooterScripts.astro";
+
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="author" content="Roberto Cancio González" />
+    <meta content="carrera, montaña, trail, Samuño, running" name="keywords" />
+    <meta name="description" content="Carrera por montaña por el Valle de Samuño, dentro del Paisaje Protegido de las Cuencas Mineras, que también permite conocer el pozo minero de carbón San Luis" />
+    <meta name="geo.placename" content="La Nueva, Langreo, Principado de Asturias, Spain" /> 
+    <meta name="geo.position" content="43.2617,-5.6737" />    
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>{title ? title : "Trail Valle de Samuño"}</title>
+
+    <Favicons />
+  </head>
+
+  <body class="<%= page_classes %>">	
+	<div id="content">
+		<div class="row">
+			<slot />
+		</div>
+	</div>
+    <FooterScripts />
+  </body>
+</html>
