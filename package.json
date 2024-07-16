@@ -6,12 +6,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "build:css": "sass sass/site.scss public/stylesheets/site.css",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "4.11.5",
     "@astrojs/check": "0.8.1",
+    "astro": "4.11.5",
+    "sass": "1.77.8",
     "typescript": "5.5.3"
   }
 }

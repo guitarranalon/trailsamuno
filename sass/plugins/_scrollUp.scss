@@ -1,0 +1,34 @@
+body #scrollUp{
+	box-shadow: 0 8px 9px rgba(0,0,0,.2);
+	@include font-size(0);
+	transition: (background $animacionMedia ease, color $animacionMedia ease);
+
+	background: $colorTema url(#{$img-root}/up.svg) no-repeat 50% 50%;
+	background-size: (17px, 17px);
+
+	bottom: 28px;
+	right: 28px;
+	background-color: $colorTema;
+	color: #272727;
+	display: block;
+	border-radius: 50%;
+	text-decoration: none;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding: 10px 6px 2px;
+
+	&:hover,
+	&:focus:hover{
+		transition: (background-color $animacionMedia ease);	
+
+		background-color: $colorTema;
+	}
+
+	&:focus{
+		transition: (background-color $animacionMedia ease);
+
+		background-color: $colorTema;
+		background-color: rgba($colorTema, .75); // Para navegadores cool	
+	}
+}

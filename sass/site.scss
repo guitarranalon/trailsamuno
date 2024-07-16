@@ -1,0 +1,45 @@
+@charset "UTF-8";
+// Para evitar problemas con carácteres como tildes o eñes lo primero en aparecer en la 
+// hoja de estilos tiene que ser la codificación de caracteres. No sirve si tiene delante 
+// espacios o comentarios
+
+@import "normalize";
+
+@import "fuentes";
+@import "base";
+
+// imports de base
+//Colores
+@import "colores";
+
+//Mixins
+@import "mixins";
+
+// FIN imports de base
+
+@import "general";
+
+@import "cabecera";
+
+@import "menu";
+
+@import "menuTercerNivel";
+
+@import "contenido";
+
+@import "patrocinadoresPie";
+
+@import "pie";
+
+// Plugins
+@import "plugins/_scrollUp.scss";
+@import "plugins/_featherlight.scss";
+@import "plugins/_featherlight.gallery.scss";
+@import "plugins/_cookiesWarning.scss";
+@import "plugins/_animate.min.scss";
+
+// Components
+@import "components/_progressBars.scss";
+
+// Others
+@import "_galeria.scss";

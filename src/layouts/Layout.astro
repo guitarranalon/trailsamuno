@@ -20,7 +20,7 @@ const { title } = Astro.props;
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>{ title ? title : "Trail Valle de Samuño" } - { mainData.tvs.mainsponsor }</title>
-
+    <link rel="stylesheet" href="/stylesheets/site.css" />
     <Favicons />
   </head>
 

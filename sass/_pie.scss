@@ -1,0 +1,203 @@
+footer{
+	background: $fondoPie;
+	clear: both;
+	color: $colorPie;
+	padding: 4em 0;
+	
+	a{
+		transition: (color $animacionMedia ease);
+		
+		color: $colorEnlacesPie;
+		text-decoration: none;
+		
+		&:hover{
+			transition: (color $animacionRapida ease);
+			
+			color: $colorHoverEnlacesPie;
+		}
+	}	
+
+	.row{
+		@include mq($screen-sm-min){
+			position: relative;
+		}
+	}
+}
+
+footer .cumbre{
+	margin-bottom: 2.5em;
+	text-align: center;
+
+	@include mq($screen-xs-min){
+		float: left;
+		height: sizeEM(68);
+		margin-bottom: 0;
+		margin-right: sizeEM(32);
+		width: sizeEM(51);
+	}
+
+	@include mq($screen-sm-min){
+		height: sizeEM(68);
+		margin-right: 0;
+		width: 5.414012%;
+	}
+}
+
+footer .cumbre a{
+	@extend %text-replacement;
+
+	display: inline-block;
+
+	.u-fill,
+	.u.border,
+	.topDash-fill,
+	.topDash-border{
+		transition: (fill $animacionMedia ease, stroke $animacionMedia ease);
+	}
+
+	&:hover .u-fill{
+		transition: (fill $animacionRapida ease);
+
+		fill: #aaa;
+	}
+
+	&:hover .u-border{
+		transition: (stroke $animacionRapida ease);
+
+		stroke: #aaa;
+	}
+
+	&:hover .topDash-fill{
+		transition: (fill $animacionRapida ease);
+
+		fill: $colorTema;
+	}
+
+	&:hover .topDash-border{
+		transition: (stroke $animacionRapida ease);
+
+		stroke: $colorTema;
+	}
+}
+
+footer .cumbre .cumbre-logo{
+	height: 68px;
+	width: 51px;
+}
+
+footer .contact{
+	list-style: none;
+	margin-bottom: 1.5em;
+	padding-left: 0;
+	text-align: center;
+	
+	@include mq($screen-xs-min){
+		text-align: left;
+	}
+	
+	@include mq($screen-sm-min){
+		margin-left: 8.598726%;
+		width: 22.611465%;
+	}
+
+	.tvs{
+		@include font-size(16);
+		
+		font-family: $fontFamily;
+		text-transform: uppercase;
+	}
+}
+
+footer .social{
+	margin-bottom: sizeEM($lineHeightBasico*2);
+	text-align: center;
+	
+	@include mq($screen-xs-min){
+		text-align: left;
+	}	
+}
+
+footer .social > ul{
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 0;
+
+	> li{
+		display: inline-block;
+	}
+
+	> li + li{
+		margin-left: 1.75em;
+	}
+
+	a{
+		@extend %text-replacement;
+	}
+
+	a .icon{
+		transition: (fill $animacionMedia ease);
+		
+		fill: #757575;
+	}
+
+	a .icon:hover{
+		transition: (fill $animacionRapida ease);
+		
+		fill: #cfcfcf;
+	}
+}
+
+footer .sellos{
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	
+	> li {
+		margin-bottom: 1em;
+		
+		@include mq($screen-xs-min){
+			display: inline-block;
+			margin-bottom: 0;
+		}
+	}
+	
+	> li + li {
+		@include mq($screen-xs-min){
+			margin-left: 1.5em;
+		}
+	}
+
+	@include mq($screen-sm-min){
+		position: absolute;
+		right: 0;
+		top: -15px;	// Para alinear el texto del logo con el de la parte izquierda
+	}
+	
+	a,
+	span{
+		@extend %text-replacement;
+	}
+	
+	.homologada-fempa{
+		height: 85px;
+		width: 178px;
+	}
+	
+	.langreocalidadturistica,
+	.nortrail {
+		svg {
+			fill: #eee;
+			height: 85px;
+			width: 85px;
+			
+			&:hover{
+				fill: #fff;
+			}
+		}
+	}
+	
+	.nortrail svg{
+		width: 56px;
+	}
+}
