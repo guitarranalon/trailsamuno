@@ -1,6 +1,7 @@
 ---
 import Favicons from "./Favicons.astro";
 import FooterScripts from "./FooterScripts.astro";
+import MainData from "../../data/main.json";
 
 const { title } = Astro.props;
 ---
@@ -17,7 +18,7 @@ const { title } = Astro.props;
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>{title ? title : "Trail Valle de Samuño"}</title>
+    <title>{ title ? title : "Trail Valle de Samuño" } - { MainData.tvs.mainsponsor }</title>
 
     <Favicons />
   </head>
