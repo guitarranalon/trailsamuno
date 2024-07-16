@@ -1,7 +1,100 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+import mainData from "../../data/main.json";
 ---
 
 <Layout>
-	<p>It works!</p>
+	<div id="content-block">
+		<article class="excerpt">
+			<div class="row noticia">
+				<h2>Trail Valle de Samuño - { mainData.tvs.mainsponsor }</h2>
+				<div>
+					<h3>🍿🍿Vídeo oficial</h3>
+					<p>¡La espera ha terminado! ¡El vídeo oficial de la edición 2024 de nuestra carrera ya está disponible! Accede a la sección de la <a href="carrera/edicionesanteriores/2024.html" title="Ir a la sección de 2024 de la carrera">edición 2024</a> y revive los momentos más emocionantes de la carrera.</p>
+				</div>
+				<!-- <div>
+					<figure class="fotoIzquierda">
+						<img src="images/utmb20k.webp" alt="Prueba puntuable para UTMB" />
+					</figure>			
+					<h3>Obtén tus puntos UTMB® Index</h3>
+					<p style="margin-bottom:3em">Este año el Trail Valle de Samuño-{ mainData.tvs.mainsponsor }> te permitirá sumar puntos para facilitarte tu participación en las carreras más deseadas del mundo. ¡No te quedes sin ellos!</p>
+				</div>
+				<div>
+					<figure class="fotoIzquierda">
+						<img src="images/copacxm.webp" alt="Copa de Asturias de Carreras por Montaña" />
+					</figure>			
+					<h3>Vuelve la emoción de la Copa a Langreo</h3>
+					<p>Por segunda vez en nuestra trayectoria (la otra fue en 2017) el Trail Valle de Samuño-{ mainData.tvxs.mainsponsor } acogerá una prueba de la Copa de Asturias de Carreras por Montaña. Los/as mejores corredores/as se darán cita en el Valle para abrir el calendario en un duelo del máximo nivel. ¡¡¡Ven a disfrutarlo!!!</p>
+				</div> -->
+			</div>
+			<div class="row aparte">
+				<ul class="data">
+					<li class="date"><span class="value">{ mainData.tvs.date.day }</span> <span class="unit">{ mainData.tvs.date.abbreviatedMonth</span></li>
+					<li class="distance"><span class="value">{ mainData.tvs.distance }</span><span class="unit">km</span></li>
+					<li class="verticalGain"><span class="value">{ mainData.tvs.abbrclimb }</span> <span class="unit">m+</span></li>
+					<li class="people"><span class="value">{ mainData.tvs.aidStations }</span> <span class="unit">avituall</span></li>
+				</ul>
+				<h2>{ mainData.tvxs.name }</h2>
+				<ul class="data">
+					<li class="date"><span class="value">{ mainData.tvxs.date.day }</span> <span class="unit">{ mainData.tvxs.date.abbreviatedMonth }</span></li>
+					<li class="distance"><span class="value">{ mainData.tvxs.distance }</span> <span class="unit">km</span></li>
+					<li class="verticalGain"><span class="value">{ mainData.tvxs.abbrclimb }</span> <span class="unit">m+</span></li>
+					<li class="people"><span class="value">{ mainData.tvxs.aidStations }</span> <span class="unit">avituall</span></li>			
+				</ul>
+			</div>
+		</article>
+		<article class="excerpt alt">
+			<div class="row">
+				<h2>Tres retos, tres distancias: { mainData.tvxs.name }, { mainData.tvs.name } y { mainData.gtvs.name }</h2>
+				<img src="images/recorrido.jpg" alt="Participante descendiendo un tramo de bosque" loading="lazy" />
+				<p>Encuentra tu desafío con las 3 modalidades: { mainData.tvxs.distance }km, { mainData.tvs.distance }km y { mainData.gtvs.distance }km por etapas</p>
+				<a class="button callToAction verRecorrido" href="carrera/recorrido.html" title="">
+					<svg class="icon inscripcion">
+						<use xlink:href="images/map.svg#recorrido-icon"></use>
+					</svg>
+					Ver recorrido</a>
+			</div>
+		</article>
+		<article class="excerpt">
+			<div class="row">
+				<h2>Premio Nortrail y sello Langreo Calidad Turística</h2>
+				<img src="images/tecnico.jpg" alt="Mejor carrera hasta 25km en los Premios Nortrail 2017 y sello Langreo Calidad Turística" loading="lazy" />
+				<p>Disfruta de una de las carreras mejor valoradas por corredores e instituciones, que ha sido reconocida como <i>Mejor carrera hasta 25km</i> en los Premios Nortrail 2017 y ha recibido el sello Langreo Calidad Turística que la distingue por su cuidada organización.</p>
+				<a class="button callToAction verRoadbook" href="informacion/reconocimientos.html" title="Ver información sobre los logros de la prueba">
+					<svg class="icon inscripcion">
+						<use xlink:href="images/map.svg#roadbook-icon"></use>
+					</svg>
+					Descubrir</a>			
+			</div>
+		</article>
+		<article class="excerpt alt">
+			<div class="row">
+				<h2>El pulmón de Las Cuencas</h2>
+				<img src="images/paisajeProtegido.jpg" alt="Corredores por el Paisaje Protegido de las Cuencas Mineras" loading="lazy" />
+				<p>Gran parte del recorrido transcurre por el Paisaje Protegido de las Cuencas Mineras que sorprende a propios y a extraños por su exuberancia y panorámicas.</p>
+				<a class="button callToAction descubrirPaisaje" href="entorno/paisajeprotegido.html" title="">
+					<svg class="icon inscripcion">
+						<use xlink:href="images/map.svg#patrimonioNatural-icon"></use>
+					</svg>
+					Descubrir</a>
+			</div>
+		</article>
+		<article class="excerpt">
+			<div class="row">	
+				<h2>Patrimonio</h2>
+				<img src="images/patrimonioIndustrial.jpg" alt="Pozo San Luis, castillete y casa de máquinas" loading="lazy" />
+				<p>Molinos, bocaminas, socavones, castilletes, trenes, ... La huella humana en la parte baja del Valle es profunda y visible aún hoy. Una pequeña parte podrás disfrutarla durante la carrera. ¡Vívela también después con los tuyos!</p>
+				<a class="button callToAction descubrirPatrimonio" href="entorno/ecomuseo.html" title="">
+					<svg class="icon inscripcion">
+						<use xlink:href="images/map.svg#patrimonioIndustrial-icon"></use>
+					</svg>
+					Descubrir</a>	
+			</div>
+		</article>
+		<div class="creditos row">
+			<p>
+			Fotografías de: Luis Coalla, Roberto Cancio González y <a href="http://www.flickr.com/photos/ennegativo/9086214152/in/photolist-srxWJK-sro13W-eQVxtE-9zV7y2-srxGzx-sro7gh-9zV9CB-srxNpP-spgav3-9zY6T9-9zV72T-9zY6DY-srwjFk-spfJwW-eQHTHt-s9XsjW-eQVx79-9zY7Zo-sry1Qa-spfRvq-eQHUen-ruxBSf-9zVabX-eQJbGx-9zV9Yc-ruxz8N-eQVfCW-9zV8Ar-9zV8jt-sry8Sg-eQVf7S-eQVfnY-eQVf31-sa6Hqx-eQVeTq-s9YNQq-s9YN83-eQHTX4-eQHSZk-eQVdUG-eQHS5F-eQHSQg-eQHSdK-eQHSEV-eQHTga-eQVeDE-7M5wDN-ruxqXE-spg3zE-spfWQJ" title="Ir a la galería del autor">David Busto Méndez</a>.
+			</p>
+		</div>
+	</div>
 </Layout>
