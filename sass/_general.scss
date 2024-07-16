@@ -11,7 +11,7 @@ html body{
 	margin:0 auto;
 	font-family:$fontFamilyLight;
 	font-size:$fontSizeBasico*1px;
-	line-height:$lineHeightBasico/$fontSizeBasico*1em;
+	line-height: math.div($lineHeightBasico, $fontSizeBasico)*1em;
 	color:$colorFuente;
 	background: $fondoPrincipal;
 }
@@ -25,7 +25,7 @@ body #contenedor{
 }
 
 #content p{
-	margin-bottom:$lineHeightBasico/$fontSizeBasico*1em;
+	margin-bottom: math.div($lineHeightBasico, $fontSizeBasico)*1em;
 	margin-top: 0;
 }
 
@@ -339,7 +339,7 @@ a.enlaceBoton.alt{
 
 	label{
 		display: inline-block;
-		margin-bottom: sizeEM($lineHeightBasico/2);
+		margin-bottom: sizeEM($lineHeightBasico * 0.5);
 	}
 	
 	input[type=text],

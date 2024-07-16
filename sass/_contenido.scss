@@ -203,7 +203,7 @@
 // Contacto
 .contacto #content{
 	ul > li{
-		margin-bottom: sizeEM($lineHeightBasico / 2);
+		margin-bottom: sizeEM($lineHeightBasico * 0.5);
 	}
 
 	.icon{
@@ -253,7 +253,7 @@
 
 .carrera_roadbook #content{
 	form{
-		@include mq($screen-sm-min, false, max, width){
+		@include mq($screen-sm-min, max, width){
 			position: sticky;
 			position: -webkit-sticky;
 			top: 5px;
@@ -261,7 +261,7 @@
 	}
 
 	#info {
-		@include mq($screen-sm-min, false, max, width){
+		@include mq($screen-sm-min, max, width){
 			position: sticky;
 			position: -webkit-sticky;
 			top: 50px;

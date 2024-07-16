@@ -43,15 +43,15 @@
 
 @mixin font-size($pixels: $fontSizeBasico){
 	font-size:$pixels*1px;
-	font-size:$pixels/$fontSizeBasico*1rem;
+	font-size:math.div($pixels, $fontSizeBasico)*1rem;
 }
 
 @function anchoPorcentaje($pix, $totalWidth:$anchoTotalPX){
-	@return $pix*100/$totalWidth*1%;
+	@return math.div($pix*100, $totalWidth)*1%;
 }
 
 @function sizeEM($pix, $fontSize:$fontSizeBasico){
-	@return $pix/$fontSize*1em;
+	@return math.div($pix, $fontSize)*1em;
 }
 
 @mixin margenMenu{
@@ -89,22 +89,10 @@
 	nuestras propias variables
 */
 
-@mixin mq($point, $IE9: false, $query1: min, $query2: width) {
-    @if $IE9 == true{
-        .ie7 & ,
-        .ie8 & {
-            @content;
-        }
-        @media screen and (#{$query1}-#{$query2}: $point / $fontSizeBasicoMQ +em) {
-            @content;
-        }
-    }
-
-    @else {
-        @media screen and (#{$query1}-#{$query2}: $point / $fontSizeBasicoMQ +em) {
-            @content;
-        }
-    }
+@mixin mq($point, $query1: min, $query2: width) {
+	@media screen and (#{$query1}-#{$query2}: (math.div($point, $fontSizeBasicoMQ)+em)) {
+		@content;
+	}
 }
 
 
