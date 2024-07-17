@@ -1,0 +1,197 @@
+{
+    "empresas": [
+      {
+        "name": "Dietética y Nutrición Jara",
+        "image": "jara.png",
+        "link": "https://www.facebook.com/jarafernandezrodriguez/",
+        "linktitle": "Ir a la web de Dietética Jara"
+      },
+      {
+        "name": "Peluquería Leticia Molano",
+        "image": "leticiamolano.png",
+        "link": "https://www.facebook.com/letyblan/",
+        "linktitle": "Ir a la web de la peluquería Leticia Molano"
+      },
+      {
+        "name": "Aliviflex",
+        "image": "aliviflex.jpg",
+        "link": "https://aliviflex.com/",
+        "linktitle": "Ir a la web de Aliviflex"
+      },
+      {
+        "name": "Caldillo d'Arriba",
+        "image": "caldillo.jpg",
+        "link": "http://cartacasacaldillo.ddns.net/Carta.pdf",
+        "linktitle": "Ir a la web de la parrilla Caldillo d'Arriba"
+      },
+      {
+        "name": "Montaña Restauración Medioambiental",
+        "image": "montana.jpg",
+        "link": "http://www.montanamedioambiente.es/",
+        "linktitle": "Ir a la web de Montaña Restauración Medioambiental"
+      },
+      {
+        "name": "Cuevas Cash",
+        "image": "cuevascash.png",
+        "link": "https://www.grupocuevas.com/cuevas-cash/",
+        "linktitle": "Ir a la web de Cuevas Cash"
+      },
+      {
+        "name": "Café bar Tere",
+        "image": "cafebartere.png",
+        "link": "https://www.facebook.com/cafebartere/",
+        "linktitle": "Ir a la web del Café Bar Tere"
+      },
+      {
+        "name": "Disceas",
+        "image": "disceas.png",
+        "link": "https://disceas.es/es/",
+        "linktitle": "Ir a la web de Disceas"
+      },
+      {
+        "name": "Séneca",
+        "image": "seneca.png",
+        "link": "https://www.instagram.com/senecafisioterapia/",
+        "linktitle": "Ir al Instagram de Séneca fisioterapia y readaptación"
+      },
+      {
+        "name": "Clínica del Calzado",
+        "image": "cortecerrajero.png",
+        "link": "https://www.facebook.com/profile.php?id=100005154001724",
+        "linktitle": "Ir a la web de Corte Cerrajero"
+      },
+      {
+        "name": "Asociación Cultural San Luis de La Nueva",
+        "image": "sanluis.png",
+        "link": "https://www.facebook.com/acsanluis",
+        "linktitle": "Ir a la web de la Asociación Cultural San Luis de La Nueva"
+      },
+      {
+        "name": "Casa El Chato",
+        "image": "elchato.png",
+        "link": "https://www.facebook.com/pages/category/Bar/Casa-El-Chato-788998317807044/",
+        "linktitle": "Ir a la web de Casa El Chato, La Nueva"
+      },
+      {
+        "name": "La Vallicuerra",
+        "image": "vallicuerra.webp",
+        "link": "https://lavallicuerra.com/",
+        "linktitle": "Ir a la web de La Vallicuerra, casas de aldea"
+      },
+      {
+        "name": "Clínica podología y posturología Nuevo Langreo",
+        "image": "podologoNuevoLangreo.png",
+        "link": "http://clinicanuevolangreo.com/",
+        "linktitle": "Ir a la web de la Clínica podología y posturología Nuevo Langreo"
+      },
+      {
+        "name": "Industrial Alonso y Cuesta",
+        "image": "alonsoycuesta.png",
+        "link": "https://alonsoycuesta.com/",
+        "linktitle": "Ir a la web de Industrial Alonso y Cuesta"
+      },
+      {
+        "name": "Caja Rural de Asturias",
+        "image": "cajaRural.png",
+        "link": "http://www.cajaruraldeasturias.com/",
+        "linktitle": "Ir a la web de la Caja Rural de Asturias"
+      },
+      {
+        "name": "Connorte Economistas",
+        "image": "connorte.png",
+        "link": "https://www.connorte.com",
+        "linktitle": "Ir a la web de Connorte Economistas"
+      },
+      {
+        "name": "Garaje Salamanca",
+        "image": "garajeSalamanca.png",
+        "link": "http://www.garajesalamanca.com/",
+        "linktitle": "Ir a la web del Garaje Salamanca"
+      },
+      {
+        "name": "Suminfor",
+        "image": "suminfor.png",
+        "link": "http://www.suminfor.com/",
+        "linktitle": "Ir a la web de Suminfor"
+      },
+      {
+        "name": "Horizonte Trail",
+        "image": "horizontetrail.png",
+        "link": "https://www.facebook.com/p/Horizonte-Trail-Langreo-100055000754624/",
+        "linktitle": "Ir a la página de Horizonte Trail Langreo"
+      },
+      {
+        "name": "Refugio del Meicín",
+        "image": "meicin.jpg",
+        "link": "https://www.refugiodelmeicin.es/",
+        "linktitle": "Ir a la web del Refugio del Meicín"
+      },
+      {
+        "name": "Totem Tattoo",
+        "image": "totemtattoo.png",
+        "link": "https://www.facebook.com/TotemTattooEstudio/",
+        "linktitle": "Ir a la web de Totem Tattoo Estudio"
+      },
+      {
+        "name": "Zapatería Don Tacón",
+        "image": "dontacon.webp",
+        "link": "http://zapateriadontacon.com/",
+        "linktitle": "Ir a la web de la zapatería Don Tacón"
+      },
+      {
+        "name": "Aguimar Inox",
+        "image": "aguimar.webp",
+        "link": "https://aguimarinox.wordpress.com/",
+        "linktitle": "Ir a la web de Aguimar Inox"
+      },
+      {
+        "name": "Joyería relojería La Esmeralda",
+        "image": "joyeriaesmeralda.webp",
+        "link": "https://www.facebook.com/profile.php?id=100090043230030",
+        "linktitle": "Ir a la página de la Joyería Relojería Esmeralda en Langreo"
+      },
+      {
+        "name": "El Puestín",
+        "image": "puestin.webp",
+        "link": "https://www.facebook.com/p/El-Puestin-100063698827654/?locale=es_ES&paipv=0&eav=AfbOYOo24d2wuxjVcGeUcJCHLqkzI_vm4UO7HZVECOqCYKBMkEbRaE72d4cqCunA4mo&_rdr",
+        "linktitle": "Ir a la página de El Puestín de La Nueva (Langreo)"
+      },
+      {
+        "name": "Diañu Films",
+        "image": "dianufilms.webp",
+        "link": "https://www.instagram.com/dianufilms/",
+        "linktitle": "Ir a la página de Diañu Films"
+      },
+      {
+        "name": "Gaiteros del Carbón",
+        "image": "gaiterosdelcarbon.webp",
+        "link": "https://gaiterosdelcarbon.com/",
+        "linktitle": "Ir a la página de la banda Gaiteros del Carbón"
+      },
+      {
+        "name": "Fanté nutrición deportiva",
+        "image": "fante.webp",
+        "link": "https://fanteofficial.com/",
+        "linktitle": "Ir a la web de Fanté nutrición deportiva"
+      },
+      {
+        "name": "Llagar Alonso",
+        "image": "sidraAlonso.webp",
+        "link": "https://www.llagaralonso.com/",
+        "linktitle": "Ir a la página del Llagar Alonso"
+      }
+    ],
+    "oficiales": [
+      {
+        "title": "Tienda online oficial",
+        "empresas": [
+          {
+            "name": "Find Your Everest",
+            "image": "findyoureverest.png",
+            "link": "https://findyoureverest.es/",
+            "linktitle": "Ir a la web de Find Your Everest"
+          }
+        ]
+      }
+    ]
+  }
