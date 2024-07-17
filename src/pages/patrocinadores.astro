@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import patrocinadores from "../../data/patrocinadores.json";
+import colaboradores from "../../data/colaboradores.json";
 
 const title = "Patrocinadores";
 ---
@@ -8,13 +10,13 @@ const title = "Patrocinadores";
 	<div id="content-block">
 		<h2>Patrocinadores</h2>
 		<ul class="patrocinadores">
-			<!-- <% data.patrocinadores.empresas.each do |empresa| %>
-				<li>
-					<a href="<%= empresa.link %>" title="<%= empresa.linktitle %>">
-						<img src="images/patrocinadores/<%= empresa.image %>" alt="<%= empresa.name %>" />
+			{ patrocinadores.empresas.map(empresa => {
+				return <li>
+					<a href={empresa.link} title={empresa.linktitle}>
+						<img src={`images/patrocinadores/${empresa.image}`} alt={empresa.name} />
 					</a>
 				</li>
-			<% end %> -->
+			})}
 		</ul>
 
 		<!-- <% data.colaboradores.oficiales.each do |epigrafeoficial| %>
@@ -34,23 +36,22 @@ const title = "Patrocinadores";
 					</li>
 				<% end %>
 			</ul>
-		<% end %>
- -->
+		<% end %> -->
+
 		<h3>Colaboradores</h3>
 		<ul class="patrocinadores">
-			<!-- <% data.colaboradores.empresas.each do |colaborador| %>
-				<li>
-					<% if colaborador.link.nil? || colaborador.link.empty? %>
-						<span>
-							<img src="images/colaboradores/<%= colaborador.image %>" alt="<%= colaborador.name %>" />
+			{ colaboradores.empresas.map(colaborador => {
+				return <li>
+					{ !colaborador.link && <span>
+							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</span>
-					<% else %>
-						<a href="<%= colaborador.link %>" title="<%= colaborador.linktitle %>">
-							<img src="images/colaboradores/<%= colaborador.image %>" alt="<%= colaborador.name %>" />
+					}
+					{ colaborador.link && <a href={colaborador.link} title="<%= colaborador.linktitle %>">
+							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</a>
-					<% end %>
+					}
 				</li>
-			<% end %> -->
+			})}
 		</ul>
 
 		<p>
