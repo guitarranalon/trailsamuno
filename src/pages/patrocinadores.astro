@@ -19,24 +19,23 @@ const title = "Patrocinadores";
 			})}
 		</ul>
 
-		<!-- <% data.colaboradores.oficiales.each do |epigrafeoficial| %>
-			<h3><%= epigrafeoficial.title %></h3>
+		{ colaboradores.oficiales.map(epigrafeoficial => {
+			return <h3>{epigrafeoficial.title}</h3>
 			<ul class="patrocinadores">
-				<% epigrafeoficial.empresas.each do |colaboradoroficial| %>
-					<li>
-						<% if colaboradoroficial.link.nil? || colaboradoroficial.link.empty? %>
-							<span>
-								<img src="images/colaboradores/<%= colaboradoroficial.image %>" alt="<%= colaboradoroficial.name %>" />
+				{ epigrafeoficial.empresas.map(colaboradoroficial => {
+					return <li>
+						{ !colaboradoroficial.link && <span>
+								<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
 							</span>
-						<% else %>
-							<a href="<%= colaboradoroficial.link %>" title="<%= colaboradoroficial.linktitle %>">
-								<img src="images/colaboradores/<%= colaboradoroficial.image %>" alt="<%= colaboradoroficial.name %>" />
+						}
+						{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
+								<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
 							</a>
-						<% end %>
+						}
 					</li>
-				<% end %>
+				})}
 			</ul>
-		<% end %> -->
+		})}
 
 		<h3>Colaboradores</h3>
 		<ul class="patrocinadores">
