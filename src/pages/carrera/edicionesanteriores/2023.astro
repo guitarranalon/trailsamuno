@@ -1,23 +1,27 @@
 ---
+import Layout from "../../../layouts/Layout.astro"
+
 const title = "2023"
 ---
 
-<div id="content-block">
-	<h2>2023</h2>
-	<h3>Cartel</h3>
-	<figure class="fotoIzquierda no-float figure">
-		<a href="<%= compute_path("images/carrera/edicionesanteriores/2023/cartel2023.jpg") %>" title="Ampliar" class="gallery">		
-			<%= image_tag 'carrera/edicionesanteriores/2023/cartel2023.jpg', :class => 'figure-img', :alt => 'Cartel del VI Trail Valle de Samuño celebrado en Langreo (Asturias)' %>
-		</a>
-	</figure>
-	<h3>Clasificaciones</h3>
-	<ul>
-		<li><a href="../../documents/edicionesanteriores/2023/tvxs.pdf" title="Abrir la clasificación TVxS de 2023">Clasificaciones TVxS</a></li>
-		<li><a href="../../documents/edicionesanteriores/2023/tvs.pdf" title="Abrir la clasificación TVS de 2023">Clasificaciones TVS</a></li>
-		<li><a href="../../documents/edicionesanteriores/2023/gtvs.pdf" title="Abrir la clasificación GTVS de 2023">Clasificaciones GTVS</a></li>
-	</ul>	
-	<h3>Imagen corporativa</h3>
-	<ul>
-		<li><a href="../../documents/edicionesanteriores/2023/imagencorporativa.zip" title="Descargar archivo de imagen corporativa">Imagen corporativa</a></li>
-	</ul>
-</div>
+<Layout title={title}>
+	<div id="content-block">
+		<h2>2023</h2>
+		<h3>Cartel</h3>
+		<figure class="fotoIzquierda no-float figure">
+			<a href="/images/carrera/edicionesanteriores/2023/cartel2023.jpg" title="Ampliar" class="gallery">		
+				<img src="/images/carrera/edicionesanteriores/2023/cartel2023.jpg" class="figure-img" alt="Cartel del VI Trail Valle de Samuño celebrado en Langreo (Asturias)" />
+			</a>
+		</figure>
+		<h3>Clasificaciones</h3>
+		<ul>
+			<li><a href="../../documents/edicionesanteriores/2023/tvxs.pdf" title="Abrir la clasificación TVxS de 2023">Clasificaciones TVxS</a></li>
+			<li><a href="../../documents/edicionesanteriores/2023/tvs.pdf" title="Abrir la clasificación TVS de 2023">Clasificaciones TVS</a></li>
+			<li><a href="../../documents/edicionesanteriores/2023/gtvs.pdf" title="Abrir la clasificación GTVS de 2023">Clasificaciones GTVS</a></li>
+		</ul>	
+		<h3>Imagen corporativa</h3>
+		<ul>
+			<li><a href="../../documents/edicionesanteriores/2023/imagencorporativa.zip" title="Descargar archivo de imagen corporativa">Imagen corporativa</a></li>
+		</ul>
+	</div>
+</Layout>

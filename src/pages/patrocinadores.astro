@@ -8,16 +8,16 @@ const title = "Patrocinadores";
 	<div id="content-block">
 		<h2>Patrocinadores</h2>
 		<ul class="patrocinadores">
-			<% data.patrocinadores.empresas.each do |empresa| %>
+			<!-- <% data.patrocinadores.empresas.each do |empresa| %>
 				<li>
 					<a href="<%= empresa.link %>" title="<%= empresa.linktitle %>">
 						<img src="images/patrocinadores/<%= empresa.image %>" alt="<%= empresa.name %>" />
 					</a>
 				</li>
-			<% end %>
+			<% end %> -->
 		</ul>
 
-		<% data.colaboradores.oficiales.each do |epigrafeoficial| %>
+		<!-- <% data.colaboradores.oficiales.each do |epigrafeoficial| %>
 			<h3><%= epigrafeoficial.title %></h3>
 			<ul class="patrocinadores">
 				<% epigrafeoficial.empresas.each do |colaboradoroficial| %>
@@ -35,10 +35,10 @@ const title = "Patrocinadores";
 				<% end %>
 			</ul>
 		<% end %>
-
+ -->
 		<h3>Colaboradores</h3>
 		<ul class="patrocinadores">
-			<% data.colaboradores.empresas.each do |colaborador| %>
+			<!-- <% data.colaboradores.empresas.each do |colaborador| %>
 				<li>
 					<% if colaborador.link.nil? || colaborador.link.empty? %>
 						<span>
@@ -50,7 +50,7 @@ const title = "Patrocinadores";
 						</a>
 					<% end %>
 				</li>
-			<% end %>
+			<% end %> -->
 		</ul>
 
 		<p>
