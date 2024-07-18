@@ -32,16 +32,43 @@
 			</ul>
 		</div>
 		
-		<!-- <ul class="sellos">
+		<ul class="sellos">
 			<li class="langreocalidadturistica">
-				<%= svg_link("images/map.svg", "langreocalidadturistica", "langreocalidadturistica", "Langreo calidad turística", "informacion/reconocimientos.html#calidadTuristica2019", "Ir a la sección de Langreo Calidad Turística") %>
+				{ Astro.url.pathname === "/informacion/reconocimientos" && <span>
+					<svg class="icon langreocalidadturistica"><use xlink:href="/images/map.svg#langreocalidadturistica"></use></svg>
+				</span>
+				}
+				{
+					Astro.url.pathname !== "/informacion/reconocimientos" && <a href="/informacion/reconocimientos#calidadTuristica2019" title="Ir a la sección de Langreo Calidad Turística">
+						<svg class="icon langreocalidadturistica"><use xlink:href="/images/map.svg#langreocalidadturistica"></use></svg>
+						Langreo calidad turística
+					</a>					
+				}
 			</li>
 			<li class="nortrail">
-				<%= svg_link("images/map.svg", "nortrail", "nortrail2017", "Mejor carrera hasta 25km Premios Nortrail 2017", "informacion/reconocimientos.html#nortrail2017", "Ir a la sección de Premios Nortrail 2017") %>
+				{ Astro.url.pathname === "/informacion/reconocimientos" && <span>
+					<svg class="icon nortrail"><use xlink:href="/images/map.svg#nortrail2017"></use></svg>
+				</span>
+				}
+				{
+					Astro.url.pathname !== "/informacion/reconocimientos" && <a href="/informacion/reconocimientos#nortrail2017" title="Ir a la sección de Premios Nortrail 2017">
+						<svg class="icon nortrail"><use xlink:href="/images/map.svg#nortrail2017"></use></svg>
+						Mejor carrera hasta 25km Premios Nortrail 2017
+					</a>					
+				}
 			</li>
 			<li class="homologacion">
-				<%= svg_link("images/map.svg", "homologada-fempa", "homologacion", "Homologación Fempa", "transversales/homologacionFempa.html", "Ir a la sección de homologación") %>
+				{ Astro.url.pathname === "/transversales/homologacionFempa" && <span>
+					<svg class="icon homologada-fempa"><use xlink:href="/images/map.svg#homologacion"></use></svg>
+				</span>
+				}
+				{
+					Astro.url.pathname !== "/transversales/homologacionFempa" && <a href="/transversales/homologacionFempa" title="Ir a la sección de homologación">
+						<svg class="icon homologada-fempa"><use xlink:href="/images/map.svg#homologacion"></use></svg>
+						Carrera homologada por la Fempa
+					</a>					
+				}
 			</li>
-		</ul> -->
+		</ul>
 	</div>
 </footer>
