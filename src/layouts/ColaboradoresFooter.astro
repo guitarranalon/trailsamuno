@@ -1,30 +1,36 @@
-<!-- <% if ((!current_page.path.end_with? "patrocinadores.html") && (!current_page.path.end_with? "colaboradores.html")) %>
-	<div id="colaboradoresFooter">
+---
+import colaboradores from "../../data/colaboradores.json";
+
+const current_page = Astro.url.pathname;
+---
+
+{ !current_page.endsWith("patrocinadores.html") && !current_page.endsWith("colaboradores.html") && <div id="colaboradoresFooter">
 		<div class="row">
 			<ul class="patrocinadores">
-			<% data.colaboradores.oficiales.each do |epigrafeoficial| %>
-				<% epigrafeoficial.empresas.each do |colaboradoroficial| %>
-					<li>
-						<% if colaboradoroficial.link.nil? || colaboradoroficial.link.empty? %>
-							<span>
-								<%= image_tag "colaboradores/"+colaboradoroficial.image, :alt => colaboradoroficial.name, :loading => "lazy"  %>
-							</span>
-						<% else %>
-							<a href="<%= colaboradoroficial.link %>" title="<%= colaboradoroficial.linktitle %>">
-								<%= image_tag "colaboradores/"+colaboradoroficial.image, :alt => colaboradoroficial.name, :loading => "lazy"  %>
-							</a>
-						<% end %>
-					</li>
-				<% end %>
-			<% end %>
-				<% data.colaboradores.empresas.each do |empresa| %>
-					<li>
-						<a href="<%= empresa.link %>" title="<%= empresa.linktitle %>">
-							<%= image_tag "colaboradores/"+empresa.image, :alt => empresa.name, :loading => "lazy" %>
+				{ colaboradores.oficiales.map(epigrafeoficial => {
+					return <>
+						{ epigrafeoficial.empresas.map(colaboradoroficial => {
+							return <li>
+								{ !colaboradoroficial.link && <span>
+										<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} loading="lazy"  />
+									</span>
+								}
+								{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
+										<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} loading="lazy" />
+									</a>
+								}
+							</li>
+						})}
+					</>
+				})}
+				{ colaboradores.empresas.map(empresa => {
+					return <li>
+						<a href={empresa.link} title={empresa.linktitle}>
+							<img src={`/images/colaboradores/${empresa.image}`} alt={empresa.name} loading="lazy" />
 						</a>
 					</li>
-				<% end %>
+				})}
 			</ul>
 		</div>
 	</div>
-<% end %> -->
+}
