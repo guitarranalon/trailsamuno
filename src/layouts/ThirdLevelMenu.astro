@@ -1,13 +1,19 @@
-<!-- <%
-current_children = get_third_level_menu()
+---
+import { getThirdLevelMenu } from "../helpers/get-third-level-menu";
+import tree from "../../data/tree.json";
 
-if !(current_children.nil?)
-%>
-<nav id="third-level-nav">
-    <ul>
-        <% current_children.each do |child| %>
-            <li class="<%= nav_active(child.path) %>"><%= link_orNot(child) %></li>
-        <% end %>
-    </ul>
-</nav>
-<% end %> -->
+const currentPage = Astro.url.pathname;
+const currentChildren = getThirdLevelMenu(tree, currentPage);
+---
+
+{ currentChildren && <nav id="third-level-nav">
+        <ul>
+            { currentChildren.map((childPage: any) => {
+                return <li class={ currentPage === childPage.path ? "active" : "" }>
+                    { currentPage === childPage.path && <span>{ childPage.name }</span> }
+                    { currentPage !== childPage.path && <a href={childPage.path} title={childPage.title}>{ childPage.name }</a> }
+                </li>
+            })}
+        </ul>
+    </nav>
+}
