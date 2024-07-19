@@ -1,13 +1,28 @@
 ---
 import data from "../../data/main.json";
+
+const { h1 } = Astro.props;
+
+const currentPage = Astro.url.pathname;
 ---
 
 <header id="header">
 	<div class="row">
 		<div class="tvs">
 			<h1>
-				<!-- <%= home_link("images/map.svg", "tvs-logo", "logo-tvs") %>
-				<%= current_page.data.title || "Trail Valle de Samuño" %> -->
+				{ currentPage === "/" && <span>
+					<svg class="icon tvs-logo">
+						<use xlink:href="/images/map.svg#logo-tvs"></use>
+					</svg>
+				</span>
+				}
+				{ currentPage !== "/" && <a href="/" title="Ir a la página de inicio">
+					<svg class="icon tvs-logo">
+						<use xlink:href="/images/map.svg#logo-tvs"></use>
+					</svg>
+				</a>
+				}
+				{ h1 || "Trail Valle de Samuño, la mejor carrera de Asturias" }
 			</h1>
 			<!-- <% if current_page.path != 'index.html' %> -->
 			<div class="nombreCarrera">

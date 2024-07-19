@@ -8,8 +8,10 @@ import ThirdLevelMenu from "./ThirdLevelMenu.astro";
 import { getPathClasses } from "../helpers/getPageClass";
 import mainData from "../../data/main.json";
 import "../../sass/site.scss";
+import Header from "./Header.astro";
 
 const { title } = Astro.props;
+const { h1 } = Astro.props;
 
 const currentPath = Astro.url.pathname;
 const pageClass = getPathClasses(currentPath);
@@ -32,7 +34,8 @@ const pageClass = getPathClasses(currentPath);
     <Favicons />
   </head>
 
-  <body class={pageClass}>	
+  <body class={pageClass}>
+  <Header h1={h1} />
 	<div id="content">
 		<div class="row">
       <ThirdLevelMenu />
