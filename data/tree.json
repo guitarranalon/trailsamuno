@@ -2,7 +2,7 @@
     "pages": [
       {
         "name": "Index",
-        "path": "index.html",
+        "path": "/",
         "title": "Ir a la página de inicio",
         "hideFromMenu": true
       },
@@ -13,67 +13,67 @@
         "children": [
           {
             "name": "Recorrido",
-            "path": "carrera/recorrido.html",
+            "path": "/carrera/recorrido.html",
             "title": "Ir al perfil y mapa de la prueba"
           },
           {
             "name": "Roadbook",
-            "path": "carrera/roadbook.html",
+            "path": "/carrera/roadbook.html",
             "title": "Ir al roadbook de la prueba"
           },
           {
             "name": "Inscripción",
-            "path": "carrera/inscripcion.html",
+            "path": "/carrera/inscripcion.html",
             "title": "Ir a la página de inscripción"
           },
           {
             "name": "Reglamento",
-            "path": "carrera/reglamento.html",
+            "path": "/carrera/reglamento.html",
             "title": "Ver el reglamento que regirá la prueba"
           },
           {
             "name": "Programa",
-            "path": "carrera/programa.html",
+            "path": "/carrera/programa.html",
             "title": "Ir al programa de la prueba"
           },
           {
             "name": "Ediciones anteriores",
-            "path": "carrera/edicionesanteriores.html",
+            "path": "/carrera/edicionesanteriores.html",
             "title": "Ir a la página sobre ediciones anteriores",
             "children": [
               {
                 "name": 2024,
-                "path": "carrera/edicionesanteriores/2024.html",
+                "path": "/carrera/edicionesanteriores/2024.html",
                 "title": "Ir a la página sobre la edición de 2024"
               },
               {
                 "name": 2023,
-                "path": "carrera/edicionesanteriores/2023.html",
+                "path": "/carrera/edicionesanteriores/2023.html",
                 "title": "Ir a la página sobre la edición de 2023"
               },
               {
                 "name": 2022,
-                "path": "carrera/edicionesanteriores/2022.html",
+                "path": "/carrera/edicionesanteriores/2022.html",
                 "title": "Ir a la página sobre la edición de 2022"
               },
               {
                 "name": 2019,
-                "path": "carrera/edicionesanteriores/2019.html",
+                "path": "/carrera/edicionesanteriores/2019.html",
                 "title": "Ir a la página sobre la edición de 2019"
               },
               {
                 "name": 2018,
-                "path": "carrera/edicionesanteriores/2018.html",
+                "path": "/carrera/edicionesanteriores/2018.html",
                 "title": "Ir a la página sobre la edición de 2018"
               },
               {
                 "name": 2017,
-                "path": "carrera/edicionesanteriores/2017.html",
+                "path": "/carrera/edicionesanteriores/2017.html",
                 "title": "Ir a la página sobre la edición de 2017"
               },
               {
                 "name": 2016,
-                "path": "carrera/edicionesanteriores/2016.html",
+                "path": "/carrera/edicionesanteriores/2016.html",
                 "title": "Ir a la página sobre la edición de 2016"
               }
             ]
@@ -82,7 +82,7 @@
       },
       {
         "name": "Patrocinadores",
-        "path": "patrocinadores.html",
+        "path": "/patrocinadores.html",
         "title": "Patrocinadores de la prueba"
       },
       {
@@ -92,32 +92,32 @@
         "children": [
           {
             "name": "Cómo llegar",
-            "path": "informacion/comollegar.html",
+            "path": "/informacion/comollegar.html",
             "title": "Ir a cómo llegar a la salida"
           },
           {
             "name": "Dónde dormir",
-            "path": "informacion/dondedormir.html",
+            "path": "/informacion/dondedormir.html",
             "title": "Ir a la sección Dónde dormir"
           },
           {
             "name": "Seguimiento",
-            "path": "informacion/seguimiento.html",
+            "path": "/informacion/seguimiento.html",
             "title": "Ir a la sección sobre los mejores puntos para ver pasar la carrera"
           },
           {
             "name": "Reconocimientos",
-            "path": "informacion/reconocimientos.html",
+            "path": "/informacion/reconocimientos.html",
             "title": "Ir a la sección de la Política de calidad de la carrera"
           },
           {
             "name": "Política calidad",
-            "path": "informacion/politicacalidad.html",
+            "path": "/informacion/politicacalidad.html",
             "title": "Ir a la sección de la Política de calidad de la carrera"
           },
           {
             "name": "Preguntas frecuentes",
-            "path": "informacion/preguntasfrecuentes.html",
+            "path": "/informacion/preguntasfrecuentes.html",
             "title": "Ir a la sección de preguntas frecuentes"
           }
         ]
@@ -129,29 +129,29 @@
         "children": [
           {
             "name": "Langreo",
-            "path": "entorno/langreo.html",
+            "path": "/entorno/langreo.html",
             "title": "Ir a la sección de Langreo"
           },
           {
             "name": "Paisaje Protegido",
-            "path": "entorno/paisajeprotegido.html",
+            "path": "/entorno/paisajeprotegido.html",
             "title": "Ir a Paisaje Protegido de las Cuencas Mineras"
           },
           {
             "name": "Patrimonio industrial",
-            "path": "entorno/patrimonioindustrial.html",
+            "path": "/entorno/patrimonioindustrial.html",
             "title": "Ver información sobre el patrimonio industrial en el valle de Samuño"
           },
           {
             "name": "Ecomuseo",
-            "path": "entorno/ecomuseo.html",
+            "path": "/entorno/ecomuseo.html",
             "title": "Ver información sobre el Ecomuseo Valle de Samuño"
           }
         ]
       },
       {
         "name": "Contacto",
-        "path": "contacto.html",
+        "path": "/contacto.html",
         "title": "Ver información de contacto"
       }
     ]

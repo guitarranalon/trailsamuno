@@ -1,5 +1,6 @@
 ---
 import data from "../../data/main.json";
+import tree from "../../data/tree.json";
 
 const { h1 } = Astro.props;
 
@@ -25,27 +26,26 @@ const currentPage = Astro.url.pathname;
 				{ h1 || "Trail Valle de Samuño, la mejor carrera de Asturias" }
 			</h1>
 			{  
-				currentPage !== 'index.html' && <div class="nombreCarrera">
+				currentPage !== '/' && <div class="nombreCarrera">
 					Trail Valle de Samuño - { data.tvs.mainsponsor }
 				</div>
 			}
 			<nav id="main-nav">
 				<ul>
-				<!-- <% data.tree.pages.each do |page| %>
-				  <% if !page.hideFromMenu %>
-					  <li class="<%= nav_active(page.path) %>">
-						<%= link_orNot(page) %>
-						<% if page.children %>
-							<ul>
-								<% page.children.each do |childPage| %>
-									<li class="<%= nav_active(childPage.path) %>"> <%= link_orNot(childPage) %></li>
-								<% end %>
-							</ul>
-						<% end %>
-						
-					  </li>
-				  <% end %>
-				<% end %> -->
+					{ tree.pages.map(page => {
+						return !page.hideFromMenu &&
+							<li class={ currentPage === page.path ? "active" : "" }>
+								{/* <%= link_orNot(page) %>
+								<% if page.children %>
+									<ul>
+										<% page.children.each do |childPage| %>
+											<li class="<%= nav_active(childPage.path) %>"> <%= link_orNot(childPage) %></li>
+										<% end %>
+									</ul>
+								<% end %> */}
+								
+							</li>
+					})}
 				</ul>	
 			</nav>
 			<a class="inscripcion enlaceBoton" href="/images/carrera/inscripcion.html" title="Inscribirme en la prueba">
