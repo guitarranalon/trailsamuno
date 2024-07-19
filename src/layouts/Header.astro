@@ -35,15 +35,17 @@ const currentPage = Astro.url.pathname;
 					{ tree.pages.map(page => {
 						return !page.hideFromMenu &&
 							<li class={ currentPage === page.path ? "active" : "" }>
-								{/* <%= link_orNot(page) %>
-								<% if page.children %>
-									<ul>
-										<% page.children.each do |childPage| %>
-											<li class="<%= nav_active(childPage.path) %>"> <%= link_orNot(childPage) %></li>
-										<% end %>
+								{ currentPage === page.path && <span>{ page.name }</span> }
+								{ currentPage !== page.path && <a href={page.path} title={page.title}>{ page.name }</a> }
+								{ page.children && <ul>
+										{ page.children.map(childPage => {
+											return <li class={ currentPage === page.path ? "active" : "" }>
+												{ currentPage === childPage.path && <span>{ childPage.name }</span> }
+												{ currentPage !== childPage.path && <a href={childPage.path} title={childPage.title}>{ childPage.name }</a> }												
+											</li>
+										})}
 									</ul>
-								<% end %> */}
-								
+								}
 							</li>
 					})}
 				</ul>	
