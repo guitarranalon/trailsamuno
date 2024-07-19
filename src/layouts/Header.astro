@@ -24,11 +24,11 @@ const currentPage = Astro.url.pathname;
 				}
 				{ h1 || "Trail Valle de Samuño, la mejor carrera de Asturias" }
 			</h1>
-			<!-- <% if current_page.path != 'index.html' %> -->
-			<div class="nombreCarrera">
-				Trail Valle de Samuño - { data.tvs.mainsponsor }
-			</div>
-			<!-- <% end %> -->
+			{  
+				currentPage !== 'index.html' && <div class="nombreCarrera">
+					Trail Valle de Samuño - { data.tvs.mainsponsor }
+				</div>
+			}
 			<nav id="main-nav">
 				<ul>
 				<!-- <% data.tree.pages.each do |page| %>
