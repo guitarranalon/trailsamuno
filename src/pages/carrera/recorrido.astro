@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 
 const title = "Recorrido";
 const h1 = "Recorrido del trail";
-localScript: "<script>progressBarsAnimations('#tiposCaminos'); progressBarsAnimations('#tiposCaminosTvxs');</script>"
+const localScript = "<script>progressBarsAnimations('#tiposCaminos'); progressBarsAnimations('#tiposCaminosTvxs');</script>"
 ---
 <Layout title={title} h1={h1}>
 	<nav id="third-level-nav">
@@ -241,3 +241,4 @@ localScript: "<script>progressBarsAnimations('#tiposCaminos'); progressBarsAnima
 		<p>¿Has corrido ya el { data.tvxs.name }? ¿También el { data.tvs.name }? ¿Sientes que te has pasado el juego? Pues aún tenemos más para ti. ¡Atrévete con la prueba por etapas, corriendo ambas carreras con una diferencia de poco más de 12h para recuperarte! ¿Serías capaz?. Estate pendiente porque los dorsales son muy limitados, habitualmente 50 cada edición y siempre son los primeros en agotarse.</p>
 	</div>
 </Layout>
+<script is:inline>progressBarsAnimations('#tiposCaminos'); progressBarsAnimations('#tiposCaminosTvxs');</script>

@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro"
 
 const title = "Ediciones anteriores";
 const h1 = "Información sobre las ediciones anteriores";
-localScript: "<script>let r=new Ranking();r.generateRanking();</script>"
+const localScript = "<script>let r=new Ranking();r.generateRanking();</script>"
 ---
 
 <Layout title={title} h1={h1}>
@@ -319,3 +319,4 @@ localScript: "<script>let r=new Ranking();r.generateRanking();</script>"
 		</table>
 	</div>
 </Layout>
+<script is:inline>let r=new Ranking();r.generateRanking();</script>
