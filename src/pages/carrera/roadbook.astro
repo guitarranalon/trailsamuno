@@ -3,9 +3,10 @@ import Layout from "../../layouts/Layout.astro"
 
 const title = "Roadbook";
 const h1 = "Análisis del recorrido del trail";
+const localscript = "<script is:inline>runRoadbook()</script>";
 ---
 
-<Layout title={title} h1={h1}>
+<Layout title={title} h1={h1} localscript={localscript}>
 	<div id="content-block">
 		<h2>Roadbook</h2>
 
@@ -410,4 +411,3 @@ const h1 = "Análisis del recorrido del trail";
 		</div>
 	</div>
 </Layout>
-<script is:inline>runRoadbook()</script>

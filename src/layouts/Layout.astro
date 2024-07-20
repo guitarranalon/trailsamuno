@@ -12,6 +12,7 @@ import Header from "./Header.astro";
 
 const { title } = Astro.props;
 const { h1 } = Astro.props;
+const { localscript } = Astro.props;
 
 const currentPath = Astro.url.pathname;
 const pageClass = getPathClasses(currentPath);
@@ -45,5 +46,6 @@ const pageClass = getPathClasses(currentPath);
     <ColaboradoresFooter />
     <Footer />
     <FooterScripts />
+    <div set:html={localscript}></div>
   </body>
 </html>

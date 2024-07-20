@@ -6,7 +6,7 @@ const h1 = "Información sobre las ediciones anteriores";
 const localScript = "<script>let r=new Ranking();r.generateRanking();</script>"
 ---
 
-<Layout title={title} h1={h1}>
+<Layout title={title} h1={h1} localscript={localScript}>
 	<div id="content-block">
 		<h2>Ediciones anteriores</h2>
 		<!-- <h3>Récords TVS (2016 y 2017)</h3>
@@ -319,4 +319,3 @@ const localScript = "<script>let r=new Ranking();r.generateRanking();</script>"
 		</table>
 	</div>
 </Layout>
-<script is:inline>let r=new Ranking();r.generateRanking();</script>
