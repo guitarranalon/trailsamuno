@@ -7,8 +7,10 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "build:css": "sass sass/site.scss public/stylesheets/site.css",
+    "build:css-prod": "sass --no-source-map --style=compressed sass/site.scss public/stylesheets/site.css",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:pro": "npm run build:css-prod && npm run build"
   },
   "dependencies": {
     "@astrojs/check": "0.8.1",
