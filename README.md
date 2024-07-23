@@ -1,4 +1,4 @@
-# [Trail Valle de Samuño](www.trailvallesamu%C3%B1o.es)
+# 🌄🏃[Trail Valle de Samuño](http://www.trailvallesamu%C3%B1o.es)
 Second iteration of a static website for the Trail Valle de Samuño, arguably the best trail running race in Asturias (northern Spain). First version was created using Ruby's Middleman static site generator ([original repo](https://github.com/guitarranalon/trailvallesamuno)) now giving a try to Javascript's Astro.
   
  ## Environment
