@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import mainData from "../../data/main.json";
+
+const localscript = "<script>indexAnimations();</script>"
 ---
 
-<Layout>
+<Layout localscript={localscript}>
 	<div id="content-block">
 		<article class="excerpt">
 			<div class="row noticia">

@@ -1,4 +1,4 @@
-var progressBarsAnimations = function(selector){
+window.progressBarsAnimations = function(selector){
 	var $tiposCaminos = $(selector),
 			$progressBars = $tiposCaminos.find('.progress-bar'),
 			position = $tiposCaminos.offset();

@@ -1,11 +1,11 @@
-var indexAnimations = function(){
+window.indexAnimations = function(){
 	var $datosTvs = $('.data').eq(0),
 		$datosTvxs = $('.data').eq(1),
 		positionDatosTvs = $datosTvs.offset(),
 		positionDatosTvxs = $datosTvxs.offset(),
 		$excerpts = $('.excerpt');
 		
-var prepareIndexAnimations = function(){
+window.prepareIndexAnimations = function(){
 	var $content = $('#content-block'),
 		$elements = $content
 						.find('.data > li, .excerpt:not(:first-of-type)>.row>h2, .excerpt>.row>p, .excerpt>.row>.button, .excerpt>.row>img');

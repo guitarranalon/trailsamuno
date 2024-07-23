@@ -1,4 +1,4 @@
-var runRoadbook = function(){
+window.runRoadbook = function(){
 	var roadbook = {
 		points:[
 			{

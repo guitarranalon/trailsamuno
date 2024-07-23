@@ -83,3 +83,5 @@ class Ranking {
         this.#generateTable(this.#results);
     }
 }
+
+window.Ranking = Ranking;
