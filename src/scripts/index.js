@@ -1,5 +1,4 @@
 import "./desarrollo/jquery-1.12.3.min.js";
-import "./desarrollo/svg4everybody.js";
 import "./desarrollo/jquery.menu-aim.js";
 import "./desarrollo/tvs.jquery.menu-aim-call.js";
 import "./desarrollo/tvs.jquery.mobileMenuAndSearch.js";
