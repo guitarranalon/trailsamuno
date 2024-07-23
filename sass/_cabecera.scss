@@ -76,13 +76,9 @@ header h1{
 	}
 }
 
-header h1 a{
-	&:hover{
-		.icon{
-			transform: scale(1.39) translate-y(3px);
-			transition: (transform $animacionRapida ease);
-		}
-	}
+header a:hover .icon {
+	transform: scale(1.39) translate(0, 3px);
+	transition: (transform $animacionRapida ease);
 }
 
 header .enlaceBoton{

@@ -39,7 +39,7 @@ const currentPage = Astro.url.pathname;
 								{ currentPage !== page.path && <a href={page.path} title={page.title}>{ page.name }</a> }
 								{ page.children && <ul>
 										{ page.children.map(childPage => {
-											return <li class={ currentPage === page.path ? "active" : "" }>
+											return <li class={ currentPage === childPage.path ? "active" : "" }>
 												{ currentPage === childPage.path && <span>{ childPage.name }</span> }
 												{ currentPage !== childPage.path && <a href={childPage.path} title={childPage.title}>{ childPage.name }</a> }												
 											</li>
