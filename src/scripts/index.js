@@ -1,4 +1,4 @@
-import "./desarrollo/jquery-1.12.3.min.js";
+import "./desarrollo/jquery-3.7.1.js";
 import "./desarrollo/jquery.menu-aim.js";
 import "./desarrollo/tvs.jquery.menu-aim-call.js";
 import "./desarrollo/tvs.jquery.mobileMenuAndSearch.js";
