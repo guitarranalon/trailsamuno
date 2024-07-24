@@ -1,7 +1,9 @@
 const INDEX_CLASS = "index";
 
+const baseURL = "/";
+
 export const getPathClasses = (pathname: string): string => {
-    if (pathname === "/") return INDEX_CLASS;
+    if (pathname === baseURL) return INDEX_CLASS;
 
     const cleanPathnameParts = pathname.replace(/\.html$/, "").substring(1).split("/");
 
