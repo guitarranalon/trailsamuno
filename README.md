@@ -47,15 +47,15 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                            | Action                                           |
-| :--------------------------------- | :----------------------------------------------- |
-| `npm install`                      | Installs dependencies                            |
-| `npm run dev`                      | Starts local dev server at `localhost:4321`      |
-| `npm run build`                    | Build your production site to `./dist/`          |
-| `npm run build:css`                | Build stylesheets to `/public/stylesheets`       |
-| `npm run build:css-prod`           | Build **compressed** stylesheets to `/public/stylesheets` |
-| `npm run build:pro`                | Build production site and styles to `./dist`     |
-| `npm run preview`                  | Preview your build locally, before deploying     |
-| `npm run astro ...`                | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help`          | Get help using the Astro CLI                     |
-| `npx rollup -c`                    | Bundles all javascripts imported in `/scripts/index.js` to `/public/scripts/bundle.js` and `/public/scripts/bundle.min.js` which is the same code but compressed |
+| Command                   | Action                                                    |
+| :------------------------ | :-------------------------------------------------------- |
+| `npm install`             | Installs dependencies                                     |
+| `npm run dev`             | Starts local dev server at `localhost:4321`               |
+| `npm run build`           | Build your production site to `./dist/`                   |
+| `npm run build:css`       | Build stylesheets to `/public/stylesheets`                |
+| `npm run build:css-prod`  | Build **compressed** stylesheets to `/public/stylesheets` |
+| `npm run build:pro`       | Build production site and styles to `./dist`              |
+| `npm run preview`         | Preview your build locally, before deploying              |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`          |
+| `npm run astro -- --help` | Get help using the Astro CLI                              |
+| `npx rollup -c`           | Bundles all javascripts imported in `/scripts/index.js` to `/public/scripts/bundle.js` and `/public/scripts/bundle.min.js` which is the same code but compressed |
