@@ -6,5 +6,6 @@ export default defineConfig({
         format: "file",
         site: 'https://guitarranalon.github.io/trailsamuno',
         base: '/trailsamuno/',
+        output: 'static',
     },    
 });
