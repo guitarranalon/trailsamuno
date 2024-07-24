@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     build: {
         format: "file",
-        site: 'https://guitarranalon.github.io',
+        site: 'https://guitarranalon.github.io/trailsamuno',
         base: '/trailsamuno/',
     },    
 });
