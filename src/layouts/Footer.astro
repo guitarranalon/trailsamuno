@@ -1,9 +1,13 @@
+---
+import computePath from "../helpers/compute-path";
+---
+
 <footer>
 	<div class="row">
 		<div class="cumbre">
 			<a href="http://gmcumbre.blogspot.com" title="Ir a la web de GM Cumbre Llangréu organizador del evento">
 				<svg class="icon cumbre-logo">
-					<use xlink:href={`/svg/map.svg#logo-cumbre`}></use>
+					<use xlink:href={computePath(`/svg/map.svg#logo-cumbre`)}></use>
 				</svg>
 				Cumbre</a>
 		</div>
@@ -16,17 +20,17 @@
 			<ul>
 				<li class="x"><a href="https://twitter.com/tvallesamuno" title="Ir a la página de X del Trail Valle de Samuño">
 					<svg class="icon x">
-						<use xlink:href={`/svg/map.svg#x`}></use>
+						<use xlink:href={computePath(`/svg/map.svg#x`)}></use>
 					</svg>
 					X</a></li>
 				<li class="facebook"><a href="https://www.facebook.com/TrailValleSamuno/" title="Ir a la página de Facebook del Trail Valle de Samuño">
 					<svg class="icon facebook">
-						<use xlink:href={`/svg/map.svg#facebook`}></use>
+						<use xlink:href={computePath(`/svg/map.svg#facebook`)}></use>
 					</svg>
 					Facebook</a></li>
 				<li class="Instagram"><a href="https://www.instagram.com/trailvalledesamuno/" title="Ir a la página de Instagram del Trail Valle de Samuño">
 					<svg class="icon instagram">
-						<use xlink:href={`/svg/map.svg#instagram`}></use>
+						<use xlink:href={computePath(`/svg/map.svg#instagram`)}></use>
 					</svg>
 					Instagram</a></li>
 			</ul>
@@ -35,36 +39,36 @@
 		<ul class="sellos">
 			<li class="langreocalidadturistica">
 				{ Astro.url.pathname === "/informacion/reconocimientos" && <span>
-					<svg class="icon langreocalidadturistica"><use xlink:href="/images/map.svg#langreocalidadturistica"></use></svg>
+					<svg class="icon langreocalidadturistica"><use xlink:href={computePath("/images/map.svg#langreocalidadturistica")}></use></svg>
 				</span>
 				}
 				{
 					Astro.url.pathname !== "/informacion/reconocimientos" && <a href="/informacion/reconocimientos#calidadTuristica2019" title="Ir a la sección de Langreo Calidad Turística">
-						<svg class="icon langreocalidadturistica"><use xlink:href="/images/map.svg#langreocalidadturistica"></use></svg>
+						<svg class="icon langreocalidadturistica"><use xlink:href={computePath("/images/map.svg#langreocalidadturistica")}></use></svg>
 						Langreo calidad turística
 					</a>					
 				}
 			</li>
 			<li class="nortrail">
 				{ Astro.url.pathname === "/informacion/reconocimientos" && <span>
-					<svg class="icon nortrail"><use xlink:href="/images/map.svg#nortrail2017"></use></svg>
+					<svg class="icon nortrail"><use xlink:href={computePath("/images/map.svg#nortrail2017")}></use></svg>
 				</span>
 				}
 				{
 					Astro.url.pathname !== "/informacion/reconocimientos" && <a href="/informacion/reconocimientos#nortrail2017" title="Ir a la sección de Premios Nortrail 2017">
-						<svg class="icon nortrail"><use xlink:href="/images/map.svg#nortrail2017"></use></svg>
+						<svg class="icon nortrail"><use xlink:href={computePath("/images/map.svg#nortrail2017")}></use></svg>
 						Mejor carrera hasta 25km Premios Nortrail 2017
 					</a>					
 				}
 			</li>
 			<li class="homologacion">
 				{ Astro.url.pathname === "/transversales/homologacionFempa" && <span>
-					<svg class="icon homologada-fempa"><use xlink:href="/images/map.svg#homologacion"></use></svg>
+					<svg class="icon homologada-fempa"><use xlink:href={computePath("/images/map.svg#homologacion")}></use></svg>
 				</span>
 				}
 				{
 					Astro.url.pathname !== "/transversales/homologacionFempa" && <a href="/transversales/homologacionFempa" title="Ir a la sección de homologación">
-						<svg class="icon homologada-fempa"><use xlink:href="/images/map.svg#homologacion"></use></svg>
+						<svg class="icon homologada-fempa"><use xlink:href={computePath("/images/map.svg#homologacion")}></use></svg>
 						Carrera homologada por la Fempa
 					</a>					
 				}

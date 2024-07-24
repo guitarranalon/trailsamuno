@@ -1,1 +1,4 @@
-<script src="/scripts/bundle.min.js" is:inline></script>
+---
+import computePath from "../helpers/compute-path";
+---
+<script src={computePath("/scripts/bundle.min.js")} is:inline></script>

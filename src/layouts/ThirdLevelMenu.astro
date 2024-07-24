@@ -1,6 +1,8 @@
 ---
 import { getThirdLevelMenu } from "../helpers/get-third-level-menu";
 import tree from "../../data/tree.json";
+import { areTheSameRoutes } from "../helpers/route-comparators";
+import computePath from "../helpers/compute-path";
 
 const currentPage = Astro.url.pathname;
 const currentChildren = getThirdLevelMenu(tree, currentPage);
@@ -9,9 +11,9 @@ const currentChildren = getThirdLevelMenu(tree, currentPage);
 { currentChildren && <nav id="third-level-nav">
         <ul>
             { currentChildren.map((childPage: any) => {
-                return <li class={ currentPage === childPage.path ? "active" : "" }>
-                    { currentPage === childPage.path && <span>{ childPage.name }</span> }
-                    { currentPage !== childPage.path && <a href={childPage.path} title={childPage.title}>{ childPage.name }</a> }
+                return <li class={ areTheSameRoutes(currentPage, childPage.path) ? "active" : "" }>
+                    { areTheSameRoutes(currentPage, childPage.path) && <span>{ childPage.name }</span> }
+                    { !areTheSameRoutes(currentPage, childPage.path) && <a href={computePath(childPage.path)} title={childPage.title}>{ childPage.name }</a> }
                 </li>
             })}
         </ul>

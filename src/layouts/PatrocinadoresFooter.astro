@@ -1,5 +1,6 @@
 ---
 import patrocinadores from "../../data/patrocinadores.json";
+import computePath from "../helpers/compute-path";
 
 const current_page = Astro.url.pathname;
 ---
@@ -10,7 +11,7 @@ const current_page = Astro.url.pathname;
 				{ patrocinadores.empresas.map(empresa => {
 					return <li>
 						<a href={empresa.link} title={empresa.linktitle}>
-							<img src={`/images/patrocinadores/${empresa.image}`} alt={empresa.name} loading="lazy" />
+							<img src={computePath(`/images/patrocinadores/${empresa.image}`)} alt={empresa.name} loading="lazy" />
 						</a>
 					</li>
 				})}

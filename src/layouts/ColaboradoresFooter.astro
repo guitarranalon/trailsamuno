@@ -1,5 +1,6 @@
 ---
 import colaboradores from "../../data/colaboradores.json";
+import computePath from "../helpers/compute-path";
 
 const current_page = Astro.url.pathname;
 ---
@@ -12,11 +13,11 @@ const current_page = Astro.url.pathname;
 						{ epigrafeoficial.empresas.map(colaboradoroficial => {
 							return <li>
 								{ !colaboradoroficial.link && <span>
-										<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} loading="lazy"  />
+										<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy"  />
 									</span>
 								}
 								{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
-										<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} loading="lazy" />
+										<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy" />
 									</a>
 								}
 							</li>
@@ -26,7 +27,7 @@ const current_page = Astro.url.pathname;
 				{ colaboradores.empresas.map(empresa => {
 					return <li>
 						<a href={empresa.link} title={empresa.linktitle}>
-							<img src={`/images/colaboradores/${empresa.image}`} alt={empresa.name} loading="lazy" />
+							<img src={computePath(`/images/colaboradores/${empresa.image}`)} alt={empresa.name} loading="lazy" />
 						</a>
 					</li>
 				})}
