@@ -1,4 +1,5 @@
 ---
+import computePath from "../../helpers/compute-path";
 import Layout from "../../layouts/Layout.astro";
 
 const title = "Dónde dormir";
@@ -38,7 +39,7 @@ const h1 = "¿Dónde alojarme para la carrera?";
 		<iframe class="wikilocMap" data-src="https://www.google.com/maps/d/u/2/embed?mid=1qT1FGXfx_Nz7iZGRDU1lpZQF_0wxgEs&ehbc=2E312F" width="640" height="480"></iframe>
 
 		<p><a href="https://www.google.com/maps/place/43%C2%B016'41.9%22N+5%C2%B040'27.8%22W/@43.2783139,-5.6765787,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d43.27831!4d-5.67439" title="Ver en Google Maps"><svg class="icon marker">
-					<use xlink:href="/images/map.svg#marker"></use>
+					<use xlink:href={computePath("/images/map.svg#marker")}></use>
 				</svg>43.27831, -5.67439</a></p>
 
 		<p>Muy próximo al inicio/fin de la carrera (unos 2km) existe un Área para autocaravanas, en el pueblo de El Cadavíu, a escasos metros de la estación inferior del tren del <a href="../entorno/ecomuseo.html" title="Ver información sobre el Ecomuseo">Ecomuseo Minero Valle de Samuño</a>.</p>
