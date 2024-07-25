@@ -37,8 +37,15 @@
 }
 
 #content .excerpt.alt{
-	background: $colorTema url(#{$img-root}/curvasNivel.svg) no-repeat 50% 50%;
+	background-color: $colorTema;
+	background-image: url(#{$img-root}/curvasNivel.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 	background-size: (cover);
+
+	[data-baseurl=\/trailsamuno] & {
+		background-image: url(#{$gh-pages-baseurl}#{$img-root}/curvasNivel.svg);
+	}
 
 	a.button{
 		@extend %altEnlaceBoton;
@@ -147,11 +154,18 @@
 	> li{
 		@extend %finalInclinado;
 
-		background: $colorTema url(#{$img-root}/curvasNivel.svg) no-repeat 50% 50%;
+		background-color: $colorTema;
+		background-image: url(#{$img-root}/curvasNivel.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
 		background-size: (cover);
 		overflow: hidden;
 		padding: sizeEM(70) 0 sizeEM(200);
 		position: relative;
+
+		[data-baseurl=\/trailsamuno] & {
+			background-image: url(#{$gh-pages-baseurl}#{$img-root}/curvasNivel.svg);
+		}
 
 		@include mq($screen-sm-min){
 			float: left;

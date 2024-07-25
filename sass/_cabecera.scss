@@ -18,7 +18,10 @@
 
 #header:after{
 	@include mq($screen-sm-plus-min){
-		background: $colorTema url(#{$img-root}/fondoCabeceraPortada.jpg) no-repeat 50% 40%;	
+		background-color: $colorTema;
+		background-image: url(#{$img-root}/fondoCabeceraPortada.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
 		background-size: (cover);
 		content: ' ';
 		height: sizeEM(160);
@@ -26,6 +29,12 @@
 		position: absolute;
 		right: 0;
 		top: sizeEM(75);
+	}
+
+	[data-baseurl=\/trailsamuno] & {
+		@include mq($screen-sm-plus-min){
+			background-image: url(#{$gh-pages-baseurl}#{$img-root}/fondoCabeceraPortada.jpg);
+		}		
 	}
 
 	.index &{

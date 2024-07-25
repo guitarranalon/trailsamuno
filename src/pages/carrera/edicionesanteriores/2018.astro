@@ -1,4 +1,5 @@
 ---
+import computePath from "../../../helpers/compute-path";
 import Layout from "../../../layouts/Layout.astro";
 
 const title = "2018";
@@ -40,8 +41,8 @@ const h1 = "Información de la edición de 2018";
 				</ul>
 			<h3>Cartel</h3>
 				<figure class="fotoIzquierda no-float figure">
-					<a href="/images/carrera/edicionesanteriores/2018/cartel2018.jpg" title="Ampliar" class="gallery">		
-						<img src="/images/carrera/edicionesanteriores/2018/cartel2018.jpg" class="figure-img" alt="Cartel del III Trail Valle de Samuño celebrado en Langreo (Asturias)" />
+					<a href={computePath("/images/carrera/edicionesanteriores/2018/cartel2018.jpg")} title="Ampliar" class="gallery">		
+						<img src={computePath("/images/carrera/edicionesanteriores/2018/cartel2018.jpg")} class="figure-img" alt="Cartel del III Trail Valle de Samuño celebrado en Langreo (Asturias)" />
 					</a>
 				</figure>
 			<h3>Prensa</h3>

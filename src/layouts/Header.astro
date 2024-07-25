@@ -1,6 +1,8 @@
 ---
 import data from "../../data/main.json";
 import tree from "../../data/tree.json";
+import computePath from "../helpers/compute-path";
+import { isSameRoute, routeIsBaseUrl } from "../helpers/route-comparators";
 
 const { h1 } = Astro.props;
 
@@ -11,22 +13,22 @@ const currentPage = Astro.url.pathname;
 	<div class="row">
 		<div class="tvs">
 			<h1>
-				{ currentPage === "/" && <span>
+				{ routeIsBaseUrl(currentPage) && <span>
 					<svg class="icon tvs-logo">
-						<use xlink:href="/images/map.svg#logo-tvs"></use>
+						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
 					</svg>
 				</span>
 				}
-				{ currentPage !== "/" && <a href="/" title="Ir a la página de inicio">
+				{ !routeIsBaseUrl(currentPage) && <a href={computePath("/")} title="Ir a la página de inicio">
 					<svg class="icon tvs-logo">
-						<use xlink:href="/images/map.svg#logo-tvs"></use>
+						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
 					</svg>
 				</a>
 				}
 				{ h1 || "Trail Valle de Samuño, la mejor carrera de Asturias" }
 			</h1>
 			{  
-				currentPage !== '/' && <div class="nombreCarrera">
+				!routeIsBaseUrl(currentPage) && <div class="nombreCarrera">
 					Trail Valle de Samuño - { data.tvs.mainsponsor }
 				</div>
 			}
@@ -34,14 +36,14 @@ const currentPage = Astro.url.pathname;
 				<ul>
 					{ tree.pages.map(page => {
 						return !page.hideFromMenu &&
-							<li class={ currentPage === page.path ? "active" : "" }>
-								{ currentPage === page.path && <span>{ page.name }</span> }
-								{ currentPage !== page.path && <a href={page.path} title={page.title}>{ page.name }</a> }
+							<li class={ isSameRoute(currentPage, page.path) ? "active" : "" }>
+								{ isSameRoute(currentPage, page.path) && <span>{ page.name }</span> }
+								{ !isSameRoute(currentPage, page.path) && <a href={computePath(page.path)} title={page.title}>{ page.name }</a> }
 								{ page.children && <ul>
 										{ page.children.map(childPage => {
-											return <li class={ currentPage === childPage.path ? "active" : "" }>
-												{ currentPage === childPage.path && <span>{ childPage.name }</span> }
-												{ currentPage !== childPage.path && <a href={childPage.path} title={childPage.title}>{ childPage.name }</a> }												
+											return <li class={ isSameRoute(currentPage, childPage.path) ? "active" : "" }>
+												{ isSameRoute(currentPage, childPage.path) && <span>{ childPage.name }</span> }
+												{ !isSameRoute(currentPage, childPage.path) && <a href={computePath(childPage.path)} title={childPage.title}>{ childPage.name }</a> }												
 											</li>
 										})}
 									</ul>
@@ -50,9 +52,9 @@ const currentPage = Astro.url.pathname;
 					})}
 				</ul>	
 			</nav>
-			<a class="inscripcion enlaceBoton" href="/images/carrera/inscripcion.html" title="Inscribirme en la prueba">
+			<a class="inscripcion enlaceBoton" href={computePath("/images/carrera/inscripcion.html")} title="Inscribirme en la prueba">
 			<svg class="icon inscripcion">
-				<use xlink:href="/images/map.svg#inscripcion-icon"></use>
+				<use xlink:href={computePath("/images/map.svg#inscripcion-icon")}></use>
 			</svg>
 			Inscribirme</a>
 		</div>
