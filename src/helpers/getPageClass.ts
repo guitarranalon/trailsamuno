@@ -1,6 +1,6 @@
 const INDEX_CLASS = "index";
 
-const baseURL = "/";
+const baseURL = import.meta.env.BASE_URL;
 
 export const getPathClasses = (pathname: string): string => {
     const cleanPathname = pathname.startsWith(import.meta.env.BASE_URL) ? pathname.substring(import.meta.env.BASE_URL.length) : pathname;
