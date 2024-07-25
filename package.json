@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npx rollup -c && npm run build:css-prod && astro check && astro build",
+    "build": "astro check && astro build",
     "build:css": "sass sass/site.scss public/stylesheets/site.css",
     "build:css-prod": "sass --no-source-map --style=compressed sass/site.scss public/stylesheets/site.css",
     "preview": "astro preview",
