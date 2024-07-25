@@ -4,7 +4,8 @@ const baseURL = "/";
 
 export const getPathClasses = (pathname: string): string => {
     const cleanPathname = pathname.startsWith(import.meta.env.BASE_URL) ? pathname.substring(import.meta.env.BASE_URL.length) : pathname;
-    if (cleanPathname === baseURL) return INDEX_CLASS;
+    
+    if (pathname === baseURL || cleanPathname === baseURL) return INDEX_CLASS;
 
     const cleanPathnameParts = cleanPathname.replace(/\.html$/, "").substring(1).split("/");
 

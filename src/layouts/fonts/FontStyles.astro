@@ -1,0 +1,8 @@
+---
+import RootUrlFonts from "./RootUrlFonts.astro";
+import GHPagesFonts from "./GHPagesFonts.astro";
+
+const isRootUrl = import.meta.env.BASE_URL === "/";
+---
+{ isRootUrl && <RootUrlFonts /> } 
+{ !isRootUrl && <GHPagesFonts />}

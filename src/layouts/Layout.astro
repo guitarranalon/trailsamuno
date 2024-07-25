@@ -9,6 +9,7 @@ import { getPathClasses } from "../helpers/getPageClass";
 import mainData from "../../data/main.json";
 import "../../sass/site.scss";
 import Header from "./Header.astro";
+import FontStyles from "./fonts/FontStyles.astro";
 
 const { title } = Astro.props;
 const { h1 } = Astro.props;
@@ -30,11 +31,10 @@ const pageClass = getPathClasses(currentPath);
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
 
     <title>{ title ? title : "Trail Valle de Samuño" } - { mainData.tvs.mainsponsor }</title>
-
+    <FontStyles />
     <Favicons />
   </head>
-
-  <body class={pageClass}>
+  <body class={pageClass} data-baseurl={import.meta.env.BASE_URL}>
   <Header h1={h1} />
 	<div id="content">
 		<div class="row">
