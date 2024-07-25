@@ -14,10 +14,10 @@ function normalizeRoute(route: string): string {
     return normalizedRoute;
 }
 
-export function areTheSameRoutes(route1: string, route2: string): boolean {
+export function isSameRoute(route1: string, route2: string): boolean {
     return normalizeRoute(route1) === normalizeRoute(route2);
 }
 
 export function routeIsBaseUrl(route: string): boolean {
-    return areTheSameRoutes(route, import.meta.env.BASE_URL);
+    return isSameRoute(route, import.meta.env.BASE_URL);
 }

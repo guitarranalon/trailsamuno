@@ -2,7 +2,7 @@
 import data from "../../data/main.json";
 import tree from "../../data/tree.json";
 import computePath from "../helpers/compute-path";
-import { areTheSameRoutes, routeIsBaseUrl } from "../helpers/route-comparators";
+import { isSameRoute, routeIsBaseUrl } from "../helpers/route-comparators";
 
 const { h1 } = Astro.props;
 
@@ -36,14 +36,14 @@ const currentPage = Astro.url.pathname;
 				<ul>
 					{ tree.pages.map(page => {
 						return !page.hideFromMenu &&
-							<li class={ areTheSameRoutes(currentPage, page.path) ? "active" : "" }>
-								{ areTheSameRoutes(currentPage, page.path) && <span>{ page.name }</span> }
-								{ !areTheSameRoutes(currentPage, page.path) && <a href={computePath(page.path)} title={page.title}>{ page.name }</a> }
+							<li class={ isSameRoute(currentPage, page.path) ? "active" : "" }>
+								{ isSameRoute(currentPage, page.path) && <span>{ page.name }</span> }
+								{ !isSameRoute(currentPage, page.path) && <a href={computePath(page.path)} title={page.title}>{ page.name }</a> }
 								{ page.children && <ul>
 										{ page.children.map(childPage => {
-											return <li class={ areTheSameRoutes(currentPage, childPage.path) ? "active" : "" }>
-												{ areTheSameRoutes(currentPage, childPage.path) && <span>{ childPage.name }</span> }
-												{ !areTheSameRoutes(currentPage, childPage.path) && <a href={computePath(childPage.path)} title={childPage.title}>{ childPage.name }</a> }												
+											return <li class={ isSameRoute(currentPage, childPage.path) ? "active" : "" }>
+												{ isSameRoute(currentPage, childPage.path) && <span>{ childPage.name }</span> }
+												{ !isSameRoute(currentPage, childPage.path) && <a href={computePath(childPage.path)} title={childPage.title}>{ childPage.name }</a> }												
 											</li>
 										})}
 									</ul>

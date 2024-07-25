@@ -1,4 +1,4 @@
-import { areTheSameRoutes } from "./route-comparators";
+import { isSameRoute } from "./route-comparators";
 
 export function getThirdLevelMenu(tree: any, currentPage: string) {
     for (let page of tree.pages) {
@@ -14,7 +14,7 @@ export function getThirdLevelMenu(tree: any, currentPage: string) {
   function getPageChildren(page: any, parentPage: any, level: number, currentPage: string): any {
     let result = null;
   
-    if (areTheSameRoutes(currentPage, page.path)) {
+    if (isSameRoute(currentPage, page.path)) {
       if (level === 1) {
         return parentPage.children;
       }
