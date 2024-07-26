@@ -2,7 +2,7 @@
 import data from "../../data/main.json";
 import tree from "../../data/tree.json";
 import computePath from "../helpers/compute-path";
-import { isSameRoute, routeIsBaseUrl } from "../helpers/route-comparators";
+import { isSameRoute, isBaseUrl } from "../helpers/route-comparators";
 
 const { h1 } = Astro.props;
 
@@ -13,13 +13,13 @@ const currentPage = Astro.url.pathname;
 	<div class="row">
 		<div class="tvs">
 			<h1>
-				{ routeIsBaseUrl(currentPage) && <span>
+				{ isBaseUrl(currentPage) && <span>
 					<svg class="icon tvs-logo">
 						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
 					</svg>
 				</span>
 				}
-				{ !routeIsBaseUrl(currentPage) && <a href={computePath("/")} title="Ir a la página de inicio">
+				{ !isBaseUrl(currentPage) && <a href={computePath("/")} title="Ir a la página de inicio">
 					<svg class="icon tvs-logo">
 						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
 					</svg>
@@ -28,7 +28,7 @@ const currentPage = Astro.url.pathname;
 				{ h1 || "Trail Valle de Samuño, la mejor carrera de Asturias" }
 			</h1>
 			{  
-				!routeIsBaseUrl(currentPage) && <div class="nombreCarrera">
+				!isBaseUrl(currentPage) && <div class="nombreCarrera">
 					Trail Valle de Samuño - { data.tvs.mainsponsor }
 				</div>
 			}

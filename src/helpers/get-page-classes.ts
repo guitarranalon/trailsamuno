@@ -1,11 +1,18 @@
+import { isSameRoute, isBaseUrl } from "./route-comparators";
+
 const INDEX_CLASS = "index";
+const emptyBaseUrl = "/";
 
 const baseURL = import.meta.env.BASE_URL;
 
 export const getPathClasses = (pathname: string): string => {
-    const cleanPathname = pathname.startsWith(import.meta.env.BASE_URL) ? pathname.substring(import.meta.env.BASE_URL.length) : pathname;
-    
-    if (pathname === baseURL || cleanPathname === baseURL) return INDEX_CLASS;
+    let cleanPathname = pathname;
+
+    if (baseURL !== emptyBaseUrl) {
+        cleanPathname = pathname.substring(import.meta.env.BASE_URL.length);
+    }
+
+    if (isBaseUrl(pathname) || isSameRoute(cleanPathname, baseURL)) return INDEX_CLASS;
 
     const cleanPathnameParts = cleanPathname.replace(/\.html$/, "").substring(1).split("/");
 
