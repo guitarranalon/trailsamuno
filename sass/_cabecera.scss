@@ -85,7 +85,7 @@ header h1{
 	}
 }
 
-header a:hover .icon {
+header a:hover .icon.tvs-logo {
 	transform: scale(1.39) translate(0, 3px);
 	transition: (transform $animacionRapida ease);
 }
