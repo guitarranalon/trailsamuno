@@ -29,7 +29,7 @@
 			docCookies.setItem('cookiesAccepted', true, Infinity);
 		}
 
-		googleAnalytics();
+		// googleAnalytics();
 		$(document).off('scroll');
 		$('.cookiesWarning').fadeOut(250);
 		loadIframes();		

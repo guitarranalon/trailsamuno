@@ -9,7 +9,7 @@ import "./desarrollo/featherlight.gallery.js";
 import "./desarrollo/ease.min.js";
 import "./desarrollo/segment.min.js";
 import "./desarrollo/roadbook.js";
-import "./desarrollo/analytics.js";
+// import "./desarrollo/analytics.js";
 import "./desarrollo/docCookies.js";
 import "./desarrollo/cookiesWarning.js";
 import "./desarrollo/jquery-scrollspy.js";

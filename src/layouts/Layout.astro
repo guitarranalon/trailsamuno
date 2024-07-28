@@ -10,6 +10,7 @@ import mainData from "../../data/main.json";
 import "../../sass/site.scss";
 import Header from "./Header.astro";
 import FontStyles from "./fonts/FontStyles.astro";
+import GoogleTag from "./GoogleTag.astro";
 
 const { title } = Astro.props;
 const { h1 } = Astro.props;
@@ -21,6 +22,7 @@ const pageClass = getPathClasses(currentPath);
 <!doctype html>
 <html lang="es-ES">
   <head>
+    <GoogleTag />
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta name="author" content="Roberto Cancio González" />
