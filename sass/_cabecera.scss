@@ -55,7 +55,7 @@
 header h1{
 	@extend %text-replacement;
 	
-	padding-top: 28px;
+	padding-top: 10px;
 
 	@include mq($screen-sm-plus-min){
 		background: $colorFuente;
@@ -66,14 +66,23 @@ header h1{
 		z-index: 100;
 	}
 
+	& > span {
+		display: block;
+		margin-bottom: 12px;
+
+		@include mq($screen-sm-plus-min){
+			display: inline;
+		}
+	}
+
 	.icon{
 		transition: (transform $animacionMedia ease);
 		
 		display: block;
 		fill: $colorFuente;
-		height: 210px;
+		height: 86px;
 		margin: 0 auto;
-		width: 170px;
+		width: 67px;
 
 		@include mq($screen-sm-plus-min){
 			fill: $colorTema;
