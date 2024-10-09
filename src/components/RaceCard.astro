@@ -1,0 +1,12 @@
+---
+import { date } from "astro/zod";
+
+const { data } = Astro.props;
+---
+<div class="card race-card">
+    { data.name }
+    { data.mainsponsor }
+    { data.date.day } { data.date.monthtext } { data.date.year }
+    { data.distance }Km
+    { data.climb }m
+</div>

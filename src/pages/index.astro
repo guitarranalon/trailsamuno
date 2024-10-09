@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import mainData from "../../data/main.json";
 import computePath from "../helpers/compute-path";
+import RaceCard from "../components/RaceCard.astro";
 
 const localscript = "<script>indexAnimations();</script>"
 ---
@@ -30,6 +31,11 @@ const localscript = "<script>indexAnimations();</script>"
 					<p>Por segunda vez en nuestra trayectoria (la otra fue en 2017) el Trail Valle de Samuño-{ mainData.tvxs.mainsponsor } acogerá una prueba de la Copa de Asturias de Carreras por Montaña. Los/as mejores corredores/as se darán cita en el Valle para abrir el calendario en un duelo del máximo nivel. ¡¡¡Ven a disfrutarlo!!!</p>
 				</div> -->
 			</div>
+			<section class="row race-list">
+				<RaceCard data={ mainData.tvs } />
+				<RaceCard data={ mainData.tvxs } />
+				<RaceCard data={ mainData.gtvs } />
+			</section>
 			<div class="row aparte">
 				<ul class="data">
 					<li class="date"><span class="value">{ mainData.tvs.date.day }</span> <span class="unit">{ mainData.tvs.date.abbreviatedMonth</span></li>
