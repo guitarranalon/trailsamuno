@@ -1,5 +1,16 @@
+.race-list {
+    @include mq($screen-sm-min) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 #content .race-card {
     margin-bottom: 32px;
+
+    @include mq($screen-sm-min) {
+        width: 30%;
+    }
 
     &__name {
         display: inline-block;
@@ -38,5 +49,10 @@
     footer {
         background: transparent;
         padding: 0;
+    }
+
+    footer .button {
+        margin-left: 0;
+        width: auto;
     }
 }
