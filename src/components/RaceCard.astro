@@ -1,6 +1,4 @@
 ---
-import { date } from "astro/zod";
-
 const { data } = Astro.props;
 ---
 <div class="card race-card">
@@ -9,4 +7,6 @@ const { data } = Astro.props;
     { data.date.day } { data.date.monthtext } { data.date.year }
     { data.distance }Km
     { data.climb }m
+
+    <a href="#" title="" class="button">Más información</a>
 </div>
