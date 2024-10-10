@@ -1,0 +1,17 @@
+.race-card {
+    margin-bottom: 32px;
+    &__title {
+        display: flex;
+    }
+
+    &__name {
+        font-family: $fontFamilyBold;
+        font-size: 32px;
+        margin-right: 8px;
+    }
+
+    footer {
+        background: transparent;
+        padding: 0;
+    }
+}

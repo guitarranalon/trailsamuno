@@ -2,11 +2,22 @@
 const { data } = Astro.props;
 ---
 <div class="card race-card">
-    { data.name }
-    { data.mainsponsor }
-    { data.date.day } { data.date.monthtext } { data.date.year }
-    { data.distance }Km
-    { data.climb }m
-
-    <a href="#" title="" class="button">Más información</a>
+    <div class="race-card__title">
+        <div class="race-card__name">{ data.name }</div>
+        <div class="race-card__sponsor">{ data.mainsponsor }</div>
+    </div>
+    <div class="race-card__data">
+        <div>
+            { data.date.day } { data.date.monthtext } { data.date.year }
+        </div>
+        <div>
+            Distancia { data.distance }Km
+        </div>
+        <div>
+            Desnivel positivo { data.climb }m
+        </div>
+    </div>
+    <footer>
+        <a href="carrera/recorrido.html" title="Ver más información de la carrera" class="button">Más información</a>
+    </footer>
 </div>
