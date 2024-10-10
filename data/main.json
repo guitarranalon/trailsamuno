@@ -1,7 +1,7 @@
 {
     "tvxs": {
       "name": "TVxS",
-      "mainsponsor": "",
+      "mainsponsor": "Clínica Nalón Dental",
       "sequence": "VI",
       "distance": "13",
       "climb": "700",
@@ -33,7 +33,7 @@
     },
     "gtvs": {
       "name": "GTVS",
-      "mainsponsor": "",
+      "mainsponsor": "Clínica Nalón Dental",
       "sequence": "V",
       "distance": "35",
       "climb": "2.200",
