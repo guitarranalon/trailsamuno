@@ -1,4 +1,4 @@
-.race-card {
+#content .race-card {
     margin-bottom: 32px;
 
     &__name {
@@ -11,6 +11,28 @@
 
     &__sponsor {
         display: inline-block;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        dl {
+            width: 50%;
+        }
+
+        dt {
+            display: block;
+            float: none;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        dd {
+            font-size: 18px;
+            font-weight: bold;
+        }
     }
 
     footer {

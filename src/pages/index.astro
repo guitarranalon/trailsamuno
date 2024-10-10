@@ -32,9 +32,9 @@ const localscript = "<script>indexAnimations();</script>"
 				</div> -->
 			</div>
 			<section class="row race-list">
-				<RaceCard data={ mainData.tvxs } />
-				<RaceCard data={ mainData.tvs } />
-				<RaceCard data={ mainData.gtvs } />
+				<RaceCard data={ { ...mainData.tvxs, moreInfoLink: "#k11" }} />
+				<RaceCard data={ { ...mainData.tvs, moreInfoLink: "#k24" }} />
+				<RaceCard data={ { ...mainData.gtvs, moreInfoLink: "gtvs" }} />
 			</section>
 		</article>
 		<article class="excerpt alt">

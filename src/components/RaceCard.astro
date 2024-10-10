@@ -6,18 +6,24 @@ const { data } = Astro.props;
         <div class="race-card__name">{ data.name }</div>
         <div class="race-card__sponsor">{ data.mainsponsor }</div>
     </div>
+    <div>
+        { data.date.day } { data.date.monthtext } { data.date.year }
+    </div>
     <div class="race-card__data">
-        <div>
-            { data.date.day } { data.date.monthtext } { data.date.year }
-        </div>
-        <div>
-            Distancia { data.distance }Km
-        </div>
-        <div>
-            Desnivel positivo { data.climb }m
-        </div>
+        <dl>
+            <dt>Distancia</dt> <dd>{ data.distance }Km</dd>
+        </dl>
+        <dl>
+            <dt>Desnivel positivo</dt> <dd>{ data.climb }m</dd>
+        </dl>
+        <dl>
+            <dt>Avituallamientos</dt> <dd>{ data.aidStations }</dd>
+        </dl>
+        { data.stages && data.stages > 1 && <dl>
+            <dt>Etapas</dt> <dd>{ data.stages }</dd>
+        </dl> }
     </div>
     <footer>
-        <a href="carrera/recorrido.html" title="Ver más información de la carrera" class="button">Más información</a>
+        <a href=`carrera/recorrido.html#${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
     </footer>
 </div>
