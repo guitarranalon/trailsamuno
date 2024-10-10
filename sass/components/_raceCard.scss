@@ -12,15 +12,32 @@
 	background-position: 80% 70%;
 	background-size: 300%;    
     margin-bottom: 64px;
-    padding: 1.5em;
+    padding: 1.25em;
     position: relative;
 
     @include mq($screen-sm-min) {
-        width: 25%;
+        width: 26%;
+    }
+
+    &__image {
+        margin: -1.25em -1.25em 0;
+
+        img {
+            width: 100%;
+
+            @include mq($screen-sm-min) {
+                position: static;
+            }
+        }
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 2em;
+        margin-top: -6em;
     }
 
     &__name {
-        display: inline-block;
         font-family: $fontFamilyBold;
         font-size: 36px;
         line-height: 1.1em;
@@ -28,7 +45,6 @@
     }
 
     &__sponsor {
-        display: inline-block;
         font-size: 18px;
     }
 
@@ -39,7 +55,7 @@
         position: absolute;
         right: 0;
         text-transform: uppercase;
-        top: -28px;         
+        top: 0;         
     }
 
     &__data {

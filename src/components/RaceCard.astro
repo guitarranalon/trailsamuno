@@ -1,7 +1,12 @@
 ---
+import computePath from "../helpers/compute-path";
+
 const { data } = Astro.props;
 ---
 <div class="card race-card">
+    <div class="race-card__image">
+        <img src={computePath(`/images/index/${data.imageUrl}`)} />
+    </div>
     <div class="race-card__title">
         <div class="race-card__name">{ data.name }</div>
         <div class="race-card__sponsor">{ data.mainsponsor }</div>
