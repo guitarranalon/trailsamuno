@@ -1,13 +1,16 @@
 .race-card {
     margin-bottom: 32px;
-    &__title {
-        display: flex;
-    }
 
     &__name {
+        display: inline-block;
         font-family: $fontFamilyBold;
         font-size: 32px;
+        line-height: 1.1em;
         margin-right: 8px;
+    }
+
+    &__sponsor {
+        display: inline-block;
     }
 
     footer {
