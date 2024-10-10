@@ -14,14 +14,14 @@ const { data } = Astro.props;
             <dt>Distancia</dt> <dd>{ data.distance }Km</dd>
         </dl>
         <dl>
-            <dt>Desnivel positivo</dt> <dd>{ data.climb }m</dd>
-        </dl>
-        <dl>
-            <dt>Avituallamientos</dt> <dd>{ data.aidStations }</dd>
+            <dt>Desnivel pos</dt> <dd>{ data.climb }m</dd>
         </dl>
         { data.stages && data.stages > 1 && <dl>
             <dt>Etapas</dt> <dd>{ data.stages }</dd>
-        </dl> }
+        </dl> }        
+        <dl>
+            <dt>Avituallamientos</dt> <dd>{ data.aidStations }</dd>
+        </dl>
     </div>
     <footer>
         <a href=`carrera/recorrido.html#${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
