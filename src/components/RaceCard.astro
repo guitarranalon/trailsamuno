@@ -6,7 +6,7 @@ const { data } = Astro.props;
         <div class="race-card__name">{ data.name }</div>
         <div class="race-card__sponsor">{ data.mainsponsor }</div>
     </div>
-    <div>
+    <div class="race-card__date">
         { data.date.day } { data.date.monthtext } { data.date.year }
     </div>
     <div class="race-card__data">
@@ -24,6 +24,6 @@ const { data } = Astro.props;
         </dl>
     </div>
     <footer>
-        <a href=`carrera/recorrido.html#${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
+        <a href=`carrera/recorrido.html${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
     </footer>
 </div>
