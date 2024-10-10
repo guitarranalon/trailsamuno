@@ -1,0 +1,95 @@
+.race-list {
+    @include mq($screen-sm-min) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#content .race-card {
+    background: $colorTema;
+	background-image: url(#{$img-root}/curvasNivel.svg);
+	background-repeat: no-repeat;
+	background-position: 80% 70%;
+	background-size: 300%;    
+    margin-bottom: 64px;
+    padding: 1.25em;
+    position: relative;
+
+    @include mq($screen-sm-min) {
+        width: 26%;
+    }
+
+    &__image {
+        margin: -1.25em -1.25em 0;
+
+        img {
+            width: 100%;
+
+            @include mq($screen-sm-min) {
+                position: static;
+            }
+        }
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 2em;
+        margin-top: -6em;
+    }
+
+    &__name {
+        font-family: $fontFamilyBold;
+        font-size: 36px;
+        line-height: 1.1em;
+        margin-right: 8px;
+    }
+
+    &__sponsor {
+        font-size: 18px;
+    }
+
+    &__date {
+        background-color: $colorTema;
+        font-size: 16px;
+        padding: 4px 12px;
+        position: absolute;
+        right: 0;
+        text-transform: uppercase;
+        top: 0;         
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        dl {
+            width: 50%;
+        }
+
+        dt {
+            display: block;
+            float: none;
+            font-size: 10px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        dd {
+            font-size: 20px;
+            font-family: $fontFamilyBold;
+        }
+    }
+
+    footer {
+        background: transparent;
+        padding: 0;
+    }
+
+    footer .button {
+        @extend %altEnlaceBoton;
+        
+        margin: 0 auto;
+        width: fit-content;
+    }
+}

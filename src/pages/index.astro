@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import mainData from "../../data/main.json";
 import computePath from "../helpers/compute-path";
+import RaceCard from "../components/RaceCard.astro";
 
 const localscript = "<script>indexAnimations();</script>"
 ---
@@ -30,21 +31,11 @@ const localscript = "<script>indexAnimations();</script>"
 					<p>Por segunda vez en nuestra trayectoria (la otra fue en 2017) el Trail Valle de Samuño-{ mainData.tvxs.mainsponsor } acogerá una prueba de la Copa de Asturias de Carreras por Montaña. Los/as mejores corredores/as se darán cita en el Valle para abrir el calendario en un duelo del máximo nivel. ¡¡¡Ven a disfrutarlo!!!</p>
 				</div> -->
 			</div>
-			<div class="row aparte">
-				<ul class="data">
-					<li class="date"><span class="value">{ mainData.tvs.date.day }</span> <span class="unit">{ mainData.tvs.date.abbreviatedMonth</span></li>
-					<li class="distance"><span class="value">{ mainData.tvs.distance }</span><span class="unit">km</span></li>
-					<li class="verticalGain"><span class="value">{ mainData.tvs.abbrclimb }</span> <span class="unit">m+</span></li>
-					<li class="people"><span class="value">{ mainData.tvs.aidStations }</span> <span class="unit">avituall</span></li>
-				</ul>
-				<h2>{ mainData.tvxs.name }</h2>
-				<ul class="data">
-					<li class="date"><span class="value">{ mainData.tvxs.date.day }</span> <span class="unit">{ mainData.tvxs.date.abbreviatedMonth }</span></li>
-					<li class="distance"><span class="value">{ mainData.tvxs.distance }</span> <span class="unit">km</span></li>
-					<li class="verticalGain"><span class="value">{ mainData.tvxs.abbrclimb }</span> <span class="unit">m+</span></li>
-					<li class="people"><span class="value">{ mainData.tvxs.aidStations }</span> <span class="unit">avituall</span></li>			
-				</ul>
-			</div>
+			<section class="row race-list">
+				<RaceCard data={ { ...mainData.tvxs, moreInfoLink: "#k11", imageUrl: "tvxs-card.webp" }} />
+				<RaceCard data={ { ...mainData.tvs, moreInfoLink: "#k24", imageUrl: "tvs-card.webp" }} />
+				<RaceCard data={ { ...mainData.gtvs, moreInfoLink: "#gtvs", imageUrl: "gtvs-card.webp" }} />
+			</section>
 		</article>
 		<article class="excerpt alt">
 			<div class="row">

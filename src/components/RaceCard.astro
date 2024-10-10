@@ -1,0 +1,34 @@
+---
+import computePath from "../helpers/compute-path";
+
+const { data } = Astro.props;
+---
+<div class="card race-card">
+    <div class="race-card__image">
+        <img src={computePath(`/images/index/${data.imageUrl}`)} />
+    </div>
+    <div class="race-card__title">
+        <div class="race-card__name">{ data.name }</div>
+        <div class="race-card__sponsor">{ data.mainsponsor }</div>
+    </div>
+    <div class="race-card__date">
+        { data.date.day } { data.date.monthtext } { data.date.year }
+    </div>
+    <div class="race-card__data">
+        <dl>
+            <dt>Distancia</dt> <dd>{ data.distance }Km</dd>
+        </dl>
+        <dl>
+            <dt>Desnivel pos</dt> <dd>{ data.climb }m</dd>
+        </dl>
+        { data.stages && data.stages > 1 && <dl>
+            <dt>Etapas</dt> <dd>{ data.stages }</dd>
+        </dl> }        
+        <dl>
+            <dt>Avituallamientos</dt> <dd>{ data.aidStations }</dd>
+        </dl>
+    </div>
+    <footer>
+        <a href=`carrera/recorrido.html${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
+    </footer>
+</div>
