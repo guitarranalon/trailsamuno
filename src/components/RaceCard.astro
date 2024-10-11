@@ -5,7 +5,7 @@ const { data } = Astro.props;
 ---
 <div class="card race-card">
     <div class="race-card__image">
-        <img src={computePath(`/images/index/${data.imageUrl}`)} />
+        <img src={computePath(`/images/index/${data.imageUrl}`)} alt="Imagen durante la celebración de la prueba" />
     </div>
     <div class="race-card__title">
         <div class="race-card__name">{ data.name }</div>
@@ -29,6 +29,6 @@ const { data } = Astro.props;
         </dl>
     </div>
     <footer>
-        <a href=`carrera/recorrido.html${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Más información</a>
+        <a href=`carrera/recorrido.html${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Detalles { data.name }</a>
     </footer>
 </div>
