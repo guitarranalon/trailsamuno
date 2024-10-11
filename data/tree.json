@@ -37,6 +37,11 @@
             "title": "Ir a la página sobre ediciones anteriores",
             "children": [
               {
+                "name": 2025,
+                "path": "/carrera/edicionesanteriores/2025.html",
+                "title": "Ir a la página sobre la edición de 2025"
+              },              
+              {
                 "name": 2024,
                 "path": "/carrera/edicionesanteriores/2024.html",
                 "title": "Ir a la página sobre la edición de 2024"
