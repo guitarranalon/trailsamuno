@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const { slug } = Astro.params;
+const noticias = await getCollection('noticias');
+const noticia = noticias.find((n) => n.slug === slug);
+
+if (!noticia) {
+  throw new Error(`Noticia no encontrada: ${slug}`);
+}
+---
+
+<Layout>
+  <h1>{noticia.data.title}</h1>
+  <img src={noticia.data.image} alt={noticia.data.title} />
+  <p>{noticia.body}</p>
+</Layout>

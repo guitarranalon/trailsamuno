@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+
+const noticias = await getCollection('noticias');
+const ultimaNoticia = noticias.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))[0];
+---
+
+<article>
+    <h3><a href={`/noticias/${ultimaNoticia.slug}`}>{ultimaNoticia.data.title}</a></h3>
+</article>
+<a href="/noticias/noticias" title="Ir a la sección de noticias">Más noticias</a>

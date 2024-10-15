@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import mainData from "../../data/main.json";
 import computePath from "../helpers/compute-path";
 import RaceCard from "../components/RaceCard.astro";
+import NoticiasPortada from "../components/noticias-portada.astro";
 
 const localscript = "<script>indexAnimations();</script>"
 ---
@@ -12,6 +13,7 @@ const localscript = "<script>indexAnimations();</script>"
 		<article class="excerpt">
 			<div class="row noticia">
 				<h2>Trail Valle de Samuño - { mainData.tvs.mainsponsor }</h2>
+				<NoticiasPortada />
 				<div>
 					<h3>🍿🍿Vídeo oficial</h3>
 					<p>¡La espera ha terminado! ¡El vídeo oficial de la edición 2024 de nuestra carrera ya está disponible! Accede a la sección de la <a href="carrera/edicionesanteriores/2024.html" title="Ir a la sección de 2024 de la carrera">edición 2024</a> y revive los momentos más emocionantes de la carrera.</p>

@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const noticias = await getCollection('noticias');
+const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+---
+
+<Layout>
+  <h1>Noticias</h1>
+  <section>
+    {noticiasOrdenadas.map((noticia) => (
+      <article>
+        <h2><a href={`/noticias/${noticia.slug}`}>{noticia.data.title}</a></h2>
+      </article>
+    ))}
+  </section>
+</Layout>
