@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+const { slug } = Astro.params;
+const noticias = await getCollection('noticias');
+const noticia = noticias.find((n) => n.slug === slug);
+
+export async function getStaticPaths() {
+  const noticias = await getCollection('noticias');
+  
+  return noticias.map((noticia) => ({
+    params: { slug: noticia.slug },
+  }));
+}
+
+if (!noticia) {
+  throw new Error(`Noticia no encontrada: ${slug}`);
+}
+---
+
+<Layout>
+  <div class="detalle-noticia">
+    <h1>{noticia.data.title}</h1>
+    <!-- <img src={noticia.data.image} alt={noticia.data.title} /> -->
+    <div class="detalle-noticia__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</div>
+    <div set:html={noticia.body}></div>
+  </div>
+</Layout>

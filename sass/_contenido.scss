@@ -16,14 +16,6 @@
 		}
 	}
 
-	&:first-child > .row{
-		padding-top: 0;
-		
-		@include mq($screen-sm-plus-min){
-			padding-top: sizeEM(87);
-		}
-	}
-
 	a.verRoadbook > .icon{
 		position: relative;
 		top: 2px;
@@ -242,3 +234,30 @@
     font-family: $fontFamily;
 }
 // FIN Reglamento
+
+// Noticias
+.noticias #content{
+	h1 {
+		@extend %tituloPrincipalContenido;
+	}
+
+	h2 {
+		@extend %tituloSecundarioContenido;
+	}
+}
+
+.detalle-noticia__fecha {
+	font-family: $fontFamilyBold;
+}
+
+.listado-noticias {
+	&__fecha {
+		font-family: $fontFamilyLight;
+		font-size: 18px;
+	}
+
+	&__titular {
+		text-transform: none;
+	}
+}
+// FIN Noticias
