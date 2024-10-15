@@ -6,6 +6,14 @@ const { slug } = Astro.params;
 const noticias = await getCollection('noticias');
 const noticia = noticias.find((n) => n.slug === slug);
 
+export async function getStaticPaths() {
+  const noticias = await getCollection('noticias');
+  
+  return noticias.map((noticia) => ({
+    params: { slug: noticia.slug },
+  }));
+}
+
 if (!noticia) {
   throw new Error(`Noticia no encontrada: ${slug}`);
 }
@@ -13,6 +21,6 @@ if (!noticia) {
 
 <Layout>
   <h1>{noticia.data.title}</h1>
-  <img src={noticia.data.image} alt={noticia.data.title} />
-  <p>{noticia.body}</p>
+  <!-- <img src={noticia.data.image} alt={noticia.data.title} /> -->
+  <div set:html={noticia.body}></div>
 </Layout>
