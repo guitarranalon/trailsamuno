@@ -8,10 +8,13 @@ const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date) - new Da
 
 <Layout>
   <h1>Noticias</h1>
-  <section>
+  <section class="listado-noticias">
     {noticiasOrdenadas.map((noticia) => (
       <article>
-        <h2><a href={`/noticias/${noticia.slug}`}>{noticia.data.title}</a></h2>
+        <h2>
+          <span class="listado-noticias__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</span>
+          <a href={`/noticias/${noticia.slug}`} title="Ir al detalle de la noticia" class="listado-noticias__titular">{noticia.data.title}</a>
+        </h2>
       </article>
     ))}
   </section>

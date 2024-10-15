@@ -5,7 +5,9 @@ const noticias = await getCollection('noticias');
 const ultimaNoticia = noticias.sort((a, b) => new Date(b.data.date) - new Date(a.data.date))[0];
 ---
 
-<article>
-    <h3><a href={`/noticias/${ultimaNoticia.slug}`}>{ultimaNoticia.data.title}</a></h3>
-</article>
-<a href="/noticias" title="Ir a la sección de noticias">Más noticias</a>
+<div class="noticias-portada">
+    <article>
+        <h3><a href={`/noticias/${ultimaNoticia.slug}`} title="Ir al detalle de la noticia" class="noticias-portada__titular">{ultimaNoticia.data.title}</a></h3>
+    </article>
+    <a href="/noticias" title="Ir a la sección de noticias" class="button">Más noticias</a>
+</div>

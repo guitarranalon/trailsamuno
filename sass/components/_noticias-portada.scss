@@ -1,0 +1,13 @@
+#content .noticias-portada {
+    margin-bottom: sizeEM(48);
+
+    &__titular {
+        text-transform: none;
+    }
+
+    .button {
+        @include mq($screen-sm-min) {
+            width: fit-content;
+        }
+    }
+}

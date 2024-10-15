@@ -341,3 +341,39 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 		opacity: 0.5;
 	}	
 }
+
+%tituloPrincipalContenido {
+	@include font-size(48);	
+	
+	font-family: $fontFamilyBold;
+	line-height : 1.1em;
+	font-weight: normal;
+	color: $colorFuente;
+	margin-bottom: sizeEM(40, 48);
+	padding-bottom: sizeEM(24, 48);
+	position: relative;
+
+	&:after{
+		background: $colorTema;
+		content: " ";
+		display: block;
+		height: 4px;
+		position: absolute;
+		bottom: -4px;
+		width: 50px;
+	}		
+}
+
+%tituloSecundarioContenido {
+	@include font-size(28);
+	
+	font-family: $fontFamily;
+	font-weight: normal;
+	margin-bottom:sizeEM(22, 28);
+	line-height:1.1em;	
+	text-transform: uppercase;
+	
+	&:after {
+		content: none;
+	}
+}

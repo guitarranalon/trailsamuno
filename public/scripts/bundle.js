@@ -12584,15 +12584,15 @@ window.indexAnimations = function(){
 window.prepareIndexAnimations = function(){
 	var $content = $('#content-block'),
 		$elements = $content
-						.find('.excerpt:not(:first-of-type)>.row>h2, .excerpt>.row>p, .excerpt>.row>.button, .excerpt>.row>img');
+						.find('.excerpt>.row>h2, .excerpt>.row>p, .excerpt>.row>.button, .excerpt>.row>img');
 	
 	$elements.addClass('transparent');
 };
 
 	$(function domReady($) {
 			prepareIndexAnimations();
-		
-			for(var i=1, max = $excerpts.length; i<max; i++){
+
+			for(var i=0, max = $excerpts.length; i<max; i++){
 				var $el = $excerpts.eq(i);
 				$el.scrollspy({
 				

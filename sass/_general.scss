@@ -30,15 +30,6 @@ body #contenedor{
 }
 
 /* quitar estilos de base.css */
-#content h1,
-#content .h1,
-#content h2,
-#content .h2,
-#content h3,
-#content .h3{
-	margin:0;
-}
-
 #content h2,
 #content .h2,
 #content h3,
@@ -50,7 +41,6 @@ body #contenedor{
 #content .h5{
 	color:$colorFuente;
 	font-weight:normal;
-	margin-bottom:.5em;	
 	margin-top:0;
 }
 
@@ -63,37 +53,12 @@ body #contenedor{
 
 #content h2,
 #content .h2{
-	@include font-size(48);	
-	
-	font-family: $fontFamily;
-	margin-bottom : .25em;
-	line-height : 1.1em;
-	font-weight: normal;
-	color: $colorFuente;
-	margin-bottom: sizeEM(40, 48);
-	padding-bottom: sizeEM(40, 48);
-	position: relative;
-
-	&:after{
-		background: $colorTema;
-		content: " ";
-		display: block;
-		height: 4px;
-		position: absolute;
-		bottom: -4px;
-		width: 50px;
-	}	
+	@extend %tituloPrincipalContenido;
 }
 
 #content h3,
 #content .h3{
-	@include font-size(28);
-	
-	font-family: $fontFamily;
-	font-weight: normal;
-	margin-bottom:sizeEM(22, 28);
-	line-height:1.1em;	
-	text-transform: uppercase;
+	@extend %tituloSecundarioContenido;
 }
 
 #content h4,

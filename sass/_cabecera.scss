@@ -44,11 +44,17 @@
 	}
 }
 
-.index #header:after{
-	@include mq($screen-sm-plus-min){
-		background-size: (cover);
-		
-		background-position: 50% 50%;
+.index #header {
+	@include mq($screen-sm-plus-min) {
+		padding-bottom: 3.5em;
+	}
+
+	&:after{
+		@include mq($screen-sm-plus-min){
+			background-size: (cover);
+			
+			background-position: 50% 50%;
+		}
 	}
 }
 

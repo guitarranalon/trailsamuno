@@ -20,8 +20,10 @@ if (!noticia) {
 ---
 
 <Layout>
-  <h1>{noticia.data.title}</h1>
-  <!-- <img src={noticia.data.image} alt={noticia.data.title} /> -->
-  <div>{ noticia.data.date.toLocaleDateString('es-ES') }</div>
-  <div set:html={noticia.body}></div>
+  <div class="detalle-noticia">
+    <h1>{noticia.data.title}</h1>
+    <!-- <img src={noticia.data.image} alt={noticia.data.title} /> -->
+    <div class="detalle-noticia__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</div>
+    <div set:html={noticia.body}></div>
+  </div>
 </Layout>
