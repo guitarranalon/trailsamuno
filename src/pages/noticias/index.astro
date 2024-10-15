@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 const noticias = await getCollection('noticias');
-const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
 <Layout>
