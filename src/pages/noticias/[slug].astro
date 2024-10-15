@@ -22,5 +22,6 @@ if (!noticia) {
 <Layout>
   <h1>{noticia.data.title}</h1>
   <!-- <img src={noticia.data.image} alt={noticia.data.title} /> -->
+  <div>{ noticia.data.date.toLocaleDateString('es-ES') }</div>
   <div set:html={noticia.body}></div>
 </Layout>
