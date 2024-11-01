@@ -14,4 +14,4 @@ myslug: "apertura-inscripciones-2025"
 
 <p>👉 Marca la fecha en tu calendario y asegura tu dorsal. Las plazas son <b>limitadas</b>!</p>
 
-<p>Mantente atento a nuestras redes para más detalles y sorpresas.💥</p>
+<p>Mantente atento a nuestra web y redes para más detalles y sorpresas.💥</p>
