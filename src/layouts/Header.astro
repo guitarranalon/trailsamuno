@@ -15,13 +15,13 @@ const currentPage = Astro.url.pathname;
 			<h1>
 				{ isBaseUrl(currentPage) && <span>
 					<svg class="icon tvs-logo">
-						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
+						<use xlink:href={computePath("/svg/map.svg#logo-tvs")}></use>
 					</svg>
 				</span>
 				}
 				{ !isBaseUrl(currentPage) && <a href={computePath("/")} title="Ir a la página de inicio">
 					<svg class="icon tvs-logo">
-						<use xlink:href={computePath("/images/map.svg#logo-tvs")}></use>
+						<use xlink:href={computePath("/svg/map.svg#logo-tvs")}></use>
 					</svg>
 				</a>
 				}
@@ -54,7 +54,7 @@ const currentPage = Astro.url.pathname;
 			</nav>
 			<a class="inscripcion enlaceBoton" href={computePath("/carrera/inscripcion.html")} title="Inscribirme en la prueba">
 			<svg class="icon inscripcion">
-				<use xlink:href={computePath("/images/map.svg#inscripcion-icon")}></use>
+				<use xlink:href={computePath("/svg/map.svg#inscripcion-icon")}></use>
 			</svg>
 			Inscribirme</a>
 		</div>
