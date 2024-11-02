@@ -28,16 +28,10 @@ footer .cumbre{
 	margin-bottom: 2.5em;
 	text-align: center;
 
-	@include mq($screen-xs-min){
+	@include mq($screen-sm-min){
 		float: left;
 		height: sizeEM(68);
 		margin-bottom: 0;
-		margin-right: sizeEM(32);
-		width: sizeEM(51);
-	}
-
-	@include mq($screen-sm-min){
-		height: sizeEM(68);
 		margin-right: 0;
 		width: 5.414012%;
 	}
@@ -91,13 +85,18 @@ footer .contact{
 	padding-left: 0;
 	text-align: center;
 	
-	@include mq($screen-xs-min){
-		text-align: left;
-	}
-	
 	@include mq($screen-sm-min){
 		margin-left: 8.598726%;
+		text-align: left;
 		width: 22.611465%;
+	}
+
+	> li {
+		margin-bottom: 1px;
+	}
+
+	a {
+		padding: 2px 0;
 	}
 
 	.tvs{
@@ -112,7 +111,7 @@ footer .social{
 	margin-bottom: sizeEM($lineHeightBasico*2);
 	text-align: center;
 	
-	@include mq($screen-xs-min){
+	@include mq($screen-sm-min){
 		text-align: left;
 	}	
 }
