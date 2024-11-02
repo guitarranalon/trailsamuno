@@ -1,0 +1,16 @@
+.listado-noticias {
+    &__fecha {
+        display: block;
+    }
+}
+
+.noticias .listado-noticias {
+    @include mq($screen-md-min) {
+        display: flex;
+        justify-content: space-between;
+
+        &__noticia {
+            width: 30%;
+        }        
+    }
+}

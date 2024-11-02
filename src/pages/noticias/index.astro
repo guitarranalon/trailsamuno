@@ -10,7 +10,7 @@ const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date).getTime(
   <h1>Noticias</h1>
   <section class="listado-noticias">
     {noticiasOrdenadas.map((noticia) => (
-      <article>
+      <article class="listado-noticias__noticia">
         <h2>
           <span class="listado-noticias__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</span>
           <a href={`/noticias/${noticia.slug}`} title="Ir al detalle de la noticia" class="listado-noticias__titular">{noticia.data.title}</a>
