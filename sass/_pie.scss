@@ -136,15 +136,19 @@ footer .social > ul{
 	}
 
 	a .icon{
+		fill: #dfdfdf;
+		height: 20px;
 		transition: (fill $animacionMedia ease);
-		
-		fill: #757575;
+		width: 20px;
+
+		@include mq($screen-sm-min) {
+			fill: #959595;
+		}
 	}
 
 	a .icon:hover{
+		fill: #dfdfdf;
 		transition: (fill $animacionRapida ease);
-		
-		fill: #cfcfcf;
 	}
 }
 
