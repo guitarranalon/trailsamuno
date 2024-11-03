@@ -7,6 +7,7 @@
 .noticias .listado-noticias {
     @include mq($screen-md-min) {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         &__noticia {
