@@ -2,7 +2,9 @@
     margin-bottom: sizeEM(48);
 
     &__titular {
+        font-family: $fontFamilyBold;
         text-transform: none;
+        text-decoration: none;
     }
 
     .button {

@@ -1,7 +1,7 @@
 .listado-noticias {
     &__fecha {
         display: block;
-    }
+    }  
 }
 
 .noticias .listado-noticias {
@@ -12,6 +12,11 @@
 
         &__noticia {
             width: 30%;
-        }        
+        }
     }
+
+    &__titular {
+        font-family: $fontFamilyBold;
+        text-decoration: none;
+    }    
 }
