@@ -1,7 +1,7 @@
 ---
 title: "Abrimos inscripciones para 2025"
 date: 2024-11-01
-image: ""
+image: "images/noticias/apertura-inscripciones-2025.avif"
 myslug: "apertura-inscripciones-2025"
 ---
 

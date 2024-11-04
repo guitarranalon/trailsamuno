@@ -1,7 +1,7 @@
 ---
 title: "¿Quieres aparecer en el cartel de 2025 del TVS?"
 date: 2024-10-31
-image: ""
+image: "images/noticias/concurso-fotografia-cartel-2025.avif"
 myslug: "concurso-fotografia-cartel-2025"
 ---
 

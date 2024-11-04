@@ -1,7 +1,7 @@
 ---
 title: "Rubén Cabo y Carolina Pereira se consagran en Samuño"
 date: 2024-04-30
-image: ""
+image: "images/noticias/cronica-2024.avif"
 myslug: "ruben-cabo-y-carolina-pereira-se-consagran-en-samuno"
 ---
 

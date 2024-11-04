@@ -1,7 +1,7 @@
 ---
 title: "🍿🍿Vídeo oficial de la edición 2024"
 date: 2024-05-15
-image: ""
+image: "images/noticias/video-trail-2024.avif"
 myslug: "video-oficial-2024"
 ---
 
