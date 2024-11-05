@@ -12,6 +12,11 @@
         "title": "Ir a las páginas de la carrera",
         "children": [
           {
+            "name": "Noticias",
+            "path": "/noticias",
+            "title": "Ver las últimas noticias sobre la carrera"
+          },          
+          {
             "name": "Recorrido",
             "path": "/carrera/recorrido.html",
             "title": "Ir al perfil y mapa de la prueba"
