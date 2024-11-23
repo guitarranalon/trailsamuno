@@ -87,15 +87,15 @@ const h1 = "¿Dónde alojarme para la carrera?";
 		<p>Muy próximo al inicio/fin de la carrera (unos 2km) existe un Área para autocaravanas, en el pueblo de El Cadavíu, a escasos metros de la estación inferior del tren del <a href="../entorno/ecomuseo.html" title="Ver información sobre el Ecomuseo">Ecomuseo Minero Valle de Samuño</a>.</p>
 	</div>
 	<script>
-    const contentBlock = document.getElementById("content-block");
-    const alojamientos = Array.from(document.querySelectorAll(".alojamiento"));
+		const contentBlock = document.getElementById("content-block");
+		const alojamientos = Array.from(document.querySelectorAll(".alojamiento"));
 
-    for (let i = alojamientos.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [alojamientos[i], alojamientos[j]] = [alojamientos[j], alojamientos[i]];
-    }
+		for (let i = alojamientos.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[alojamientos[i], alojamientos[j]] = [alojamientos[j], alojamientos[i]];
+		}
 
-    alojamientos.forEach(alojamiento => alojamiento.remove());
-    alojamientos.forEach(alojamiento => contentBlock.prepend(alojamiento));		
+		alojamientos.forEach(alojamiento => alojamiento.remove());
+		alojamientos.forEach(alojamiento => contentBlock?.prepend(alojamiento));		
 	</script>
 </Layout>
