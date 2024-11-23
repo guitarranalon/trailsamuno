@@ -4,9 +4,12 @@ import Layout from '../../layouts/Layout.astro';
 
 const noticias = await getCollection('noticias');
 const noticiasOrdenadas = noticias.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const title = "Noticias"
+const h1 = "Noticias";
 ---
 
-<Layout>
+<Layout title={title} h1={h1}>
   <h1>Noticias</h1>
   <section class="listado-noticias">
     {noticiasOrdenadas.map((noticia) => (

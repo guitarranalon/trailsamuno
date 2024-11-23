@@ -277,6 +277,10 @@ a.button{
 	@extend %enlaceBoton;
 
 	margin-bottom: 0;
+
+	&.fit-content {
+		width: fit-content;
+	}
 }
 
 a.enlaceBoton.alt{
