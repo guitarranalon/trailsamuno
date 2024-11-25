@@ -191,7 +191,19 @@
         "image": "caleyuca.webp",
         "link": "https://www.instagram.com/lacaleyuca?igsh=MXJ0Z3h5NHo3a3lteQ==",
         "linktitle": "Ir a la página del Bar/Tienda La Caleyuca, en la Güeria de Urbiés"
-      }      
+      },
+      {
+        "name": "LangreHotel",
+        "image": "langrehotel.webp",
+        "link": "https://www.azzhoteles.com/es/azz-asturias-langrehotel",
+        "linktitle": "Ir a la página del Hotel/Spa Azz Langrehotel"
+      },
+      {
+        "name": "Hotel Palacio de las Nieves",
+        "image": "palacionieves.webp",
+        "link": "https://www.hotelpalaciodelasnieves.com/es",
+        "linktitle": "Ir a la página del Hotel/Restaurante/Spa Palacio de las Nieves"
+      }
     ],
     "oficiales": [
       {
