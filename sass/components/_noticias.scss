@@ -8,10 +8,11 @@
     @include mq($screen-md-min) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 3rem;
+        justify-content: flex-start;
 
         &__noticia {
-            width: 30%;
+            width: calc(33.33% - 3rem);
         }
     }
 
