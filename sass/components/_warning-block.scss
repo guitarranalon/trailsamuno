@@ -1,0 +1,45 @@
+#content .warning-block {
+    background-color: #ffa131;
+    margin-bottom: 36px;
+    padding: 36px;
+
+    .icon {
+        fill: #171617;
+        height: 80px;
+        left: -40px;
+        margin-bottom: 16px;
+        margin-left: 50%;
+        position: relative;
+        width: 80px;
+    }
+
+    .icon.animated {
+        animation: pulse 1.5s infinite;    
+    }
+
+    h2 {
+        color: #171617;
+        font-size: 2.1rem;
+        padding-bottom: 0;
+
+        &::after {
+            content: none;
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@keyframes pulse {
+    10% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+}

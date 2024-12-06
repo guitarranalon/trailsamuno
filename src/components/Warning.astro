@@ -1,0 +1,11 @@
+---
+import computePath from "../helpers/compute-path";
+
+const { children } = Astro.slots;
+---
+
+<div class="warning-block">
+    <svg class="icon warning animated"><use xlink:href={computePath("/svg/map.svg#warning")}></use></svg>
+
+    <slot />
+</div>
