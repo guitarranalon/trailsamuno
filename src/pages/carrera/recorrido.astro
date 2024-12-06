@@ -1,5 +1,6 @@
 ---
 import data from "../../../data/main.json";
+import Warning from "../../components/Warning.astro";
 import Layout from "../../layouts/Layout.astro";
 
 const title = "Recorrido";
@@ -16,6 +17,12 @@ const localScript = "<script>progressBarsAnimations('#tiposCaminos'); progressBa
 	</nav>
 
 	<div id="content-block">
+		<Warning>
+			<h2>¡Importante! Respetemos las normas y cuidemos nuestra colaboración con el Ecomuseo</h2>
+			<p>Se recuerda que está estrictamente prohibido entrar en la galería de la mina (Socavón Emilia) fuera de la fecha y horario de la carrera. Esta galería es parte del Ecomuseo Minero Valle de Samuño, por él circula un tren turístico, lo que hace que el acceso no autorizado sea extremadamente peligroso para su seguridad.</p>
+			<p>Además, entrar sin permiso pone en riesgo la valiosa colaboración del Ecomuseo con nuestra carrera, un acuerdo que nos permite disfrutar de un evento tan especial una vez al año. Para que esto siga siendo así, demostremos respeto por las normas y por quienes nos brindan esta oportunidad única.</p>
+			<p>¡Cuidemos nuestra seguridad y esta increíble experiencia que nos une!</p>
+		</Warning>
 		<h2 id="k11">{ data.tvxs.name } - { data.tvxs.mainsponsor }</h2>
 		<h3>Perfil</h3>
 		<img src="../images/perfiltvxs.jpg" class="fotoCentro" alt="Perfil del recorrido" />
