@@ -7,28 +7,36 @@ const current_page = Astro.url.pathname;
 
 { !current_page.endsWith("patrocinadores.html") && !current_page.endsWith("colaboradores.html") && <div id="colaboradoresFooter">
 		<div class="row">
+			{ colaboradores.oficiales.map(epigrafeoficial => {
+				return <h3>{epigrafeoficial.title}</h3>
+				<ul class="patrocinadores">
+					{ epigrafeoficial.empresas.map(colaboradoroficial => {
+						return <li>
+							{ !colaboradoroficial.link && <span>	
+									<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy" />
+								</span>
+							}
+							{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
+									<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy" />
+								</a>
+							}
+						</li>
+					})}
+				</ul>
+			})}
+
+			<h3>Colaboradores</h3>
 			<ul class="patrocinadores">
-				{ colaboradores.oficiales.map(epigrafeoficial => {
-					return <>
-						{ epigrafeoficial.empresas.map(colaboradoroficial => {
-							return <li>
-								{ !colaboradoroficial.link && <span>
-										<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy"  />
-									</span>
-								}
-								{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
-										<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy" />
-									</a>
-								}
-							</li>
-						})}
-					</>
-				})}
-				{ colaboradores.empresas.map(empresa => {
+				{ colaboradores.empresas.map(colaborador => {
 					return <li>
-						<a href={empresa.link} title={empresa.linktitle}>
-							<img src={computePath(`/images/colaboradores/${empresa.image}`)} alt={empresa.name} loading="lazy" />
-						</a>
+						{ !colaborador.link && <span>
+								<img src={computePath(`/images/colaboradores/${colaborador.image}`)} alt={colaborador.name} loading="lazy" />
+							</span>
+						}
+						{ colaborador.link && <a href={colaborador.link} title="<%= colaborador.linktitle %>">
+								<img src={computePath(`/images/colaboradores/${colaborador.image}`)} alt={colaborador.name} loading="lazy" />
+							</a>
+						}
 					</li>
 				})}
 			</ul>

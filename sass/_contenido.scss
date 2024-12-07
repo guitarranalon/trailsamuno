@@ -111,27 +111,6 @@
 	}
 }
 
-.index #content > .row .noticia{
-	figure {
-		text-align: center;
-	}
-
-	img {
-		margin: auto;
-		position: static;
-		width: auto;
-
-		@include mq($screen-sm-min) {
-			width: 100px;
-		}
-	}
-
-	p {
-		margin: auto;
-		width: auto;
-	}
-}
-
 // Contacto
 .contacto #content{
 	ul > li{
