@@ -1,0 +1,95 @@
+---
+---
+
+<div class="cookie-banner" id="cookie-banner">
+  <p>
+    Utilizamos cookies para mejorar su experiencia. Puede aceptar todas,
+    rechazarlas o configurar sus preferencias.
+  </p>
+  <div class="cookie-actions">
+    <button id="accept-all">Aceptar todas</button>
+    <button id="reject-all">Rechazar todas</button>
+    <button id="configure">Configurar</button>
+  </div>
+  <div
+    class="cookie-preferences"
+    id="cookie-preferences"
+    style="display: none;"
+  >
+    <label>
+      <input type="checkbox" id="analytics" />
+      Cookies de análisis
+    </label>
+    <label>
+      <input type="checkbox" id="externalcontent" />
+      Cookies de contenido externo
+    </label>
+    <button id="save-preferences">Guardar preferencias</button>
+  </div>
+</div>
+)
+
+<script>
+  interface CookiePreferences {
+    analytics: boolean;
+    externalcontent: boolean;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("cookie-banner");
+    const preferencesDiv = document.getElementById("cookie-preferences");
+
+    const acceptAllButton = document.getElementById("accept-all");
+    const rejectAllButton = document.getElementById("reject-all");
+    const configureButton = document.getElementById("configure");
+    const savePreferencesButton = document.getElementById("save-preferences");
+
+    const analyticsCheckbox = document.getElementById(
+      "analytics"
+    ) as HTMLInputElement;
+    const externalcontentCheckbox = document.getElementById(
+      "externalcontent"
+    ) as HTMLInputElement;
+
+    configureButton?.addEventListener("click", () => {
+      if (!preferencesDiv) return;
+
+      preferencesDiv.style.display = "block";
+    });
+
+    acceptAllButton?.addEventListener("click", () => {
+      savePreferences({ analytics: true, externalcontent: true });
+      hideBanner();
+    });
+
+    rejectAllButton?.addEventListener("click", () => {
+      savePreferences({ analytics: false, externalcontent: false });
+      hideBanner();
+    });
+
+    savePreferencesButton?.addEventListener("click", () => {
+      const preferences = {
+        analytics: analyticsCheckbox?.checked,
+        externalcontent: externalcontentCheckbox?.checked,
+      };
+      savePreferences(preferences);
+      hideBanner();
+    });
+
+    function savePreferences(preferences: CookiePreferences) {
+      localStorage.setItem("cookiePreferences", JSON.stringify(preferences));
+      console.log("Preferencias guardadas:", preferences);
+    }
+
+    function hideBanner() {
+      if (!banner) return;
+
+      banner.style.display = "none";
+    }
+
+    const savedPreferences = localStorage.getItem("cookiePreferences");
+    if (savedPreferences) {
+      hideBanner();
+    }
+  });
+</script>

@@ -11,6 +11,7 @@ import "../../sass/site.scss";
 import Header from "./Header.astro";
 import FontStyles from "./fonts/FontStyles.astro";
 import GoogleTag from "./GoogleTag.astro";
+import CookieBanner from "../components/CookieBanner.astro";
 
 const { title } = Astro.props;
 const { h1 } = Astro.props;
@@ -49,5 +50,7 @@ const pageClass = getPathClasses(currentPath);
     <Footer />
     <FooterScripts />
     <div set:html={localscript}></div>
+
+    <CookieBanner />
   </body>
 </html>
