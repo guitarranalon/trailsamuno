@@ -13,3 +13,4 @@ import "./desarrollo/progressBarsAnimations.js";
 import "./desarrollo/indexAnimations.js";
 import "./desarrollo/invocations.js";
 import "./desarrollo/tvs.historicRanking.js";
+import "./desarrollo/cookie-preferences.js";

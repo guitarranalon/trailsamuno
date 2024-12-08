@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <div class="cookie-banner" id="cookie-banner">
@@ -27,68 +28,7 @@
     <button id="save-preferences">Guardar preferencias</button>
   </div>
 </div>
-)
 
 <script>
-  interface CookiePreferences {
-    analytics: boolean;
-    externalcontent: boolean;
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const banner = document.getElementById("cookie-banner");
-    const preferencesDiv = document.getElementById("cookie-preferences");
-
-    const acceptAllButton = document.getElementById("accept-all");
-    const rejectAllButton = document.getElementById("reject-all");
-    const configureButton = document.getElementById("configure");
-    const savePreferencesButton = document.getElementById("save-preferences");
-
-    const analyticsCheckbox = document.getElementById(
-      "analytics"
-    ) as HTMLInputElement;
-    const externalcontentCheckbox = document.getElementById(
-      "externalcontent"
-    ) as HTMLInputElement;
-
-    configureButton?.addEventListener("click", () => {
-      if (!preferencesDiv) return;
-
-      preferencesDiv.style.display = "block";
-    });
-
-    acceptAllButton?.addEventListener("click", () => {
-      savePreferences({ analytics: true, externalcontent: true });
-      hideBanner();
-    });
-
-    rejectAllButton?.addEventListener("click", () => {
-      savePreferences({ analytics: false, externalcontent: false });
-      hideBanner();
-    });
-
-    savePreferencesButton?.addEventListener("click", () => {
-      const preferences = {
-        analytics: analyticsCheckbox?.checked,
-        externalcontent: externalcontentCheckbox?.checked,
-      };
-      savePreferences(preferences);
-      hideBanner();
-    });
-
-    function savePreferences(preferences: CookiePreferences) {
-      localStorage.setItem("cookiePreferences", JSON.stringify(preferences));
-    }
-
-    function hideBanner() {
-      if (!banner) return;
-
-      banner.style.display = "none";
-    }
-
-    const savedPreferences = localStorage.getItem("cookiePreferences");
-    if (savedPreferences) {
-      hideBanner();
-    }
-  });
+  window.testCookiePreferences();
 </script>
