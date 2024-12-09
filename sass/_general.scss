@@ -20,6 +20,12 @@ html body{
 	@extend %row;
 }
 
+.hidden {
+	display: none !important;
+	height: 0;
+	width: 0;
+}
+
 body #contenedor{
 	margin:1em auto 0;
 }

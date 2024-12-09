@@ -12576,7 +12576,14 @@ document.addEventListener("DOMContentLoaded", () => {
   cookieManager.init();
 });
 
+const HIDDEN = "hidden";
+const CLICK = "click";
+
 class CookiePreferences {
+  static LOCAL_STORAGE_KEYS = {
+    COOKIE_PREFERENCES: "cookiePreferences",
+  };
+
   constructor() {
     this.htmlElements = {
       banner: document.getElementById("cookie-banner"),
@@ -12596,27 +12603,29 @@ class CookiePreferences {
     const savedPreferences = (new CookiePreferences).getCookiePreferences();
     if (savedPreferences) {
       this.#hideBanner();
-    }    
+    } else {
+      this.htmlElements.banner.classList.remove(HIDDEN);
+    } 
   }
 
   #addEventListeners() {
-    this.htmlElements.configureButton?.addEventListener("click", () => {
+    this.htmlElements.configureButton?.addEventListener(CLICK, () => {
       if (!this.htmlElements.preferencesDiv) return;
   
-      this.htmlElements.preferencesDiv.style.display = "block";
+      this.htmlElements.preferencesDiv.classList.remove(HIDDEN);
     });
   
-    this.htmlElements.acceptAllButton?.addEventListener("click", () => {
+    this.htmlElements.acceptAllButton?.addEventListener(CLICK, () => {
       this.#savePreferences({ analytics: true, externalcontent: true });
       this.#hideBanner();
     });
   
-    this.htmlElements.rejectAllButton?.addEventListener("click", () => {
+    this.htmlElements.rejectAllButton?.addEventListener(CLICK, () => {
       this.#savePreferences({ analytics: false, externalcontent: false });
       this.#hideBanner();
     });
   
-    this.htmlElements.savePreferencesButton?.addEventListener("click", () => {
+    this.htmlElements.savePreferencesButton?.addEventListener(CLICK, () => {
       const preferences = {
         analytics: this.htmlElements.analyticsCheckbox?.checked,
         externalcontent: this.htmlElements.externalcontentCheckbox?.checked,
@@ -12627,7 +12636,7 @@ class CookiePreferences {
   }  
 
   getCookiePreferences() {
-    const preferences = localStorage.getItem("cookiePreferences");
+    const preferences = localStorage.getItem(CookiePreferences.LOCAL_STORAGE_KEYS.COOKIE_PREFERENCES);
     return preferences ? JSON.parse(preferences) : null;
   }
 
@@ -12647,13 +12656,13 @@ class CookiePreferences {
   }
 
   #savePreferences(preferences) {
-    localStorage.setItem("cookiePreferences", JSON.stringify(preferences));
+    localStorage.setItem(CookiePreferences.LOCAL_STORAGE_KEYS.COOKIE_PREFERENCES, JSON.stringify(preferences));
   }
 
   #hideBanner() {
     if (!this.htmlElements?.banner) return;
   
-    this.htmlElements.banner.style.display = "none";
+    this.htmlElements.banner.classList.add(HIDDEN);
     new CookiePreferences().applyPreferences();
     runTagManager();
   }  
