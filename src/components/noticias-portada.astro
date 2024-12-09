@@ -7,6 +7,9 @@ const ultimaNoticia = noticias.sort((a, b) => new Date(b.data.date).getTime() - 
 
 <div class="noticias-portada">
     <article>
+        <a href={`/noticias/${ultimaNoticia.slug}`} title="Ir al detalle de la noticia">
+            <img src={`/${ultimaNoticia.data.image}`} alt={ultimaNoticia.data.title} />
+        </a>        
         <h3>
             <span class="listado-noticias__fecha">{ ultimaNoticia.data.date.toLocaleDateString('es-ES') }</span>
             <a href={`/noticias/${ultimaNoticia.slug}`} title="Ir al detalle de la noticia" class="noticias-portada__titular">{ultimaNoticia.data.title}</a>

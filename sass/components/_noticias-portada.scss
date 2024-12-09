@@ -1,10 +1,36 @@
 #content .noticias-portada {
     margin-bottom: sizeEM(48);
 
+    article {
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    h3 {
+        @include mq($screen-sm-min) {
+            bottom: 48px;
+            color: #fff;
+            left: 48px;
+            margin-bottom: 0;
+            position: absolute;
+            right: 48px;
+            text-shadow: 0 2px 6px rgba(0,0,0,.25);
+        }        
+    }
+
     &__titular {
         font-family: $fontFamilyBold;
         text-transform: none;
         text-decoration: none;
+
+        @include mq($screen-sm-min) {
+            color: #fff;            
+        }
     }
 
     .button {
