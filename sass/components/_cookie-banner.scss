@@ -1,0 +1,33 @@
+.cookie-banner {
+    background: rgba(0,0,0, 0.9);
+    bottom: 0;
+    color: #fff;
+    padding: 3rem 1rem;
+    position: fixed;
+    text-align: center;
+    width: calc(100% - 2rem);
+    z-index: 10000;
+}
+
+.cookie-actions,
+.cookie-preferences {
+    button {
+        @extend %enlaceBoton;
+
+        @include mq($screen-sm-min) {
+            display: inline-block;
+        }
+    }
+}
+
+.cookie-preferences {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.cookie-preferences label {
+    margin: 5px 12px 5px 0;
+}

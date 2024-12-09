@@ -1,0 +1,34 @@
+---
+
+---
+
+<div class="cookie-banner hidden" id="cookie-banner">
+  <p>
+    Utilizamos cookies para mejorar su experiencia. Puede aceptar todas,
+    rechazarlas o configurar sus preferencias.
+  </p>
+  <div class="cookie-actions">
+    <button id="reject-all">Rechazar todas</button>
+    <button id="configure">Configurar</button>
+    <button id="accept-all">Aceptar todas</button>
+  </div>
+  <div
+    class="cookie-preferences hidden"
+    id="cookie-preferences"
+  >
+    <label>
+      <input type="checkbox" id="analytics" />
+      Cookies de análisis
+    </label>
+    <label>
+      <input type="checkbox" id="externalcontent" />
+      Cookies de contenido externo
+    </label>
+    <button id="save-preferences">Guardar preferencias</button>
+  </div>
+</div>
+
+<script>
+  const cookiePrefs = new CookiePreferences();
+  cookiePrefs.applyPreferences();
+</script>
