@@ -21,11 +21,22 @@
 }
 
 .cookie-preferences {
-    align-items: baseline;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin-top: 1rem;
+    
+    @include mq($screen-sm-min) {
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 12px;
+
+        @include mq($screen-sm-min) {
+            width: auto;
+        }
+    }
 }
 
 .cookie-preferences label {
