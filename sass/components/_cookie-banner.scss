@@ -23,6 +23,20 @@
     }
 }
 
+.cookie-actions {
+    @include mq($screen-sm-min) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    button + button {
+        @include mq($screen-sm-min) {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
 .cookie-preferences {
     margin-top: 1rem;
     

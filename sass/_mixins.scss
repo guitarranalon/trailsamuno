@@ -200,7 +200,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	text-decoration: none;
 	width: 100%;
 	
-	@include mq($screen-sm-plus-min){
+	@include mq($screen-sm-min){
 		width: auto;
 	}
 
