@@ -12600,7 +12600,7 @@ class CookiePreferences {
   init() {
     this.#addEventListeners();
 
-    const savedPreferences = (new CookiePreferences).getCookiePreferences();
+    const savedPreferences = this.getCookiePreferences();
     if (savedPreferences) {
       this.#hideBanner();
     } else {
@@ -12652,7 +12652,9 @@ class CookiePreferences {
   }
 
   #loadAnalytics() {
-    runTagManager();
+    if (!runAnalytics || typeof runAnalytics !== 'function') return;
+  
+    runAnalytics();
   }
 
   #savePreferences(preferences) {
@@ -12663,8 +12665,8 @@ class CookiePreferences {
     if (!this.htmlElements?.banner) return;
   
     this.htmlElements.banner.classList.add(HIDDEN);
-    new CookiePreferences().applyPreferences();
-    runTagManager();
+    this.applyPreferences();
+    this.#loadAnalytics();
   }  
 
   applyPreferences() {

@@ -1,7 +1,7 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JB0K1TDYGZ"></script>
 <script is:inline>
-  function runTagManager () {
+  function runAnalytics () {
     const preferences = JSON.parse(localStorage.getItem("cookiePreferences"));
     
     if (preferences?.analytics) {
@@ -13,8 +13,8 @@
     }
   }
 
-  runTagManager();
+  runAnalytics();
 
-  window.runTagManager = runTagManager;
+  window.runTagManager = runAnalytics;
 
 </script>

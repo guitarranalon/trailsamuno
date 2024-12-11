@@ -79,9 +79,9 @@ class CookiePreferences {
   }
 
   #loadAnalytics() {
-    if (!runTagManager || typeof runTagManager !== 'function') return;
+    if (!runAnalytics || typeof runAnalytics !== 'function') return;
   
-    runTagManager();
+    runAnalytics();
   }
 
   #savePreferences(preferences) {
