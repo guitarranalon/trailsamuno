@@ -79,6 +79,8 @@ class CookiePreferences {
   }
 
   #loadAnalytics() {
+    if (!runTagManager || typeof runTagManager !== 'function') return;
+  
     runTagManager();
   }
 
@@ -91,7 +93,7 @@ class CookiePreferences {
   
     this.htmlElements.banner.classList.add(HIDDEN);
     this.applyPreferences();
-    runTagManager();
+    this.#loadAnalytics();
   }  
 
   applyPreferences() {
