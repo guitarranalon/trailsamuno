@@ -15,13 +15,13 @@ const h1 = "Noticias";
     {noticiasOrdenadas.map((noticia) => (
       <article class="listado-noticias__noticia">
         {noticia.data.image && noticia.data.image !== "" && (
-          <a href={`/noticias/${noticia.slug}`} title="Ir al detalle de la noticia">
+          <a href={`/noticias/${noticia.id}`} title="Ir al detalle de la noticia">
             <img src={`/${noticia.data.image}`} alt={noticia.data.title} />
           </a>
         )}
         <h2>
           <span class="listado-noticias__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</span>
-          <a href={`/noticias/${noticia.slug}`} title="Ir al detalle de la noticia" class="listado-noticias__titular">{noticia.data.title}</a>
+          <a href={`/noticias/${noticia.id}`} title="Ir al detalle de la noticia" class="listado-noticias__titular">{noticia.data.title}</a>
         </h2>
       </article>
     ))}
