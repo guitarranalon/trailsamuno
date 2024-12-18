@@ -1,19 +1,19 @@
 ---
 import { getCollection } from 'astro:content';
 
-const noticias = await getCollection('noticias');
+const noticias = await getCollection("noticias");
 const ultimaNoticia = noticias.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())[0];
 ---
 
 <div class="noticias-portada">
-    <article>
-        <a href={`/noticias/${ultimaNoticia.slug}`} title="Ir al detalle de la noticia">
+    { noticias?.length > 0 && <article>
+        <a href={`/noticias/${ultimaNoticia.id}`} title="Ir al detalle de la noticia">
             <img src={`/${ultimaNoticia.data.image}`} alt={ultimaNoticia.data.title} />
-        </a>        
+        </a>
         <h3>
             <span class="listado-noticias__fecha">{ ultimaNoticia.data.date.toLocaleDateString('es-ES') }</span>
-            <a href={`/noticias/${ultimaNoticia.slug}`} title="Ir al detalle de la noticia" class="noticias-portada__titular">{ultimaNoticia.data.title}</a>
+            <a href={`/noticias/${ultimaNoticia.id}`} title="Ir al detalle de la noticia" class="noticias-portada__titular">{ultimaNoticia.data.title}</a>
         </h3>
-    </article>
+    </article>}
     <a href="/noticias" title="Ir a la sección de noticias" class="button">Más noticias</a>
 </div>

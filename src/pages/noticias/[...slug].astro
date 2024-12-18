@@ -2,21 +2,14 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
-const { slug } = Astro.params;
-const noticias = await getCollection('noticias');
-const noticia = noticias.find((n) => n.slug === slug);
-
 export async function getStaticPaths() {
   const noticias = await getCollection('noticias');
-  
-  return noticias.map((noticia) => ({
-    params: { slug: noticia.slug },
+  return noticias.map(noticia => ({
+    params: { slug: noticia.id }, props: { noticia },
   }));
 }
 
-if (!noticia) {
-  throw new Error(`Noticia no encontrada: ${slug}`);
-}
+const { noticia } = Astro.props;
 ---
 
 <Layout>
