@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "0.4.4",
-    "rollup": "4.19.0"
+    "rollup": "4.28.1"
   }
 }
