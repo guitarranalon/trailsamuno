@@ -1,10 +1,10 @@
 {
     "empresas": [
       {
-        "name": "Clínica Nalón Dental",
-        "image": "clinicaNalonDental.jpg",
-        "link": "http://www.clinicanalondental.com",
-        "linktitle": "Ir a la web de la Clínica Nalón Dental"
+        "name": "Clínica Dental González Gallego",
+        "image": "clinicadentalgonzalezgallego.avif",
+        "link": "https://clinicagonzalezgallego.com/",
+        "linktitle": "Ir a la web de la Clínica Dental González Gallego"
       },
       {
         "name": "Área de Deportes del Ayuntamiento de Langreo",

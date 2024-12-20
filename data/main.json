@@ -1,7 +1,7 @@
 {
     "tvxs": {
       "name": "TVxS",
-      "mainsponsor": "Clínica Nalón Dental",
+      "mainsponsor": "Clínica Dental González Gallego",
       "sequence": "VI",
       "distance": "13",
       "climb": "700",
@@ -17,7 +17,7 @@
     },
     "tvs": {
       "name": "TVS",
-      "mainsponsor": "Clínica Nalón Dental",
+      "mainsponsor": "Clínica Dental González Gallego",
       "sequence": "VIII",
       "distance": "22",
       "climb": "1.500",
@@ -33,7 +33,7 @@
     },
     "gtvs": {
       "name": "GTVS",
-      "mainsponsor": "Clínica Nalón Dental",
+      "mainsponsor": "Clínica Dental González Gallego",
       "sequence": "V",
       "distance": "35",
       "climb": "2.200",
