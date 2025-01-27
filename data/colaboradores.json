@@ -215,7 +215,19 @@
         "image": "allin.avif",
         "link": "https://www.instagram.com/allinfutbollaviana/?hl=es",
         "linktitle": "Ir a la página de Allin fútbol"
-      }          
+      },
+      {
+        "name": "Miel La Puela",
+        "image": "lapuela.avif",
+        "link": "https://mieldelapuela.com/",
+        "linktitle": "Ir a la página de Miel La Puela"
+      },
+      {
+        "name": "Productos lácteos Los Caserinos",
+        "image": "caserinos.avif",
+        "link": "https://loscaserinos.com/",
+        "linktitle": "Ir a la página de Los Caserinos"
+      }               
     ],
     "oficiales": [
       {
