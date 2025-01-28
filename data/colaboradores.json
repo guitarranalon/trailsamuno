@@ -227,7 +227,13 @@
         "image": "caserinos.avif",
         "link": "https://loscaserinos.com/",
         "linktitle": "Ir a la página de Los Caserinos"
-      }               
+      },
+      {
+        "name": "Hunosa",
+        "image": "hunosa.avif",
+        "link": "https://www.hunosa.es/",
+        "linktitle": "Ir a la página de Hunosa"
+      }                   
     ],
     "oficiales": [
       {
