@@ -43,12 +43,6 @@
         "linktitle": "Ir a la web del Café Bar Tere"
       },
       {
-        "name": "Disceas",
-        "image": "disceas.png",
-        "link": "https://disceas.es/es/",
-        "linktitle": "Ir a la web de Disceas"
-      },
-      {
         "name": "Séneca",
         "image": "seneca.png",
         "link": "https://www.instagram.com/senecafisioterapia/",
@@ -59,12 +53,6 @@
         "image": "cortecerrajero.png",
         "link": "https://www.facebook.com/profile.php?id=100005154001724",
         "linktitle": "Ir a la web de Corte Cerrajero"
-      },
-      {
-        "name": "Asociación Cultural San Luis de La Nueva",
-        "image": "sanluis.png",
-        "link": "https://www.facebook.com/acsanluis",
-        "linktitle": "Ir a la web de la Asociación Cultural San Luis de La Nueva"
       },
       {
         "name": "Casa El Chato",
