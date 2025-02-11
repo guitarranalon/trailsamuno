@@ -186,7 +186,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	transition: (background-color $animacionMedia ease, color $animacionMedia ease, box-shadow $animacionMedia ease);
 	appearance: (none);
 
-	background:$colorTema;
+	background: $colorTema;
 	border:0;	
 	color: $colorFuente;
 	display: block;

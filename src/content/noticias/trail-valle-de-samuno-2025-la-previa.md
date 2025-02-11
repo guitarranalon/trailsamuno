@@ -1,6 +1,6 @@
 ---
 title: "Vuelve el Trail Valle de Samuño con la edición más abierta de los últimos años"
-date: 2025-01-31
+date: 2025-02-23
 image: "images/noticias/previa-2025.avif"
 myslug: "trail-valle-de-samuno-2025-la-previa"
 ---
@@ -20,7 +20,7 @@ myslug: "trail-valle-de-samuno-2025-la-previa"
 
 <p>Uno de los grandes atractivos del evento es el último kilómetro de cada recorrido, que transcurre por una galería minera auténtica, un punto único que no deja indiferente a ningún corredor. Además, los trazados ascienden a cumbres tan vistosas como el Cogollu y el Rondiz, e incluyen tramos ya icónicos como el Repechín y la Cresta los Fugaos.</p>
 
-<h2>Un cartel abierto y lleno de promesas 🏃</h2>
+<h2>🏃 Un cartel abierto y lleno de promesas</h2>
 
 <p>Esta edición promete emociones fuertes. Con la ausencia de su condición como campeonato de Asturias o prueba puntuable para la Copa de Asturias, la competición está más abierta que nunca, lo que aumenta las expectativas de nuevos ganadores en las diferentes categorías.</p>
 
@@ -32,7 +32,7 @@ myslug: "trail-valle-de-samuno-2025-la-previa"
 	<li>En el GTVS: [indicar principales favoritos].</li>
 </ul>
 
-<p>Además, la historia también jugará su papel. Dos participantes han logrado terminar todas las ediciones anteriores, consolidándose como auténticos emblemas de la prueba: Agustín González Bobes y Cristian Menéndez Pérez. Por otro lado, Andrés García Blanco, el corredor con más victorias (5🥇) en la historia del Trail Valle de Samuño, podría ver peligrar su trono ya que Carolina Pereira Obaya, una de las atletas más destacadas (3🥇), aspira a destronarlo si consigue imponerse en (al menos) 2 de las 3 pruebas. Otros aspirantes a nuevo/a rey/reina serían Meritxhell Nava, Borja Fernández y Laura Sánchez, pero necesitarían subir a lo más alto del podium en las 3 pruebas para lograrlo, algo que cada año resulta más complicado.</p>
+<p>Además, la historia también jugará su papel. Dos participantes han logrado terminar todas las ediciones anteriores, consolidándose como auténticos emblemas de la prueba: Agustín González Bobes y Cristian Menéndez Pérez. Por otro lado, Andrés García Blanco, el corredor con más victorias (5🥇) en la historia del Trail Valle de Samuño, podría ver peligrar su trono ya que Carolina Pereira Obaya, una de las atletas más destacadas (3🥇), aspira a alcanzarlo si consigue imponerse en (al menos) 2 de las 3 pruebas, pudiendo llegar a destronarlo si consiguiese el pleno. Otros aspirantes a nuevo/a rey/reina serían Meritxhell Nava, Borja Fernández y Laura Sánchez, pero necesitarían subir a lo más alto del podium en las 3 pruebas para lograrlo, algo que cada año resulta más complicado.</p>
 
 <p>En el apartado popular el local Miguel Ángel Menéndez, Rubén Fernándoz López, César Jiménez Fernández y Franciso Javier Baños deben esperar el fallo de Cristian Menéndez y Agustín González para poder convertirse en leyendas del TVS y empatar con ellos como corredores con más TVS finalizados. En el TVxS hay 9 atletas empatados con 4 metas y esta edición debería servir para cribar el grupo de leyendas. Entre ellos destaca la presencia de Agustín González Bobes, un sospechoso habitual en estos rankings. No podemos dejar de mencionar también a la única mujer de este selecto club, Jennifer Argüelles Mesa, que, además, es también la mujer con más TVS terminados.</p>
 

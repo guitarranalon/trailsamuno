@@ -21,7 +21,7 @@
       {
         "name": "Caldillo d'Arriba",
         "image": "caldillo.jpg",
-        "link": "http://cartacasacaldillo.ddns.net/Carta.pdf",
+        "link": "https://casacaldillo.es/",
         "linktitle": "Ir a la web de la parrilla Caldillo d'Arriba"
       },
       {
@@ -43,12 +43,6 @@
         "linktitle": "Ir a la web del Café Bar Tere"
       },
       {
-        "name": "Disceas",
-        "image": "disceas.png",
-        "link": "https://disceas.es/es/",
-        "linktitle": "Ir a la web de Disceas"
-      },
-      {
         "name": "Séneca",
         "image": "seneca.png",
         "link": "https://www.instagram.com/senecafisioterapia/",
@@ -59,12 +53,6 @@
         "image": "cortecerrajero.png",
         "link": "https://www.facebook.com/profile.php?id=100005154001724",
         "linktitle": "Ir a la web de Corte Cerrajero"
-      },
-      {
-        "name": "Asociación Cultural San Luis de La Nueva",
-        "image": "sanluis.png",
-        "link": "https://www.facebook.com/acsanluis",
-        "linktitle": "Ir a la web de la Asociación Cultural San Luis de La Nueva"
       },
       {
         "name": "Casa El Chato",
@@ -203,7 +191,37 @@
         "image": "palacionieves.webp",
         "link": "https://www.hotelpalaciodelasnieves.com/es",
         "linktitle": "Ir a la página del Hotel/Restaurante/Spa Palacio de las Nieves"
-      }
+      },
+      {
+        "name": "Pinta en Copas",
+        "image": "pintaencopas.avif",
+        "link": "https://www.facebook.com/p/Pinta-en-Copas-61553836114700/",
+        "linktitle": "Ir a la página del Pinta en Copas"
+      },
+      {
+        "name": "Allin fútbol",
+        "image": "allin.avif",
+        "link": "https://www.instagram.com/allinfutbollaviana/?hl=es",
+        "linktitle": "Ir a la página de Allin fútbol"
+      },
+      {
+        "name": "Miel La Puela",
+        "image": "lapuela.avif",
+        "link": "https://mieldelapuela.com/",
+        "linktitle": "Ir a la página de Miel La Puela"
+      },
+      {
+        "name": "Productos lácteos Los Caserinos",
+        "image": "caserinos.avif",
+        "link": "https://loscaserinos.com/",
+        "linktitle": "Ir a la página de Los Caserinos"
+      },
+      {
+        "name": "Hunosa",
+        "image": "hunosa.avif",
+        "link": "https://www.hunosa.es/",
+        "linktitle": "Ir a la página de Hunosa"
+      }                   
     ],
     "oficiales": [
       {

@@ -35,6 +35,11 @@
         color: #fff;
         margin-bottom: 2em;
         margin-top: -6em;
+
+        @include mq($screen-sm-min) {
+            margin-bottom: 3em;
+            margin-top: -7em;
+        }        
     }
 
     &__name {
