@@ -20,7 +20,7 @@ myslug: "trail-valle-de-samuno-2025-la-previa"
 
 <p>Uno de los grandes atractivos del evento es el último kilómetro de cada recorrido, que transcurre por una galería minera auténtica, un punto único que no deja indiferente a ningún corredor. Además, los trazados ascienden a cumbres tan vistosas como el Cogollu y el Rondiz, e incluyen tramos ya icónicos como el Repechín y la Cresta los Fugaos.</p>
 
-<h2>🏃 Un cartel abierto y lleno de promesas</h2>
+<h2>🏃 Un cartel abierto y lleno de sorpresas</h2>
 
 <p>Esta edición promete emociones fuertes. Con la ausencia de su condición como campeonato de Asturias o prueba puntuable para la Copa de Asturias, la competición está más abierta que nunca, lo que aumenta las expectativas de nuevos ganadores en las diferentes categorías.</p>
 
