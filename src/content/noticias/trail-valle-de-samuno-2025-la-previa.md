@@ -1,6 +1,6 @@
 ---
 title: "Vuelve el Trail Valle de Samuño con la edición más abierta de los últimos años"
-date: 2025-02-23
+date: 2025-02-28
 image: "images/noticias/previa-2025.avif"
 myslug: "trail-valle-de-samuno-2025-la-previa"
 ---
@@ -24,15 +24,9 @@ myslug: "trail-valle-de-samuno-2025-la-previa"
 
 <p>Esta edición promete emociones fuertes. Con la ausencia de su condición como campeonato de Asturias o prueba puntuable para la Copa de Asturias, la competición está más abierta que nunca, lo que aumenta las expectativas de nuevos ganadores en las diferentes categorías.</p>
 
-<p>Por el momento, todos los ojos están puestos en los favoritos:</p>
+<p>Habrá que estar pendiente de nombres habituales como Meritxhell Nava (GTVS), Laura Álvarez (TVS), Andrés González (GTVS), José Blanco (TVxS), Paulo Rozada (TVS), Jennifer Argüelles (GTVS)... ¡Pero sin olvidar que en esta edición puede pasar de todo!</p>
 
-<ul>
-	<li>En el TVxS (K13): [indicar principales favoritos].</li>
-	<li>En el TVS (K22): [indicar principales favoritos].</li>
-	<li>En el GTVS: [indicar principales favoritos].</li>
-</ul>
-
-<p>Además, la historia también jugará su papel. Dos participantes han logrado terminar todas las ediciones anteriores, consolidándose como auténticos emblemas de la prueba: Agustín González Bobes y Cristian Menéndez Pérez. Por otro lado, Andrés García Blanco, el corredor con más victorias (5🥇) en la historia del Trail Valle de Samuño, podría ver peligrar su trono al no participar ya que, aunque Carolina Pereira Obaya, una de las atletas más destacadas (3🥇), podría alcanzarlo si consigue imponerse en (al menos) 2 de las 3 pruebas, tampoco participará en esta edición. Otros aspirantes a nuevo/a rey/reina serían Meritxhell Nava y Laura Sánchez, pero necesitarían subir a lo más alto del podium en las 3 pruebas para lograrlo, algo que cada año resulta más complicado.</p>
+<p>Además, la historia también jugará su papel. Dos participantes han logrado terminar todas las ediciones anteriores, consolidándose como auténticos emblemas de la prueba: Agustín González Bobes y Cristian Menéndez Pérez. Por otro lado, ni Andrés García Blanco, el corredor con más victorias (5🥇) ni Carolina Pereira Obaya, segunda atleta más laureada (3🥇) participarán en esta edición. Meritxhell Nava (2🥇 y 2🥈) y Laura Sánchez (2🥇 y 1🥈) podrían desbancar a Carolina Pereira con 1 victoria, pero ambas necesitarían hacer pleno para acabar con el reinado de Andrés García.</p>
 
 <p>En el apartado popular el local Miguel Ángel Menéndez, Rubén Fernándoz López y César Jiménez Fernández deben esperar el fallo de Cristian Menéndez y Agustín González para poder convertirse en leyendas del TVS y empatar con ellos como corredores con más TVS finalizados. En el TVxS hay 9 atletas empatados con 4 metas y esta edición debería servir para cribar el grupo de leyendas. Entre ellos destaca la presencia de Agustín González Bobes, un sospechoso habitual en estos rankings. No podemos dejar de mencionar también a la única mujer de este selecto club, Jennifer Argüelles Mesa, que, además, es también la mujer con más TVS terminados.</p>
 
