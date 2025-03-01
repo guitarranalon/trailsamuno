@@ -221,7 +221,13 @@
         "image": "hunosa.avif",
         "link": "https://www.hunosa.es/",
         "linktitle": "Ir a la página de Hunosa"
-      }                   
+      },
+      {
+        "name": "Distribuciones Disa Astur",
+        "image": "disaastur.avif",
+        "link": "https://www.facebook.com/distribucionesdisaastur",
+        "linktitle": "Ir a la página de Disa Astur"
+      }                        
     ],
     "oficiales": [
       {
