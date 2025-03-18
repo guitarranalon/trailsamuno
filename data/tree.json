@@ -82,7 +82,12 @@
                 "title": "Ir a la página sobre la edición de 2016"
               }
             ]
-          }
+          },
+          {
+            "name": "Guía corredor",
+            "path": "/documents/carrera/guia-corredor/guia-corredor-2025.pdf",
+            "title": "Ir a la guía del corredor de 2025"
+          }          
         ]
       },
       {
