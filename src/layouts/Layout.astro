@@ -23,19 +23,20 @@ const pageClass = getPathClasses(currentPath);
 <!doctype html>
 <html lang="es-ES">
   <head>
-    <GoogleTag />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
+    
+    <FontStyles />
+    <GoogleTag />
+    <Favicons />
+    
+    <title>{ title ? title : "Trail Valle de Samuño" } - { mainData.tvs.mainsponsor }</title>
     <meta name="author" content="Roberto Cancio González" />
-    <meta content="carrera, montaña, trail, Samuño, running" name="keywords" />
+    <meta content="carrera, montaña, trail, Samuño, running, Asturias" name="keywords" />
     <meta name="description" content="Carrera por montaña por el Valle de Samuño, dentro del Paisaje Protegido de las Cuencas Mineras, que también permite conocer el pozo minero de carbón San Luis" />
     <meta name="geo.placename" content="La Nueva, Langreo, Principado de Asturias, Spain" /> 
-    <meta name="geo.position" content="43.2617,-5.6737" />    
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport">
-
-    <title>{ title ? title : "Trail Valle de Samuño" } - { mainData.tvs.mainsponsor }</title>
-    <FontStyles />
-    <Favicons />
+    <meta name="geo.position" content="43.2617,-5.6737" />        
   </head>
   <body class={pageClass} data-baseurl={import.meta.env.BASE_URL}>
   <Header h1={h1} />
