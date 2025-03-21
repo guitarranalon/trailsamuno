@@ -10,6 +10,24 @@ const isRootUrl = import.meta.env.BASE_URL === "/";
             font-style: normal;
             font-display: swap;
         }
+        
+        @font-face {
+            font-family: 'montserratlight';
+            src: url('/fonts/montserrat-light/montserrat-light-webfont.woff2') format('woff2'),
+                url('/fonts/montserrat-light/montserrat-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+            
+        @font-face {
+            font-family: 'montserratregular';
+            src: url('/fonts/montserrat-regular/montserrat-regular-webfont.woff2') format('woff2'),
+                url('/fonts/montserrat-regular/montserrat-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
     </style>
 }
 { !isRootUrl && <style is:global>
