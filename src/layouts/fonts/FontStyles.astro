@@ -1,16 +1,14 @@
 ---
 const isRootUrl = import.meta.env.BASE_URL === "/";
 ---
-{ isRootUrl && <>
-    <link rel="preload" href="/fonts/montserrat-bold/montserrat-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <style is:global>
+{ isRootUrl && <style is:global>
         @font-face {
             font-family: 'montserratbold';
             src: url('/fonts/montserrat-bold/montserrat-bold-webfont.woff2') format('woff2'),
                 url('/fonts/montserrat-bold/montserrat-bold-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: fallback;
         }
         
         @font-face {
@@ -31,7 +29,6 @@ const isRootUrl = import.meta.env.BASE_URL === "/";
             font-display: swap;
         }
     </style>
-    </>
 }
 { !isRootUrl && <style is:global>
     @font-face {
