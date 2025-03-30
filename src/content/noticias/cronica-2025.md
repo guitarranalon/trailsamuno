@@ -19,6 +19,8 @@ myslug: "cronica-2025"
 
 <p>Emergiendo desde las entrañas de la mina hacia la luz de la meta, el primero en cruzarla fue Miguel Ángel de Prado Llames, con un tiempo de 1h 11' 20", superando en casi tres minutos a Andrés González González, ganador de 2024, y en 3'15" a Alejandro Virginio Mauriz. En mujeres, Aroa Calvo Gómez reafirmó su reinado con una marca de 1h 24' 39", seguida de Meritxhell Nava Álvarez a poco más de un minuto y Lara Menéndez Peña a cinco minutos.</p>
 
+<p>En el apartado popular, 7 corredores están empatados con 5 TVxS completados, destacando Agustín González Bobes y Jennifer Argüelles, única mujer en este selecto grupo. Ambos están también en el top 10 de finishers del TVS y, en el caso de Argüelles, aparece además en el medallero con una medalla de bronce.</p>
+
 <p>La mejora de los tiempos respecto a 2024, a pesar del barro y la dificultad del terreno, solo confirma la grandeza de los atletas que hoy escribieron su nombre en la historia del Trail Valle de Samuño. Bajo el sol radiante que regresó tras el eclipse, en la tierra minera de Langreo. Y así, entre sudor, esfuerzo y pasión, el deporte y la leyenda volvieron a encontrarse en las montañas (y en las entrañas de la tierra) asturianas.</p>
 
 <h2>(30/03/2025) TVS (K22): Rubén Cabo impone su ley en Samuño; Meritxhell Nava a las puertas del récord de victorias</h2>
@@ -36,6 +38,8 @@ myslug: "cronica-2025"
 <p>Y entonces, la mina los engulló. El Socavón Emilia, con su kilómetro de oscuridad y sus 180 escalones, dictó sentencia. Desde las entrañas del pozo San Luis emergió Rubén Cabo como vencedor absoluto con un tiempo de 2h 07' 51", confirmando su reinado en Samuño. Paulo Rozada cruzó la meta 8 minutos después, seguido de Ernesto Herrero a 11 minutos.</p>
 
 <p>En mujeres, Meritxhell Nava reafirmó su dominio con una marca de 2h 44' 35", sumando su cuarto oro en la historia de la prueba (entre TVxS, TVS y GTVS) y acercándose al récord de victorias de Andrés García Blanco (5). Patricia Fernández aseguró el segundo puesto a casi 4 minutos, mientras que Laura Álvarez cerró el podio a 15 minutos de la campeona, ambas más centradas en mantener el puesto que en mejorarlo, dado que las energías ya empezaban a disminuir.</p>
+
+<p>Mención especial para Cristian Menéndez y Agustín González, que han logrado terminar la prueba, siendo los únicos finishers de todas las ediciones. Se da el caso de que, además, los dos han participado en la modalidad por etapas terminando ambas pruebas, en el caso de Cristian llevándose la medalla de chocolate. Por su parte Jennifer Argüelles es la única mujer que aparece en el top 10 de finishers del TVS con 6 metas.</p>
 
 <p>El mejor corredor local, Igor Prieto, cruzó la meta en una meritoria quinta posición, demostrando el talento de la tierra. Rubén Cabo, que quería asaltar su propio tiempo de dos horas, tuvo que conformarse con la victoria, frenado por el barro. Pero lo que el terreno le negó, la historia ya se lo ha concedido: su nombre sigue grabado en la mina del Trail Valle de Samuño, como el de un verdadero capataz de la montaña.</p>
 
