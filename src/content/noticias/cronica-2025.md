@@ -25,6 +25,8 @@ myslug: "cronica-2025"
 
 <h2>(30/03/2025) TVS (K22): Rubén Cabo impone su ley en Samuño; Meritxhell Nava a las puertas del récord de victorias</h2>
 
+<img src="/images/noticias/cronica-2025-tvs.avif" alt="Rubén Cabo liderando la prueba al paso por el Mayáu Miguel" />
+
 <p>El sol iluminó el amanecer en Langreo, presagio de una jornada con una temperatura ideal para correr. La octava edición del Trail Valle de Samuño prometía una batalla sin tregua entre los mejores corredores de la montaña, y no defraudó. Desde las primeras zancadas, el ritmo fue muy rápido. La Senda de Los Molinos, fiel a su esencia, recibió a los corredores con barro y humedad antes de dar paso a la primera gran ascensión.</p>
 
 <p>El Tendeyón y La Inverniza sirvieron de criba inicial. Ahí, Rubén Cabo Vázquez, el defensor del título, comenzó su exhibición, despegándose de sus perseguidores. Paulo Rozada y Ernesto Herrero intentaron seguir su estela, pero al llegar al Picu Cogollu, techo de la prueba, la diferencia ya era de 3 minutos. En la categoría femenina, Meritxhell Nava dejó claro desde el inicio que quería su cuarta corona (contando las distintas pruebas que componen el Trail Valle de Samuño), liderando con solvencia.</p>
@@ -44,6 +46,8 @@ myslug: "cronica-2025"
 <p>El mejor corredor local, Igor Prieto, cruzó la meta en una meritoria quinta posición, demostrando el talento de la tierra. Rubén Cabo, que quería asaltar su propio tiempo de dos horas, tuvo que conformarse con la victoria, frenado por el barro. Pero lo que el terreno le negó, la historia ya se lo ha concedido: su nombre sigue grabado en la mina del Trail Valle de Samuño, como el de un verdadero capataz de la montaña.</p>
 
 <h2>(29-30/03/2025) GTVS (K35): Andrés González y Meritxhell Nava, los que más carbón picaron en Samuño</h2>
+
+<img src="/images/noticias/cronica-2025-gtvs.avif" alt="Meritxhell Nava encarando la Cresta los Fugaos en la carrera del sábado" />
 
 <p>Dos días, 35 kilómetros y 2.200 metros de desnivel positivo. Un fin de semana de sol, barro y lucha sin tregua en el corazón minero de Asturias. La modalidad por etapas del Trail Valle de Samuño no es solo una prueba de resistencia y capacidad de recuperación; es un desafío de fortaleza mental, de constancia y de pura determinación. Solo 37 valientes lograron completar la exigente combinación de TVxS y TVS, pero dos nombres destacan sobre el resto: Andrés González y Meritxhell Nava, los dueños absolutos del fin de semana.</p>
 
