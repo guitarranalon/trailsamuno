@@ -21,12 +21,12 @@ const { data } = Astro.props;
         <dl>
             <dt>Desnivel pos</dt> <dd>{ data.climb }m</dd>
         </dl>
-        { data.stages && data.stages > 1 && <dl>
-            <dt>Etapas</dt> <dd>{ data.stages }</dd>
-        </dl> }        
         <dl>
             <dt>Avituallamientos</dt> <dd>{ data.aidStations }</dd>
         </dl>
+        { data.stages && data.stages > 1 && <dl>
+            <dt>Etapas</dt> <dd>{ data.stages }</dd>
+        </dl> }         
     </div>
     <footer>
         <a href=`carrera/recorrido.html${ data.moreInfoLink }` title="Ver más información de la carrera" class="button">Detalles { data.name }</a>
