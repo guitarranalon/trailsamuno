@@ -369,10 +369,15 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	
 	font-family: $fontFamily;
 	font-weight: normal;
-	margin-bottom:sizeEM(22, 28);
+	margin-bottom:sizeEM(12, 28);
+	padding-bottom: 0;
 	line-height:1.1em;	
 	text-transform: uppercase;
 	
+	&:not(:first-child) {
+		margin-top: 1.25em;
+	}
+
 	&:after {
 		content: none;
 	}
