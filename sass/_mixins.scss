@@ -368,7 +368,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	@include font-size(28);
 	
 	font-family: $fontFamily;
-	font-weight: normal;
+	font-weight: bold;
 	margin-bottom:sizeEM(12, 28);
 	padding-bottom: 0;
 	line-height:1.1em;	

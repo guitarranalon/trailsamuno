@@ -104,6 +104,7 @@ footer .contact{
 		@include font-size(16);
 		
 		font-family: $fontFamily;
+		font-weight: bold;
 		text-transform: uppercase;
 	}
 }
