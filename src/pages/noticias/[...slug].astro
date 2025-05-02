@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import ListadoNoticias from '../../components/ListadoNoticias.astro';
 
 export async function getStaticPaths() {
   const noticias = await getCollection('noticias');
@@ -10,6 +11,12 @@ export async function getStaticPaths() {
 }
 
 const { noticia } = Astro.props;
+const noticias = await getCollection('noticias');
+
+const otrasNoticias = noticias
+  .filter(n => n.id !== noticia.id)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
 ---
 
 <Layout>
@@ -21,5 +28,11 @@ const { noticia } = Astro.props;
     <div class="detalle-noticia__fecha">{ noticia.data.date.toLocaleDateString('es-ES') }</div>
     <div set:html={noticia.body}></div>
   </div>
+
+  <div class="mas-noticias">
+    <h2>Más noticias</h2>
+    <ListadoNoticias listadoNoticias={otrasNoticias} />
+  </div>
+
   <a href="/noticias" title="Volver a la sección de noticias">&lt; Volver a noticias</a>
 </Layout>
