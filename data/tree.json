@@ -92,8 +92,20 @@
       },
       {
         "name": "Patrocinadores",
-        "path": "/patrocinadores.html",
-        "title": "Patrocinadores de la prueba"
+        "path": "#",
+        "title": "Patrocinadores de la prueba",
+        "children": [
+          {
+            "name": "Patrocinadores",
+            "path": "/patrocinadores/patrocinadores.html",
+            "title": "Patrocinadores de la prueba"
+          },
+          {
+            "name": "Colabora",
+            "path": "/patrocinadores/colabora.html",
+            "title": "Colabora con el evento"
+          }
+        ]
       },
       {
         "name": "Información",

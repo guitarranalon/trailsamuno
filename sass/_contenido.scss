@@ -151,6 +151,10 @@
 	}
 }
 
+.patrocinadores_colabora ol > li::marker {
+	font-size: sizeEM(24);
+}
+
 // Roadbook
 #content .svg-container{
 	background: $colorTema;

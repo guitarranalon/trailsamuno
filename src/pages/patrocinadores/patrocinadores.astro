@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import patrocinadores from "../../data/patrocinadores.json";
-import colaboradores from "../../data/colaboradores.json";
+import Layout from "../../layouts/Layout.astro";
+import patrocinadores from "../../../data/patrocinadores.json";
+import colaboradores from "../../../data/colaboradores.json";
 
 const title = "Patrocinadores";
 const h1 = "Patrocinadores de la carrera";
@@ -14,7 +14,7 @@ const h1 = "Patrocinadores de la carrera";
 			{ patrocinadores.empresas.map(empresa => {
 				return <li>
 					<a href={empresa.link} title={empresa.linktitle}>
-						<img src={`images/patrocinadores/${empresa.image}`} alt={empresa.name} />
+						<img src={`/images/patrocinadores/${empresa.image}`} alt={empresa.name} />
 					</a>
 				</li>
 			})}
@@ -26,11 +26,11 @@ const h1 = "Patrocinadores de la carrera";
 				{ epigrafeoficial.empresas.map(colaboradoroficial => {
 					return <li>
 						{ !colaboradoroficial.link && <span>
-								<img src={`images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
+								<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
 							</span>
 						}
 						{ colaboradoroficial.link && <a href={colaboradoroficial.link} title={colaboradoroficial.linktitle}>
-								<img src={`images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
+								<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
 							</a>
 						}
 					</li>
@@ -43,11 +43,11 @@ const h1 = "Patrocinadores de la carrera";
 			{ colaboradores.empresas.map(colaborador => {
 				return <li>
 					{ !colaborador.link && <span>
-							<img src={`images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
+							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</span>
 					}
 					{ colaborador.link && <a href={colaborador.link} title="<%= colaborador.linktitle %>">
-							<img src={`images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
+							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</a>
 					}
 				</li>
