@@ -173,17 +173,38 @@ header .enlaceBoton{
 	}
 }
 
-header.is-scrolled {
+#header.is-scrolled {
+	padding-bottom: 0;
+	transition: padding-bottom 0.3s ease-in-out;
+
+	&:after {
+		@include mq($screen-sm-min) {
+			content: none;
+		}
+	}
+
 	.nombreCarrera {
 		height: 0;
 		margin-bottom: 0;
 		overflow: hidden;
 		transition: height 0.3s ease-in-out;
 	}
+	
+	.inscripcion.enlaceBoton {
+		display: none;
+
+		@include mq($screen-sm-plus-min) {
+			display: inline-block;
+		}
+	}
 
 	.icon.tvs-logo {
 		height: 60px;
 		transition: all 0.3s ease-in-out;
 		width: 45px;
+	}
+
+	.openCloseButton {
+		top: 16px;
 	}
 }

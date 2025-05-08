@@ -3,6 +3,10 @@
 	margin-top: 290px;
 }
 
+.index #content {
+	margin-top: 200px;
+}
+
 #content .excerpt{
 	@include mq($screen-sm-min){
 		min-height: 40em;
