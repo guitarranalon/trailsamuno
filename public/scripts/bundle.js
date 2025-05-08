@@ -12474,14 +12474,33 @@ window.prepareIndexAnimations = function(){
 	});
 };
 
+function debounce(fn, delay = 100) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn.apply(this, args), delay);
+  };
+}
+
+function initScrollHeader() {
+    const header = document.querySelector('#header');
+    if (!header) return;
+  
+    const onScroll = debounce(() => {
+      header.classList.toggle('is-scrolled', window.scrollY > 0);
+    }, 100);
+  
+    window.addEventListener('scroll', onScroll);
+  }
+
 $("#header").find('.row').mobileMenu("#main-nav");
 $.menuAimCall();
 
 $.scrollUp({scrollText:"Volver arriba"});
 
-// $.randomCollaborators();
-
 $("#content").find(".gallery").featherlightGallery({galleryFadeIn:300,openSpeed:300,type:"image"});
+
+initScrollHeader();
 
 class Ranking {
     #results = [];
