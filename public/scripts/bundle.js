@@ -12474,6 +12474,7 @@ window.prepareIndexAnimations = function(){
 	});
 };
 
+// Versión mejorada del script
 function debounce(fn, delay = 100) {
   let timeout;
   return function (...args) {
@@ -12482,16 +12483,28 @@ function debounce(fn, delay = 100) {
   };
 }
 
+let lastScrolled = null;
+const SCROLL_THRESHOLD = 10; // Umbral mínimo de scroll para cambiar estado
+
 function initScrollHeader() {
-    const header = document.querySelector('#header');
-    if (!header) return;
-  
-    const onScroll = debounce(() => {
-      header.classList.toggle('is-scrolled', window.scrollY > 0);
-    }, 100);
-  
-    window.addEventListener('scroll', onScroll);
-  }
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  const updateHeaderState = () => {
+    // Usamos un umbral para evitar cambios demasiado sensibles
+    const isNowScrolled = window.scrollY > SCROLL_THRESHOLD;
+
+    if (lastScrolled !== isNowScrolled) {
+      header.classList.toggle('is-scrolled', isNowScrolled);
+      lastScrolled = isNowScrolled;
+    }
+  };
+
+  window.addEventListener('scroll', debounce(updateHeaderState, 100));
+
+  // Llamar una vez por si el usuario entra con scroll ya abajo
+  updateHeaderState();
+}
 
 $("#header").find('.row').mobileMenu("#main-nav");
 $.menuAimCall();

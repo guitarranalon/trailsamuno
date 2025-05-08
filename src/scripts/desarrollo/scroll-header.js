@@ -11,7 +11,7 @@ export function initScrollHeader() {
     if (!header) return;
   
     const onScroll = debounce(() => {
-      header.classList.toggle('is-scrolled', window.scrollY > 0);
+      header.classList.toggle('is-scrolled', window.scrollY > 100);
     }, 100);
   
     window.addEventListener('scroll', onScroll);

@@ -1,8 +1,10 @@
 #header{
 	background: $colorTema;
+	left: 0;
 	margin-bottom: sizeEM(70);
 	padding-bottom: sizeEM(28);
-	position: sticky;
+	position: fixed;
+	right: 0;
 	top: 0;
 	z-index: 10;
 
@@ -168,5 +170,14 @@ header .enlaceBoton{
 		right: -100px;
 		top: 90px;
 		transform: rotate(45deg);
+	}
+}
+
+header.is-scrolled {
+	min-height: 30px;
+	.nombreCarrera {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s ease-in-out;
 	}
 }
