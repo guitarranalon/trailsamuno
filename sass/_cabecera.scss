@@ -174,10 +174,16 @@ header .enlaceBoton{
 }
 
 header.is-scrolled {
-	min-height: 30px;
 	.nombreCarrera {
 		height: 0;
+		margin-bottom: 0;
 		overflow: hidden;
 		transition: height 0.3s ease-in-out;
+	}
+
+	.icon.tvs-logo {
+		height: 60px;
+		transition: all 0.3s ease-in-out;
+		width: 45px;
 	}
 }
