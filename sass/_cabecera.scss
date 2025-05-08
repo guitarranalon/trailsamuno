@@ -2,6 +2,9 @@
 	background: $colorTema;
 	margin-bottom: sizeEM(70);
 	padding-bottom: sizeEM(28);
+	position: sticky;
+	top: 0;
+	z-index: 10;
 
 	@include mq($screen-sm-plus-min){
 		height: sizeEM(75);
