@@ -183,6 +183,11 @@ header .enlaceBoton{
 		}
 	}
 
+	h1 > a {
+		display: block;
+		margin-bottom: 12px;
+	}
+
 	.nombreCarrera {
 		height: 0;
 		margin-bottom: 0;
