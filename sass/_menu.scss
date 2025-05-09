@@ -218,7 +218,7 @@
 	overflow-y: auto;
 }
 
-#header.is-scrolled nav#main-nav:before {
+#header.is-scrolled #mobileMenu nav#main-nav:before {
     content: "";
     display: block;
     width: 100%;
