@@ -1,5 +1,14 @@
 #content{
 	margin-bottom: sizeEM(70);
+	margin-top: 290px;
+}
+
+.index #content {
+	margin-top: 200px;
+
+	@include mq($screen-sm-plus-min) {
+		margin-top: 504px;
+	}
 }
 
 #content .excerpt{

@@ -147,7 +147,7 @@
 	padding-left: 0;
 	padding-right: 0;
 	position: absolute;
-	top: 10px;
+	top: 16px;
 	z-index: 101;
 
 	b{
@@ -211,4 +211,20 @@
 	padding: 6em 2em 2em;
 	position: relative;
 	z-index: 100;
+}
+
+#header.is-scrolled #mobileMenu .clonedMenu {
+	height: calc(100vh - 60px);
+	overflow-y: auto;
+}
+
+#header.is-scrolled #mobileMenu nav#main-nav:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    background: $colorTema;
+    top: 0;
+	z-index: 10;
 }

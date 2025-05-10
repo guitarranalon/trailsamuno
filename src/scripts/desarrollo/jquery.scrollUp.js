@@ -119,7 +119,9 @@
 
             $('html, body').animate({
                 scrollTop: scrollTarget
-            }, o.scrollSpeed, o.easingType);
+            }, o.scrollSpeed, o.easingType, () => {
+                window.dispatchEvent(new Event('scrollUpEnd'));
+            });
         });
     };
 

@@ -11259,7 +11259,9 @@ return jQuery;
 
             $('html, body').animate({
                 scrollTop: scrollTarget
-            }, o.scrollSpeed, o.easingType);
+            }, o.scrollSpeed, o.easingType, () => {
+                window.dispatchEvent(new Event('scrollUpEnd'));
+            });
         });
     };
 
@@ -12474,14 +12476,48 @@ window.prepareIndexAnimations = function(){
 	});
 };
 
+function throttle(fn, limit = 100) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      fn.apply(this, args);
+    }
+  };
+}
+
+function initScrollHeader() {
+  const header = document.querySelector('#header');
+  if (!header) return;
+
+  const onScroll = throttle(() => {
+    header.classList.toggle('is-scrolled', window.scrollY > 100);
+  }, 100);
+
+  window.addEventListener('scroll', onScroll);
+
+  onScroll();
+  addScrollUpEndListener();
+}
+
+function addScrollUpEndListener() {
+window.addEventListener('scrollUpEnd', () => {
+    const header = document.querySelector('#header');
+    if (header) {
+        header.classList.toggle('is-scrolled', window.scrollY > 100);
+    }
+});  
+}
+
 $("#header").find('.row').mobileMenu("#main-nav");
 $.menuAimCall();
 
 $.scrollUp({scrollText:"Volver arriba"});
 
-// $.randomCollaborators();
-
 $("#content").find(".gallery").featherlightGallery({galleryFadeIn:300,openSpeed:300,type:"image"});
+
+initScrollHeader();
 
 class Ranking {
     #results = [];
