@@ -11259,7 +11259,9 @@ return jQuery;
 
             $('html, body').animate({
                 scrollTop: scrollTarget
-            }, o.scrollSpeed, o.easingType);
+            }, o.scrollSpeed, o.easingType, () => {
+                window.dispatchEvent(new Event('scrollUpEnd'));
+            });
         });
     };
 
@@ -12474,36 +12476,38 @@ window.prepareIndexAnimations = function(){
 	});
 };
 
-// Versión mejorada del script
-function debounce(fn, delay = 100) {
-  let timeout;
+function throttle(fn, limit = 100) {
+  let lastCall = 0;
   return function (...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fn.apply(this, args), delay);
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      fn.apply(this, args);
+    }
   };
 }
 
-let lastScrolled = null;
-const SCROLL_THRESHOLD = 10; // Umbral mínimo de scroll para cambiar estado
-
 function initScrollHeader() {
-  const header = document.querySelector('header');
+  const header = document.querySelector('#header');
   if (!header) return;
 
-  const updateHeaderState = () => {
-    // Usamos un umbral para evitar cambios demasiado sensibles
-    const isNowScrolled = window.scrollY > SCROLL_THRESHOLD;
+  const onScroll = throttle(() => {
+    header.classList.toggle('is-scrolled', window.scrollY > 100);
+  }, 100);
 
-    if (lastScrolled !== isNowScrolled) {
-      header.classList.toggle('is-scrolled', isNowScrolled);
-      lastScrolled = isNowScrolled;
+  window.addEventListener('scroll', onScroll);
+
+  onScroll();
+  addScrollUpEndListener();
+}
+
+function addScrollUpEndListener() {
+window.addEventListener('scrollUpEnd', () => {
+    const header = document.querySelector('#header');
+    if (header) {
+        header.classList.toggle('is-scrolled', window.scrollY > 100);
     }
-  };
-
-  window.addEventListener('scroll', debounce(updateHeaderState, 100));
-
-  // Llamar una vez por si el usuario entra con scroll ya abajo
-  updateHeaderState();
+});  
 }
 
 $("#header").find('.row').mobileMenu("#main-nav");

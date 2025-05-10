@@ -1,18 +1,33 @@
-function debounce(fn, delay = 100) {
-  let timeout;
+function throttle(fn, limit = 100) {
+  let lastCall = 0;
   return function (...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fn.apply(this, args), delay);
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      fn.apply(this, args);
+    }
   };
 }
 
 export function initScrollHeader() {
+  const header = document.querySelector('#header');
+  if (!header) return;
+
+  const onScroll = throttle(() => {
+    header.classList.toggle('is-scrolled', window.scrollY > 100);
+  }, 100);
+
+  window.addEventListener('scroll', onScroll);
+
+  onScroll();
+  addScrollUpEndListener();
+}
+
+export function addScrollUpEndListener() {
+window.addEventListener('scrollUpEnd', () => {
     const header = document.querySelector('#header');
-    if (!header) return;
-  
-    const onScroll = debounce(() => {
-      header.classList.toggle('is-scrolled', window.scrollY > 100);
-    }, 100);
-  
-    window.addEventListener('scroll', onScroll);
-  }
+    if (header) {
+        header.classList.toggle('is-scrolled', window.scrollY > 100);
+    }
+});  
+}
