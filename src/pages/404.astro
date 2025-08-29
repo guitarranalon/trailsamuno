@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Página no encontrada";
+const h1 = "¡Ups! Te has salido del sendero...";
+---
+
+<Layout title={title} h1={h1}>
+  <div id="content-block">
+      <h2>
+        🧭 {h1}
+      </h2>
+    <p>Parece que la ruta que buscas no existe.</p>
+    <p class="h4">Te ayudamos a orientarte:</p>
+    <ul>
+      <li>
+        <a href="/">🏡 Volver a la base</a>
+      </li>
+      <li>
+        <a href="/carrera/recorrido">🌄 Explora el recorrido</a>
+      </li>
+      <li>
+        <a href="/noticias">📖 Descubre las últimas novedades</a>
+      </li>
+    </ul>
+  </div>
+</Layout>
