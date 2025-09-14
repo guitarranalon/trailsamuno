@@ -34,13 +34,13 @@
     "gtvs": {
       "name": "GTVS",
       "mainsponsor": "Clínica Dental González Gallego",
-      "sequence": "V",
+      "sequence": "VI",
       "distance": "35",
       "climb": "2.200",
       "abbrclimb": "2.2K",
       "date": {
         "day": "18-19",
-        "month": 3,
+        "month": 4,
         "year": 2026,
         "abbreviatedMonth": "abr",
         "monthtext": "abril"
