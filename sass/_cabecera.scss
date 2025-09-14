@@ -174,7 +174,6 @@ header .enlaceBoton{
 }
 
 #header.is-scrolled {
-	padding-bottom: 0;
 	transition: padding-bottom 0.3s ease-in-out;
 
 	&:after {
@@ -195,14 +194,6 @@ header .enlaceBoton{
 		transition: height 0.3s ease-in-out;
 	}
 	
-	.inscripcion.enlaceBoton {
-		display: none;
-
-		@include mq($screen-sm-plus-min) {
-			display: inline-block;
-		}
-	}
-
 	.icon.tvs-logo {
 		@include mq($screen-sm-plus-min, max) {
 			height: 60px;
