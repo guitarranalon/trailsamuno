@@ -1,0 +1,38 @@
+---
+const links = [
+  {
+    href: "/carrera/recorrido",
+    title: "Ir a la sección de recorridos",
+    text: "Descubre nuestros recorridos",
+  },
+  {
+    href: "/carrera/inscripcion",
+    title: "Ir a inscribirte en la carrera",
+    text: "¡Inscríbete que se agotan!",
+  },
+  {
+    href: "/informacion/dondedormir",
+    title: "Ver los mejores alojamientos de la zona",
+    text: "Alojamientos recomendados",
+  },
+];
+---
+
+<div id="enlaces-destacados" class="enlaces-destacados">
+  <div class="row">
+    <h3 class="enlaces-destacados__title">Más sobre Samuño</h3>
+    <ul class="noBullets enlaces-destacados__list">
+      {
+        links.map((link) => {
+          return (
+            <li>
+              <a href={link.href} title={link.title}>
+                {link.text}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</div>

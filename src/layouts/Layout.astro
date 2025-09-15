@@ -5,12 +5,13 @@ import FooterScripts from "./FooterScripts.astro";
 import ColaboradoresFooter from "./ColaboradoresFooter.astro";
 import PatrocinadoresFooter from "./PatrocinadoresFooter.astro";
 import ThirdLevelMenu from "./ThirdLevelMenu.astro";
-import { getPathClasses } from "../helpers/get-page-classes";
+import { emptyBaseUrl, getPathClasses } from "../helpers/get-page-classes";
 import mainData from "../../data/main.json";
 import "../../sass/site.scss";
 import Header from "./Header.astro";
 import GoogleTag from "./GoogleTag.astro";
 import CookieBanner from "../components/CookieBanner.astro";
+import EnlacesDestacados from "../components/EnlacesDestacados.astro";
 
 const { title } = Astro.props;
 const { h1 } = Astro.props;
@@ -46,6 +47,9 @@ const pageClass = getPathClasses(currentPath);
 			<slot />
 		</div>
 	</div>
+    { currentPath !== emptyBaseUrl && (
+      <EnlacesDestacados />
+    )}
     <PatrocinadoresFooter />
     <ColaboradoresFooter />
     <Footer />
