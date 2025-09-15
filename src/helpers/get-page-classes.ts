@@ -1,7 +1,7 @@
 import { isSameRoute, isBaseUrl } from "./route-comparators";
 
 const INDEX_CLASS = "index";
-const emptyBaseUrl = "/";
+export const emptyBaseUrl = "/";
 
 const baseURL = import.meta.env.BASE_URL;
 
