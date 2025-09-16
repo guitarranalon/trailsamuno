@@ -30,9 +30,6 @@ const { relatedLinks = defaultLinks } = Astro.props;
         relatedLinks.map((link: Link) => {
           return (
             <li class="enlaces-destacados__list-item">
-        links.map((link) => {
-          return (
-            <li>
               <a href={link.href} title={link.title}>
                 {link.text}
               </a>
