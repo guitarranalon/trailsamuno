@@ -2,12 +2,30 @@
 import data from "../../../data/main.json";
 import Warning from "../../components/Warning.astro";
 import Layout from "../../layouts/Layout.astro";
+import type { Link } from "../../types/link";
 
 const title = "Recorrido";
 const h1 = "Recorrido del trail";
-const localScript = "<script>progressBarsAnimations('#tiposCaminos'); progressBarsAnimations('#tiposCaminosTvxs');</script>"
+const localScript = "<script>progressBarsAnimations('#tiposCaminos'); progressBarsAnimations('#tiposCaminosTvxs');</script>";
+const relatedLinks: Link[] = [
+  {
+    href: "/carrera/inscripcion",
+    title: "Ir a inscribirte en la carrera",
+    text: "¡Inscríbete que se agotan!",
+  },
+  {
+    href: "/informacion/dondedormir",
+    title: "Ver los mejores alojamientos de la zona",
+    text: "Alojamientos recomendados",
+  },
+  {
+    href: "/carrera/edicionesanteriores",
+    title: "Ver carreras anteriores",
+    text: "Revive la emoción de otras ediciones",
+  },  
+];
 ---
-<Layout title={title} h1={h1} localscript={localScript}>
+<Layout title={title} h1={h1} localscript={localScript} relatedLinks={relatedLinks}>
 	<nav id="third-level-nav">
 		<ul>
 			<li class=""><a href="#k11" title="Información sobre la prueba corta">TVxS</a></li>

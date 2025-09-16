@@ -1,5 +1,7 @@
 ---
-const links = [
+import type { Link } from "../types/link";
+
+const defaultLinks: Link[] = [
   {
     href: "/carrera/recorrido",
     title: "Ir a la sección de recorridos",
@@ -16,6 +18,8 @@ const links = [
     text: "Alojamientos recomendados",
   },
 ];
+
+const { relatedLinks = defaultLinks } = Astro.props;
 ---
 
 <div id="enlaces-destacados" class="enlaces-destacados">
@@ -23,6 +27,9 @@ const links = [
     <h3 class="enlaces-destacados__title">Más sobre Samuño</h3>
     <ul class="noBullets enlaces-destacados__list">
       {
+        relatedLinks.map((link: Link) => {
+          return (
+            <li class="enlaces-destacados__list-item">
         links.map((link) => {
           return (
             <li>

@@ -11,7 +11,7 @@ window.progressBarsAnimations = function(selector){
 				min: position.top - ($(window).height()/2),
 				max: position.top + $(this).height(),
 				onEnter: function onEnter(element) {
-					window.console.log('Entering ' + element.id);
+					// window.console.log('Entering ' + element.id);
 					
 					for(var i=0, max = $progressBars.length; i<max; i++){
 						$progressBars.eq(i).attr('style', 'width: ' + $progressBars.eq(i).attr('aria-valuenow') + '%');
