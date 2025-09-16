@@ -1,10 +1,29 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import type { Link } from "../../types/link";
 const title = "Inscripción";
 const h1 = "Inscribirme en el Trail Valle de Samuño";
+
+const relatedLinks: Link[] = [
+  {
+    href: "/informacion/dondedormir",
+    title: "Ver los mejores alojamientos de la zona",
+    text: "Alojamientos recomendados",
+  },
+  {
+    href: "/informacion/comollegar",
+    title: "Ver mapa para conducir a la salida",
+    text: "No te pierdas por el camino",
+  },  
+  {
+    href: "/informacion/seguimiento",
+    title: "Dónde pueden verte pasar tus amigos y familiares",
+    text: "Descubre los mejores sitios para ver la carrera",
+  },  
+];
 ---
 
-<Layout title={title} h1={h1}>
+<Layout title={title} h1={h1} relatedLinks={relatedLinks}>
 	<div id="content-block">
 		<h2>Inscripción</h2>
 		<script type="text/javascript" src="https://inscripciones.empa-t.com/js/iframe/v1/load_iframe.js">

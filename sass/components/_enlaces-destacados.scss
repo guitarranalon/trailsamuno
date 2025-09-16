@@ -20,10 +20,11 @@
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1.1em;
         margin: 0 0 0.4em;
         position: relative;
+        text-transform: uppercase;
         z-index: 1;
     }
 
@@ -37,10 +38,18 @@
         z-index: 1;
     }
 
+    &__list-item {
+        margin-bottom: 6px;
+    }
+
     &__list a {
         color: $colorFuente;
         text-decoration: underline;
         text-decoration-color: $colorFuente;
         text-decoration-thickness: 2px;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
