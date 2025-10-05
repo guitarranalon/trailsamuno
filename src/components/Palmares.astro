@@ -1,0 +1,56 @@
+---
+import palmares from "../../data/rankings.json";
+import { getYears, getByYearAndGender } from "../helpers/palmares-helpers";
+---
+
+{palmares.races.map((race) => {
+  const years = getYears(race.palmares);
+  return (
+    <>
+      <h3>Palmarés {race.race}</h3>
+      <table>
+        <caption>Masculino</caption>
+        <thead>
+          <tr>
+            <th>Año</th><th>1</th><th>2</th><th>3</th>
+          </tr>
+        </thead>
+        <tbody>
+          {years.map((year) => {
+            const results = getByYearAndGender(race.palmares, year, "M");
+            return (
+              <tr>
+                <th scope="row">{year}</th>
+                {results
+                  ? results.results.map((r) => <td>{r.name}</td>)
+                  : [<td>-</td>, <td>-</td>, <td>-</td>]}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Femenino</caption>
+        <thead>
+          <tr>
+            <th>Año</th><th>1</th><th>2</th><th>3</th>
+          </tr>
+        </thead>
+        <tbody>
+          {years.map((year) => {
+            const results = getByYearAndGender(race.palmares, year, "F");
+            return (
+              <tr>
+                <th scope="row">{year}</th>
+                {results
+                  ? results.results.map((r) => <td>{r.name}</td>)
+                  : [<td>-</td>, <td>-</td>, <td>-</td>]}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>      
+    </>
+  );
+})}

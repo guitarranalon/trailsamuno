@@ -1,0 +1,361 @@
+{
+    "races": [
+        {
+            "race": "TVxS",
+            "palmares": [
+                {
+                    "year": 2025,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Miguel Ángel de Prado Llames" },
+                        { "pos": 2, "name": "Andrés González González" },
+                        { "pos": 3, "name": "Alejandro Virginio Mauriz" }
+                    ]
+                },
+                {
+                    "year": 2025,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Aroa Calvo Gómez" },
+                        { "pos": 2, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 3, "name": "Lara Menéndez Peña" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés González González" },
+                        { "pos": 2, "name": "Hugo Lago Fernández" },
+                        { "pos": 3, "name": "Alberto Vieira Teresa" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Aroa Calvo Gómez" },
+                        { "pos": 2, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 3, "name": "Lara Menéndez Peña" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "José Blanco Sánchez" },
+                        { "pos": 2, "name": "Jon Zubeldia Larrarte" },
+                        { "pos": 3, "name": "Aitor San Sebastián Elola" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Carolina Pereira Obaya" },
+                        { "pos": 2, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 3, "name": "Beatriz Fernández García" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Borja Fernández Navarro" },
+                        { "pos": 2, "name": "Ignacio Pello Álvarez" },
+                        { "pos": 3, "name": "Paulo Rozada Camblor" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Carolina Pereira Obaya" },
+                        { "pos": 2, "name": "Estefanía Serrano Palicio" },
+                        { "pos": 3, "name": "Elena Arienza Fernández" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés García Blanco" },
+                        { "pos": 2, "name": "Carlos Sánchez Castro" },
+                        { "pos": 3, "name": "Paulo Rozada Camblor" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Laura Sánchez Suárez" },
+                        { "pos": 2, "name": "Cristina Ardisana Molleda" },
+                        { "pos": 3, "name": "Lara Menéndez Peña" }
+                    ]
+                },
+                {
+                    "year": 2018,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Aitor Llamedo Vigil" },
+                        { "pos": 2, "name": "Luis Fernández Bárcena" },
+                        { "pos": 3, "name": "Alberto Avín Crespo" }
+                    ]
+                },
+                {
+                    "year": 2018,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Cristina Ardisana Molleda" },
+                        { "pos": 2, "name": "Laura Sánchez Suárez" },
+                        { "pos": 3, "name": "Lara Menéndez Peña" }
+                    ]
+                }                                                                                            
+            ]            
+        },
+        {
+            "race": "TVS",
+            "palmares": [
+                {
+                    "year": 2025,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Rubén Cabo" },
+                        { "pos": 2, "name": "Paulo Rozada Camblor" },
+                        { "pos": 3, "name": "Ernesto Herrero Blanco" }
+                    ]
+                },
+                {
+                    "year": 2025,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Patricia Fernández del Río" },
+                        { "pos": 3, "name": "Laura Álvarez Álvarez" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Rubén Cabo" },
+                        { "pos": 2, "name": "Aitor Pulgarín Arribas" },
+                        { "pos": 3, "name": "Igor Prieto Jamart" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Carolina Pereira Obaya" },
+                        { "pos": 2, "name": "Patricia Álvarez Pérez" },
+                        { "pos": 3, "name": "Aida Campos Hernández" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Pablo Sierra González" },
+                        { "pos": 2, "name": "Alberto Fernández Palacio" },
+                        { "pos": 3, "name": "Paulo Rozada Camblor" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Silvia Álvarez Marqués" },
+                        { "pos": 2, "name": "Hanna Patramanska" },
+                        { "pos": 3, "name": "Paula Pevida Arbesú" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Igor Prieto Jamart" },
+                        { "pos": 2, "name": "Borja Fernández Navarro" },
+                        { "pos": 3, "name": "Iván Diéguez Castro" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Laura Álvarez Álvarez" },
+                        { "pos": 2, "name": "Meritxell Nava Álvarez" },
+                        { "pos": 3, "name": "Dovile Eibutyte" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés García Blanco" },
+                        { "pos": 2, "name": "Carlos Sánchez Castro" },
+                        { "pos": 3, "name": "Igor Prieto Jamart" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Ana Nogueiro Nogueiro" },
+                        { "pos": 2, "name": "Laura Álvarez Álvarez" },
+                        { "pos": 3, "name": "Amelia Fernández García" }
+                    ]
+                },
+                {
+                    "year": 2018,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés García Blanco" },
+                        { "pos": 2, "name": "José Enrique García Alonso" },
+                        { "pos": 3, "name": "Iván González López" }
+                    ]
+                },
+                {
+                    "year": 2018,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Miriam García Capín" },
+                        { "pos": 2, "name": "Aida Campos Hernández" },
+                        { "pos": 3, "name": "Carla Rodríguez Pardo" }
+                    ]
+                },
+                {
+                    "year": 2017,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés García Blanco" },
+                        { "pos": 2, "name": "Álvaro Sánchez García" },
+                        { "pos": 3, "name": "Alberto Fernández Palacio" }
+                    ]
+                },
+                {
+                    "year": 2017,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Miriam García Capín" },
+                        { "pos": 2, "name": "Raquel Ronco Castañón" },
+                        { "pos": 3, "name": "Belén Betolaza Cadenas" }
+                    ]
+                },
+               {
+                    "year": 2016,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Martín Álvarez Espinar" },
+                        { "pos": 2, "name": "José María Valdés Gallo" },
+                        { "pos": 3, "name": "Eduardo Collado García" }
+                    ]
+                },
+                {
+                    "year": 2016,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Sonia Amat Valero" },
+                        { "pos": 2, "name": "Ana Cristina Aguado Mori" },
+                        { "pos": 3, "name": "Raquel Ronco Castañón" }
+                    ]
+                }
+            ]            
+        },
+        {
+            "race": "GTVS",
+            "palmares": [
+                {
+                    "year": 2025,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés González González" },
+                        { "pos": 2, "name": "Andrés Terán Gutiérrez" },
+                        { "pos": 3, "name": "Alberto Nieto Marrón" }
+                    ]
+                },
+                {
+                    "year": 2025,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Leticia Blanco Toledo" },
+                        { "pos": 3, "name": "Tatiana Magdalena Castaño" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés González González" },
+                        { "pos": 2, "name": "Alberto Vieira Teresa" },
+                        { "pos": 3, "name": "Hugo Lago Fernández" }
+                    ]
+                },
+                {
+                    "year": 2024,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Silvia Pezón González" },
+                        { "pos": 3, "name": "Tania Huerta Collado" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Jon Zubeldia Larrarte" },
+                        { "pos": 2, "name": "Urko Arizeta Legarra" },
+                        { "pos": 3, "name": "Aitor San Sebastián Elola" }
+                    ]
+                },
+                {
+                    "year": 2023,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Maialen Segurola Arregui" },
+                        { "pos": 3, "name": "Elena Arienza Fernández" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Borja Fernández Navarro" },
+                        { "pos": 2, "name": "Paulo Rozada Camblor" },
+                        { "pos": 3, "name": "Ignacio Pello Álvarez" }
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Elena Arienza Fernández" },
+                        { "pos": 2, "name": "Estefanía Serrano Palicio" },
+                        { "pos": 3, "name": "Beatriz Antón Fudalgo" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés García Blanco" },
+                        { "pos": 2, "name": "Carlos Sánchez Castro" },
+                        { "pos": 3, "name": "Paulo Rozada Camblor" }
+                    ]
+                },
+                {
+                    "year": 2019,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Laura Sánchez Suárez" },
+                        { "pos": 2, "name": "Estefanía Serrano Palicio" },
+                        { "pos": 3, "name": "Jennifer Argüelles Mesa" }
+                    ]
+                }                                                                                           
+            ]            
+        }               
+    ]
+}
