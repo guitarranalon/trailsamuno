@@ -22,7 +22,7 @@ import { getYears, getByYearAndGender } from "../helpers/palmares-helpers";
               <tr>
                 <th scope="row">{year}</th>
                 {results
-                  ? results.results.map((r) => <td>{r.name}</td>)
+                  ? results.results.map((r: { name: string }) => <td>{r.name}</td>)
                   : [<td>-</td>, <td>-</td>, <td>-</td>]}
               </tr>
             );
@@ -44,7 +44,7 @@ import { getYears, getByYearAndGender } from "../helpers/palmares-helpers";
               <tr>
                 <th scope="row">{year}</th>
                 {results
-                  ? results.results.map((r) => <td>{r.name}</td>)
+                  ? results.results.map((r: { name: string }) => <td>{r.name}</td>)
                   : [<td>-</td>, <td>-</td>, <td>-</td>]}
               </tr>
             );
