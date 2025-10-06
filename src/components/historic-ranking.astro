@@ -1,39 +1,31 @@
 ---
 import palmares from "../../data/rankings.json";
-
-interface RankingData {
-    gold: number;
-    silver: number;
-    bronze: number;
-};
-
-
-const calculateRanking = () => {
-    const ranking: Record<string, RankingData> = {};
-
-    palmares.races.map(race => {
-        race.palmares.map(res => {
-            res.results.map(resultado => {
-                if (!ranking[resultado.name]) {
-                    ranking[resultado.name] = { gold: 0, silver: 0, bronze: 0 };
-                }
-
-                if (resultado.pos === 1) { ranking[resultado.name].gold++; }
-                if (resultado.pos === 2) { ranking[resultado.name].silver++; }
-                if (resultado.pos === 3) { ranking[resultado.name].bronze++; }
-            });
-        });
-    });
-
-    return ranking;
-}
-
-const getSortedRanking = (ranking: Record<string, RankingData>) => {
-    return Object.entries(ranking).map(([name, stats]) => ({ name, stats})).sort((a, b) => {
-        return b.stats.gold - a.stats.gold || b.stats.silver - a.stats.silver || b.stats.bronze - a.stats.bronze;
-    });
-}
-console.log(getSortedRanking(calculateRanking()));
+import { calculateRanking, getSortedRanking } from "../helpers/historic-ranking";
 ---
 
 <h3>Ranking histórico</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Atleta</th>
+      <th>Oro</th>
+      <th>Plata</th>
+      <th>Bronce</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      getSortedRanking(calculateRanking(palmares)).map((athlete) => (
+        <tr>
+          <td>{athlete.pos}</td>
+          <td>{athlete.name}</td>
+          <td>{athlete.stats.gold}</td>
+          <td>{athlete.stats.silver}</td>
+          <td>{athlete.stats.bronze}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
