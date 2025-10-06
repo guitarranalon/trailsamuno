@@ -10,12 +10,12 @@ interface Athlete {
   stats: RankingData;
 }
 
-export const calculateRanking = (palmares) => {
+export const calculateRanking = (palmares: Record<string, any>) => {
   const ranking: Record<string, RankingData> = {};
 
-  palmares.races.map((race) => {
-    race.palmares.map((res) => {
-      res.results.map((resultado) => {
+  palmares.races.map((race: Record<string, any>) => {
+    race.palmares.map((res: Record<string, any>) => {
+      res.results.map((resultado: Record<string, any>) => {
         if (!ranking[resultado.name]) {
           ranking[resultado.name] = { gold: 0, silver: 0, bronze: 0 };
         }
