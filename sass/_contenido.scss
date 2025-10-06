@@ -227,3 +227,12 @@
 	font-weight: bold;
 }
 // FIN Reglamento
+
+.bloque-destacado {
+	background-color: color.adjust($colorTema, $lightness: 40%, $saturation: -16%);
+	padding: 16px;
+}
+
+.w-fit {
+	width: fit-content;
+}

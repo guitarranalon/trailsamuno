@@ -1,6 +1,4 @@
 ---
-import HistoricRanking from "../../components/historic-ranking.astro";
-import Palmares from "../../components/Palmares.astro";
 import Layout from "../../layouts/Layout.astro"
 
 const title = "Ediciones anteriores";
@@ -41,7 +39,35 @@ const h1 = "Información sobre las ediciones anteriores";
 			<li><b>Femenino: </b>1h 25' 33" Carolina Pereira Obaya (2023)</li>
 		</ul>	-->
 
-		<Palmares />
-		<HistoricRanking />
+		<section class="intro">
+			<p>
+			A lo largo de los años, el <strong>Trail Valle de Samuño</strong> ha reunido a
+			cientos de atletas que han dejado su huella en el circuito. En esta sección
+			puedes consultar el <a href="/carrera/edicionesanteriores/palmares">palmarés completo</a>
+			y el <a href="/carrera/edicionesanteriores/ranking-historico">ranking histórico</a>.
+			</p>
+		</section>
+
+		<section class="highlights">
+			<h3>Lo más destacado</h3>
+			<ul>
+			<li>🏅 <strong>Palmarés:</strong> todos los podios año a año.</li>
+			<li>📊 <strong>Ranking histórico:</strong> los atletas más laureados.</li>
+			<li>📆 <strong>Ediciones recientes:</strong> consulta los resultados de <a href="/carrera/edicionesanteriores/2025">2025</a> y años anteriores.</li>
+			</ul>
+		</section>
+
+		<section class="seo">
+			<h3>La historia de [nombre del evento]</h3>
+			<p>
+			Desde su primera edición en 2016, la prueba se ha consolidado como una de las
+			más importantes del calendario. Con un recorrido exigente y una participación creciente,
+			el evento ha visto competir a algunos de los mejores corredores nacionales e internacionales.
+			</p>
+			<p>
+			Gracias al palmarés y al ranking histórico, puedes seguir la evolución de la competición y
+			descubrir quiénes han dominado en cada edición.
+			</p>
+		</section>
 	</div>
 </Layout>

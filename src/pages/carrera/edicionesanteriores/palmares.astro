@@ -1,0 +1,14 @@
+---
+import Layout from "../../../layouts/Layout.astro"
+import TablasPalmares from "../../../components/Palmares.astro";
+
+const title = "Palmarés";
+const h1 = "Palmarés del Trail Valle de Samuño";
+---
+
+<Layout title={title} h1={h1}>
+	<div id="content-block">
+        <h2>Palmarés</h2>
+        <TablasPalmares />
+    </div>
+</Layout>

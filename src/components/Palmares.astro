@@ -3,11 +3,18 @@ import palmares from "../../data/rankings.json";
 import { getYears, getByYearAndGender } from "../helpers/palmares-helpers";
 ---
 
+<div class="bloque-destacado w-fit">
+  <ul class="noBullets no-margin">
+    {palmares.races.map(race => <li><a href={`#palmares-${race.race}`}>Palmarés {race.race}</a></li>
+
+    )}
+  </ul>
+</div>
 {palmares.races.map((race) => {
   const years = getYears(race.palmares);
   return (
     <>
-      <h3>Palmarés {race.race}</h3>
+      <h3 id={`palmares-${race.race}`}>Palmarés {race.race}</h3>
       <table>
         <caption>Masculino</caption>
         <thead>

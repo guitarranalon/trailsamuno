@@ -42,6 +42,16 @@
             "title": "Ir a la página sobre ediciones anteriores",
             "children": [
               {
+                "name": "Palmarés",
+                "path": "/carrera/edicionesanteriores/palmares.html",
+                "title": "Palmarés de las diferentes pruebas del Trail Valle de Samuño"
+              },
+              {
+                "name": "Ranking histórico",
+                "path": "/carrera/edicionesanteriores/ranking-historico.html",
+                "title": "Ranking histórico de corredores del Trail Valle de Samuño"
+              },              
+              {
                 "name": 2026,
                 "path": "/carrera/edicionesanteriores/2026.html",
                 "title": "Ir a la página sobre la edición de 2026"
