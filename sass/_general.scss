@@ -413,6 +413,10 @@ iframe{
 	padding-left: 0;
 }
 
+#content .no-margin {
+	margin: 0;
+}
+
 #content blockquote{
 	border-left: 5px solid $colorFuente;
 	margin: 0 0 sizeEM($lineHeightBasico);
