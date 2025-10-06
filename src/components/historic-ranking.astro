@@ -1,0 +1,31 @@
+---
+import palmares from "../../data/rankings.json";
+import { calculateRanking, getSortedRanking } from "../helpers/historic-ranking";
+---
+
+<h3>Ranking histórico</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Atleta</th>
+      <th>Oro</th>
+      <th>Plata</th>
+      <th>Bronce</th>
+    </tr>
+  </thead>
+  <tbody>
+    {
+      getSortedRanking(calculateRanking(palmares)).map((athlete) => (
+        <tr>
+          <td>{athlete.pos}</td>
+          <td>{athlete.name}</td>
+          <td>{athlete.stats.gold}</td>
+          <td>{athlete.stats.silver}</td>
+          <td>{athlete.stats.bronze}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
