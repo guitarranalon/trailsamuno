@@ -145,6 +145,12 @@
         "linktitle": "Ir a la web de Aguimar Inox"
       },
       {
+        "name": "Audika",
+        "image": "audika.avif",
+        "link": "https://www.audika.es",
+        "linktitle": "Ir a la web de Audika"
+      },
+      {
         "name": "Joyería relojería La Esmeralda",
         "image": "joyeriaesmeralda.webp",
         "link": "https://www.facebook.com/profile.php?id=100090043230030",
@@ -227,6 +233,12 @@
         "image": "hunosa.avif",
         "link": "https://www.hunosa.es/",
         "linktitle": "Ir a la página de Hunosa"
+      },
+      {
+        "name": "Asturcocteleros",
+        "image": "asturcocteleros.avif",
+        "link": "https://asturcocteleros.es",
+        "linktitle": "Ir a la web de Asturcocteleros"
       },
       {
         "name": "Distribuciones Disa Astur",
