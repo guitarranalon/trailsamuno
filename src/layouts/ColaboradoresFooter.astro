@@ -7,10 +7,10 @@ const current_page = Astro.url.pathname;
 
 { !current_page.endsWith("patrocinadores.html") && !current_page.endsWith("colaboradores.html") && <div id="colaboradoresFooter">
 		<div class="row">
-			{ colaboradores.oficiales.map(epigrafeoficial => {
+			{ colaboradores.oficiales.map((epigrafeoficial: any) => {
 				return <h3>{epigrafeoficial.title}</h3>
 				<ul class="patrocinadores">
-					{ epigrafeoficial.empresas.map(colaboradoroficial => {
+					{ epigrafeoficial.empresas.map((colaboradoroficial: any) => {
 						return <li>
 							{ !colaboradoroficial.link && <span>	
 									<img src={computePath(`/images/colaboradores/${colaboradoroficial.image}`)} alt={colaboradoroficial.name} loading="lazy" />

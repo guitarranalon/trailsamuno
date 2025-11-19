@@ -20,10 +20,10 @@ const h1 = "Patrocinadores de la carrera";
 			})}
 		</ul>
 
-		{ colaboradores.oficiales.map(epigrafeoficial => {
+		{ colaboradores.oficiales?.map((epigrafeoficial: any) => {
 			return <h3>{epigrafeoficial.title}</h3>
 			<ul class="patrocinadores">
-				{ epigrafeoficial.empresas.map(colaboradoroficial => {
+				{ epigrafeoficial.empresas.map((colaboradoroficial: any) => {
 					return <li>
 						{ !colaboradoroficial.link && <span>
 								<img src={`/images/colaboradores/${colaboradoroficial.image}`} alt={colaboradoroficial.name} />
