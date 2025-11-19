@@ -247,17 +247,5 @@
         "linktitle": "Ir a la web de la Asociación Cultural Valle de Samuño"
       }
     ],
-    "oficiales": [
-      {
-        "title": "Tienda online oficial",
-        "empresas": [
-          {
-            "name": "Find Your Everest",
-            "image": "findyoureverest.png",
-            "link": "https://findyoureverest.es/",
-            "linktitle": "Ir a la web de Find Your Everest"
-          }
-        ]
-      }
-    ]
+    "oficiales": []
   }
