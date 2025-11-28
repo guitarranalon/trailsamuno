@@ -17,6 +17,6 @@ myslug: "apertura-inscripciones-2026"
 
 <p>👉 <strong>Recuerda:</strong> las plazas son <strong>limitadas</strong> y en la edición anterior los dorsales se agotaron en solo <strong>52 horas</strong>. Si quieres asegurar tu participación, marca la fecha en tu calendario.</p>
 
-<p>No pierdas tu oportunidad de vivir una de las experiencias deportivas más intensas de Asturias. Muy pronto publicaremos más detalles sobre recorridos, reglamento y otras novedades. Síguenos en nuestra web y en redes sociales para no perderte nada. 💥</p>
+<p>No pierdas tu oportunidad de vivir una de las experiencias deportivas más intensas de Asturias. Muy pronto publicaremos más detalles sobre <a href="/carrera/recorrido" title="Ver información sobre los recorridos de las distintas carreras">recorridos</a>, <a href="/carrera/reglamento" title="Ver el reglamento de la carrera">reglamento</a> y otras <a href="/noticias" title="Ver la última información sobre la carrera">novedades</a>. Síguenos en nuestra web y en redes sociales para no perderte nada. 💥</p>
 
 <p>🏔️⛏️🏃 <em>Trail Valle de Samuño. #correrporlaminaesposible.</em></p>
