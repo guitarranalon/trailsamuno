@@ -6,7 +6,6 @@ import ColaboradoresFooter from "./ColaboradoresFooter.astro";
 import PatrocinadoresFooter from "./PatrocinadoresFooter.astro";
 import ThirdLevelMenu from "./ThirdLevelMenu.astro";
 import { emptyBaseUrl, getPathClasses } from "../helpers/get-page-classes";
-import mainData from "../../data/main.json";
 import "../../sass/site.scss";
 import Header from "./Header.astro";
 import GoogleTag from "./GoogleTag.astro";
@@ -30,7 +29,7 @@ const pageClass = getPathClasses(currentPath);
     <GoogleTag />
     <Favicons />
     
-    <title>{ title ? title : "" } - { `Trail Valle de Samuño - ${mainData.tvs.mainsponsor}` }</title>
+    <title>{ `${title ? title + " - " : ""}Trail Valle de Samuño` }</title>
     <meta name="author" content="Roberto Cancio González" />
     <meta content="carrera, montaña, trail, Samuño, running, Asturias" name="keywords" />
     <meta name="description" content="Carrera por montaña por el Valle de Samuño, dentro del Paisaje Protegido de las Cuencas Mineras, que también permite conocer el pozo minero de carbón San Luis" />
