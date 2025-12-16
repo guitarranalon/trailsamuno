@@ -46,7 +46,7 @@ const h1 = "Patrocinadores de la carrera";
 							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</span>
 					}
-					{ colaborador.link && <a href={colaborador.link} title="<%= colaborador.linktitle %>">
+					{ colaborador.link && <a href={colaborador.link} title={colaborador.linktitle}>
 							<img src={`/images/colaboradores/${colaborador.image}`} alt={colaborador.name} />
 						</a>
 					}
