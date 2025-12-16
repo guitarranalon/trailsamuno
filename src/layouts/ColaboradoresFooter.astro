@@ -33,7 +33,7 @@ const current_page = Astro.url.pathname;
 								<img src={computePath(`/images/colaboradores/${colaborador.image}`)} alt={colaborador.name} loading="lazy" />
 							</span>
 						}
-						{ colaborador.link && <a href={colaborador.link} title="<%= colaborador.linktitle %>">
+						{ colaborador.link && <a href={colaborador.link} title={colaborador.linktitle}>
 								<img src={computePath(`/images/colaboradores/${colaborador.image}`)} alt={colaborador.name} loading="lazy" />
 							</a>
 						}
