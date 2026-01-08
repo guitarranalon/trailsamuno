@@ -1,23 +1,17 @@
 {
     "empresas": [
       {
-        "name": "Dietética y Nutrición Jara",
-        "image": "jara.png",
-        "link": "https://www.facebook.com/jarafernandezrodriguez/",
-        "linktitle": "Ir a la web de Dietética Jara"
+        "name": "Aliviflex",
+        "image": "aliviflex.jpg",
+        "link": "https://aliviflex.com/",
+        "linktitle": "Ir a la web de Aliviflex"
       },
       {
         "name": "Peluquería Leticia Molano",
         "image": "leticiamolano.png",
         "link": "https://www.facebook.com/letyblan/",
         "linktitle": "Ir a la web de la peluquería Leticia Molano"
-      },
-      {
-        "name": "Aliviflex",
-        "image": "aliviflex.jpg",
-        "link": "https://aliviflex.com/",
-        "linktitle": "Ir a la web de Aliviflex"
-      },
+      },      
       {
         "name": "Caldillo d'Arriba",
         "image": "caldillo.jpg",
@@ -191,6 +185,12 @@
         "image": "palacionieves.webp",
         "link": "https://www.hotelpalaciodelasnieves.com/es",
         "linktitle": "Ir a la página del Hotel/Restaurante/Spa Palacio de las Nieves"
+      },
+      {
+        "name": "Bamtrail",
+        "image": "bamtrail.avif",
+        "link": "https://bamtrail.shop/",
+        "linktitle": "Ir a la página de Bamtrail, bastones artesanos de bambú"
       },
       {
         "name": "Pinta en Copas",
