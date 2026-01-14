@@ -7,6 +7,12 @@
         "linktitle": "Ir a la web de Aliviflex"
       },
       {
+        "name": "Recuperation",
+        "image": "recuperation.avif",
+        "link": "https://recuperat-ion.com/",
+        "linktitle": "Ir a la web de Recuperat-ion"
+      },      
+      {
         "name": "Peluquería Leticia Molano",
         "image": "leticiamolano.png",
         "link": "https://www.facebook.com/letyblan/",
@@ -23,12 +29,6 @@
         "image": "montana.jpg",
         "link": "http://www.montanamedioambiente.es/",
         "linktitle": "Ir a la web de Montaña Restauración Medioambiental"
-      },
-      {
-        "name": "Recuperation",
-        "image": "recuperation.avif",
-        "link": "https://recuperat-ion.com/",
-        "linktitle": "Ir a la web de Recuperat-ion"
       },
       {
         "name": "Café bar Tere",
