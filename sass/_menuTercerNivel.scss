@@ -37,7 +37,8 @@
 	}
 }
 
-#third-level-nav + #content-block{
+#third-level-nav + #content-block,
+#third-level-nav + main > #content-block {
 	@include mq($screen-sm-min){
 		margin-right: anchoPorcentaje(213 + 30);
 	}
