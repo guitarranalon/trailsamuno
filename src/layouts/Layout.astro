@@ -41,7 +41,9 @@ const pageClass = getPathClasses(currentPath);
 	<div id="content">
 		<div class="row">
       <ThirdLevelMenu />
-			<slot />
+      <main role="main">
+			  <slot />
+      </main>
 		</div>
 	</div>
     { currentPath !== emptyBaseUrl && (
