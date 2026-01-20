@@ -4,7 +4,7 @@ PRODID:-//ical.marudot.com//iCal Event Maker
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Europe/Berlin
-LAST-MODIFIED:20240422T053451Z
+LAST-MODIFIED:20250410T142247Z
 TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Berlin
 X-LIC-LOCATION:Europe/Berlin
 BEGIN:DAYLIGHT
@@ -23,21 +23,22 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20260123T162754Z
-UID:1758299232438-28688@ical.marudot.com
+DTSTAMP:20260120T195041Z
+UID:1768938586207-95721@ical.marudot.com
 DTSTART;TZID=Europe/Berlin:20260123T110000
 DTEND;TZID=Europe/Berlin:20260123T111500
-SUMMARY:Apertura inscripciones Samuño
-URL:http://www.trailvallesamuño.es
+SUMMARY:Apertura lista espera Samuño 2026
+URL:https://www.xn--trailvallesamuo-crb.es/carrera/inscripcion.html
+DESCRIPTION:🚨¡Última oportunidad para correr Samuño este 2026!🚨
 LOCATION:Online
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION: ¡Última oportunidad de correr Samuño este año!¡Apúntate a la lista de espera!
+DESCRIPTION:Apertura lista espera Samuño 2026
 TRIGGER:-PT15M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:¡Última oportunidad de correr Samuño este año!¡Apúntate a la lista de espera!
+DESCRIPTION:Apertura lista espera Samuño 2026
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
