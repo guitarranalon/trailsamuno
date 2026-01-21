@@ -103,6 +103,12 @@
         "linktitle": "Ir a la web de la Confitería Ovetus"
       },      
       {
+        "name": "Naeco",
+        "image": "naeco.avif",
+        "link": "https://naeco.com/",
+        "linktitle": "Ir a la web de Naeco"
+      },      
+      {
         "name": "Horizonte Trail",
         "image": "horizontetrail.png",
         "link": "https://www.facebook.com/p/Horizonte-Trail-Langreo-100055000754624/",
