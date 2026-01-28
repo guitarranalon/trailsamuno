@@ -109,6 +109,12 @@
         "linktitle": "Ir a la web de Naeco"
       },      
       {
+        "name": "hama",
+        "image": "hama.avif",
+        "link": "https://es.hama.com/",
+        "linktitle": "Ir a la web de Hama"
+      },      
+      {
         "name": "Horizonte Trail",
         "image": "horizontetrail.png",
         "link": "https://www.facebook.com/p/Horizonte-Trail-Langreo-100055000754624/",
