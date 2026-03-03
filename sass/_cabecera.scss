@@ -24,7 +24,7 @@
 #header:after{
 	@include mq($screen-sm-plus-min){
 		background-color: $colorTema;
-		background-image: url(#{$img-root}/fondoCabeceraPortada.jpg);
+		background-image: url(#{$img-root}/fondoCabeceraPortada.avif);
 		background-repeat: no-repeat;
 		background-position: 50% 40%;
 		background-size: (cover);
@@ -38,7 +38,7 @@
 
 	[data-baseurl=\/trailsamuno] & {
 		@include mq($screen-sm-plus-min){
-			background-image: url(#{$gh-pages-baseurl}#{$img-root}/fondoCabeceraPortada.jpg);
+			background-image: url(#{$gh-pages-baseurl}#{$img-root}/fondoCabeceraPortada.avif);
 		}		
 	}
 
