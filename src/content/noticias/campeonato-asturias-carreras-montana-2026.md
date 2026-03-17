@@ -13,7 +13,7 @@ myslug: "campeonato-asturias-carreras-montana-2026"
 
 <h3>Un impacto que va más allá del cronómetro</h3>
 
-<p>El Trail Valle de Samuño no solo genera sudor, sino también riqueza y comunidad. Con un 20% de participantes llegados de fuera de Asturias, el impacto en la hostelería local es notable, llenando hoteles y restaurantes de la zona. Pero la carrera no olvida sus raíces: unos 70 corredores locales tomarán la salida, demostrando que el espíritu deportivo está más vivo que nunca entre los vecinos de Langreo.</p>
+<p>El Trail Valle de Samuño no solo genera sudor, sino también riqueza y comunidad. Con un 20% de participantes llegados de fuera de Asturias, el impacto en la hostelería local es notable, llenando hoteles y restaurantes de la zona. Pero la carrera no olvida sus raíces: 85 corredores locales tomarán la salida, demostrando que el espíritu deportivo está más vivo que nunca entre los vecinos de Langreo.</p>
 
 <h2>Sábado 18: Velocidad y Espectáculo en la TVxS (13km)</h2>
 
@@ -25,11 +25,24 @@ myslug: "campeonato-asturias-carreras-montana-2026"
 
 <p>El domingo llega el turno de la prueba reina: 22km con 1.500m de desnivel positivo. Al ser Campeonato de Asturias de Clubes y Copa de Asturias, el nivel será estratosférico. Si se dan las condiciones óptimas (buena temperatura y suelo bastante seco) podría incluso bajarse por fin de las 2h, un hito aún inédito pero que ya se han planteado los mejores corredores.</p>
 
-<!-- En cuanto a la Copa de Asturias FEMPA, tras la primera prueba disputada en Nava, la clasificación llega al rojo vivo ... -->
+<p>En cuanto a la Copa de Asturias FEMPA, tras la primera prueba disputada en Nava, la clasificación llega al rojo vivo con estos corredores liderando cada categoría:</p>
+
+<ul>
+	<li><b>Promesa Fem: </b>Aroa Calvo</li>
+	<li><b>Promesa Masc: </b>Manuel Mejido</li>
+	<li><b>Senior Fem: </b>Ana Junquera</li>
+	<li><b>Senior Masc: </b>Bruno Argüelles</li> 
+	<li><b>Veterano A: </b>Paulo Rozada</li>
+	<li><b>Veterana A: </b>Laura García</li>
+	<li><b>Veterana B: </b>Amelia Fernández</li>
+	<li><b>Veterano B: </b>Ignacio Miguel Martínez</li>
+	<li><b>Veterana C: </b>Ana Cristina Aguado</li>
+	<li><b>Veterano C: </b>Antonio Aza</li>
+</ul>
 
 <p>Entre los nombres que aparecen en las quinielas destacan en hombres (en orden alfabético ya que es muy difícil predecir quién tiene más posibilidades) los de <b>Marcos Acevedo, Vladimir Averianov, Bruno Escamilla, Ángel Fdez. Duarte, Xabel Guiu, Josep Llado</b> y los locales <b>Igor Prieto</b> y <b>Aitor Pulgarín</b> que a buen seguro aprovecharán su conocimiento del terreno para poner contra las cuerdas al resto. Entre los nombres femeninos la apuesta es igual de complicada con atletas de la talla de <b>Silvia Álvarez Marqués, Aroa Calvo, Estefanía Fernández, Ana Granda</b> o <b>Ana Junquera</b>. La única de entre ellas que ya ha inaugurado su palmarés en Samuño es Aroa (2 oros en la TVxS) pero se enfrenta a huesos muy duros de roer.</p>
 
-<p>A nivel de clubes la prueba estará muy reñida ya que <b>Avientu, Wolves-Born to run, Club Siero TRH</b> y <b>CM Camín Real</b> aterrizarán en La Nueva con toda su artillería para demostrar quién ha conseguido alinear en sus filas a los más rápidos, en una prueba que premia más el nivel medio que las individualidades.</p>
+<p>A nivel masculino de clubes la prueba estará muy reñida ya que <b>Avientu, Wolves-Born to run, Club Siero TRH</b> y <b>CM Camín Real</b> aterrizarán en La Nueva con toda su artillería para demostrar quién ha conseguido alinear en sus filas a los más rápidos, en una prueba que premia más el nivel medio que las individualidades. En el apartado femenino la rivalidad será máxima también con <b>Avientu, Wolves-Born to run, Find your Everest</b> y <b>Club Oriente Atletismo</b> disputándose los metales en una prueba previsiblemente muy igualada.</p>
 
 <h2>GTVS: El Desafío Total (35km)</h2>
 
