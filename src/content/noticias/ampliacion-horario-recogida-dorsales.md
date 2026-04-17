@@ -12,7 +12,7 @@ myslug: "amplicacion-horarios-recogida-dorsales"
 </ul>
 <h3>Sábado 18 de abril</h3>
 <ul>
-    <li><b>11:30 a 12:00</b> Recogida de dorsales todas las distancias en la Asociación de Vecinos de La Nueva.</li>
+    <li><b>11:30 a 12:30</b> Recogida de dorsales todas las distancias en la Asociación de Vecinos de La Nueva.</li>
     <li><b>14:00 a 15:30</b> Recogida de dorsales TVxS y GTVS en la Asociación de Vecinos de La Nueva.</li>
 </ul> 
 <h3>Domingo 19 de abril</h3>
