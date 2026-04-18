@@ -4,6 +4,24 @@
             "race": "TVxS",
             "palmares": [
                 {
+                    "year": 2026,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Nicasio Álvarez Prieto" },
+                        { "pos": 2, "name": "Pablo Pravia Fernández" },
+                        { "pos": 3, "name": "Alejandro Virginio Mauriz" }
+                    ]
+                },
+                {
+                    "year": 2026,
+                    "gender": "F",
+                    "results": [ 
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Eva González" },
+                        { "pos": 3, "name": "Carmen Bueno Gayo" }
+                    ]
+                },
+                {
                     "year": 2025,
                     "gender": "M",
                     "results": [
