@@ -135,6 +135,24 @@
             "race": "TVS",
             "palmares": [
                 {
+                    "year": 2026,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Vladimir Averianov" },
+                        { "pos": 2, "name": "Mario Junquera San Millán" },
+                        { "pos": 3, "name": "Aitor Pulgarín Arribas" }
+                    ]
+                },
+                {
+                    "year": 2026,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Ana Junquera Méndez" },
+                        { "pos": 2, "name": "Silvia Álvarez Marqués" },
+                        { "pos": 3, "name": "Aroa Calvo Gómez" }
+                    ]
+                },                
+                {
                     "year": 2025,
                     "gender": "M",
                     "results": [
@@ -283,6 +301,24 @@
         {
             "race": "GTVS",
             "palmares": [
+                {
+                    "year": 2026,
+                    "gender": "M",
+                    "results": [
+                        { "pos": 1, "name": "Andrés González González" },
+                        { "pos": 2, "name": "Nel Garrote" },
+                        { "pos": 3, "name": "Iván Montes Cabello" }
+                    ]
+                },
+                {
+                    "year": 2026,
+                    "gender": "F",
+                    "results": [
+                        { "pos": 1, "name": "Meritxhell Nava Álvarez" },
+                        { "pos": 2, "name": "Laura Suárez Tresguerres" },
+                        { "pos": 3, "name": "Elena Arienza Fernández" }
+                    ]
+                },
                 {
                     "year": 2025,
                     "gender": "M",
