@@ -57,19 +57,75 @@ myslug: "cronica-2026"
 Tras el espectáculo de hoy, todas las miradas se centran en la prueba larga de mañana. Con el Campeonato de Asturias de Clubes en juego, se espera una batalla táctica de alto nivel. Las previsiones apuntan a una mejoría en la meteorología, lo que podría favorecer ritmos aún más altos en el corazón minero de Asturias.
 </p>
 
-<!-- 
-<h2>(19/04/2026) TVS (K22): Campeonato de Asturias de Clubs de alto voltaje</h2>
+<h2>(19/04/2026) TVS (K22): Vladimir Averianov y Ana Junquera conquistan el "Mar de Nubes" en el Trail de Samuño más estratégico</h2>
 
-<img src="/images/noticias/cronica-2026-tvs.avif" alt="Momento de la celebración del Trail Valle de Samuño, Campeonato de Asturias de Clubes" />
+<!-- <img src="/images/noticias/cronica-2026-tvs.avif" alt="Momento de la celebración del Trail Valle de Samuño, Campeonato de Asturias de Clubes" /> -->
 
-<p>El domingo era el día marcado en rojo. La Copa de Asturias y, sobre todo, el Campeonato de Clubes, trajeron a lo mejor del panorama regional. La estrategia de equipo fue clave en los 22 kilómetros de recorrido técnico y exigente.</p>
+<p>El Valle de Samuño ha vivido hoy una de sus ediciones más espectaculares y técnicas. Con el prestigio de ser Copa de Asturias de Carreras por Montaña y Campeonato de Asturias de Clubes, el nivel de los corredores convirtió los 22 kilómetros y 1.500 metros de desnivel positivo en una partida de ajedrez sobre el barro.</p>
 
+<h3>Entre la niebla y el cielo: Un escenario de postal</h3>
 
-<h2>(18-19/04/2026) GTVS (K35): ...</h2>
+<p>La jornada comenzó con incertidumbre; la lluvia previa al amanecer y una densa niebla en el fondo del valle hacían presagiar un día gris. Sin embargo, la montaña regaló un espectáculo visual único: al ganar altura, los corredores emergieron sobre un mar de nubes que dejaba a la vista las cumbres de Ubiña, el Aramo y los Picos de Europa.</p>
 
-<img src="/images/noticias/cronica-2026-gtvs.avif" alt="Momento de la celebración de la prueba por etapas" />
+<p>Pese a que el terreno estaba practicable, el barro acumulado descartó cualquier asalto al récord de la prueba, haciendo imposible bajar de la barrera de las 2 horas.</p>
 
-<p>...</p>
+<h3>Crónica masculina: remontada de Averianov</h3>
 
-<p>Desde la organización, queremos agradecer a los más de 70 voluntarios, Protección Civil y patrocinadores que hacen que el Samuño siga siendo una experiencia única. ¡Nos vemos en 2027!</p>
--->
+<p>El Pico Cogollu (km 7) dictó la primera sentencia. Tras salvar el mayor desnivel del día, Josep Llado coronaba en solitario en unos estratosféricos 45 minutos. Pero tras él, tres "galgos" iniciaban la caza a escasos 50 segundos: Vladimir Averianov, Mario Junquera y el local, Aitor Pulgarín.</p>
+
+<p>El tramo de "sube y baja" hacia La Mozqueta cambió el guión. Averianov apretó los dientes para arrebatar el liderato a Llado, mientras Junquera se pegaba a su estela. Al llegar al Mayáu Miguel, el podio ya tenía nombres, pero no orden definitivo.</p>
+
+<p>En el descenso hacia El Corralón, Aitor Pulgarín hizo valer su condición de local, arriesgando para colocarse segundo. Sin embargo, en la subida final a Rondiz y el técnico descenso a meta, Mario Junquera sacó a relucir su clase para recuperar la plata, dejando a Pulgarín un meritorio bronce y a Llado con la siempre agridulce medalla de chocolate.</p>
+
+<ol>
+    <li>Vladimir Averianov</li>
+    <li>Mario Junquera</li>
+    <li>Aitor Pulgarín</li>
+</ol>
+
+<h3>Crónica femenina: Ana Junquera, maestra de la estrategia</h3>
+
+<p>La carrera femenina fue una lección de gestión de esfuerzos. Silvia Álvarez salió a por todas, coronando el Cogollu con una ventaja de 3 minutos sobre Ana Junquera. Parecía una victoria decidida, pero Junquera supo esperar su momento.</p>
+
+<p>A partir del Mayáu Miguel, Ana cambió el ritmo de forma demoledora, utilizando la segunda mitad del trazado, más favorable a sus condiciones, para cazar a Silvia y cruzar la meta en solitario. La plata fue para una combativa Silvia Álvarez que luchó cada metro.</p>
+
+<p>El bronce tuvo nombre propio: Aroa Calvo. La corredora de categoría Promesa realizó una carrera de menos a más, rodando cuarta durante gran parte del recorrido para terminar asestando el golpe definitivo en los kilómetros finales a Estefanía Fernández, quien defendió el podio con uñas y dientes hasta que la fortaleza de la joven Aroa se impuso.</p>
+
+<ol>
+    <li>Ana Junquera</li>
+    <li>Silvia Álvarez</li>
+    <li>Aroa Calvo</li>
+</ol>
+
+<h3>Apartado popular</h3>
+
+<p>La dureza de los 1.500 metros positivos se reflejó en los 23 abandonos registrados. En la cara amable del apartado popular, el aplauso más cerrado fue para Agustín González y Cristian Menéndez. Ambos mantienen intacto su récord particular: son los únicos corredores que han sido finishers en todas las ediciones de la prueba, alimentando una rivalidad sana que es ya parte del patrimonio del Trail Valle de Samuño.</p>
+
+<h2>(18-19/04/2026) GTVS (K35): Andrés González y Meritxhell Nava firman una hegemonía de récord</h2>
+
+<!--<img src="/images/noticias/cronica-2026-gtvs.avif" alt="Momento de la celebración de la prueba por etapas" />-->
+
+<p>El Trail Valle de Samuño no solo es una prueba de velocidad, sino de resistencia y estrategia. Tras la suma de tiempos de la etapa 1 (TVxS) y la exigente etapa 2 (TVS), la clasificación general por etapas ha coronado a dos corredores que ya forman parte de la mitología de esta carrera.</p>
+
+<h3>Andrés González: Una remontada de tres quilates</h3>
+
+<p>No lo tenía fácil Andrés González. Tras la primera jornada, el corredor partía con una desventaja de casi 40 segundos frente a un Nel Garrote que se mostró intratable en el primer asalto. Sin embargo, los grandes campeones aparecen cuando el terreno se empina.</p>
+
+<p>En una segunda etapa magistral, González no solo enjugó la diferencia, sino que impuso un ritmo demoledor para darle la vuelta a la tortilla. Con una gestión impecable de los esfuerzos, logró alzarse con su tercera victoria consecutiva en la general, sellando una ventaja final de 4' 19". El podio lo completó Iván Montes, que supo sufrir para mantener la plaza a 3 minutos de Garrote.</p>
+
+<p>Mención especial merece Cristian Menéndez, quien tras firmar el pleno de asistencias en todas las ediciones del Samuño, demostró que su nivel competitivo sigue al alza con un espectacular cuarto puesto en la general.</p>
+
+<h3>Meritxhell Nava: Póker de reinado absoluto</h3>
+
+<p>Si hay un nombre que define la prueba por etapas del Trail Valle de Samuño (GTVS), ese es el de Meritxhell Nava. La corredora llegaba a la jornada decisiva con un "colchón" de 12 minutos logrados en la prueba corta, una renta que le hubiera permitido correr con la calculadora en la mano.</p>
+
+<p>Lejos de especular, Nava decidió exprimirse al máximo para honrar la competición, logrando así su cuarto título consecutivo. Una gesta que será difícil de igualar en las próximas ediciones.</p>
+
+<p>La batalla por los cajones restantes fue mucho más ajustada:</p>
+
+<ul>
+    <li>Laura Suárez se colgó la plata tras una actuación muy sólida en ambas jornadas.</li>
+    <li>Elena Arienza cerró el podio, acechando en todo momento a Suárez, quien partía el segundo día con apenas 1' 30" de margen sobre ella.</p>
+</ul>
+
+<p>Desde la organización, queremos agradecer a los más de 70 voluntarios, Protección Civil y patrocinadores que hacen que Samuño siga siendo una experiencia única. ¡Nos vemos en 2027!</p>
