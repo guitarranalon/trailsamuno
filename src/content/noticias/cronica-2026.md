@@ -13,7 +13,7 @@ myslug: "cronica-2026"
 
 <p>La gran novedad de esta edición fue el bucle inicial, un tramo rápido, técnico y ratonero que estiró el pelotón desde los primeros metros. Al paso por el pueblo, el ambiente era eléctrico: público abundante cuyos gritos de ánimo se escuchaban desde las laderas del monte, empujando a los corredores hacia la parte más dura del trazado.</p>
 
-<p>En el paso por la emblemática Cresta de los Fugaos, el gran favorito, Andrés González, mantenía el liderato, pero el acecho era constante. Nicasio Álvarez ya le pisaba los talones, presagiando el cambio de guion que estaba por venir.</p>
+<p>En el paso por la emblemática Cresta de los Fugaos, el gran favorito, Andrés González, mantenía el liderato, pero el acecho era constante. El jovencísimo (categoría cadete) Nicasio Álvarez ya le pisaba los talones, presagiando el cambio de guión que estaba por venir.</p>
 
 <h3>La batalla del Pico Rondiz: Remontadas y cambios de líder</h3>
 
@@ -95,6 +95,24 @@ Tras el espectáculo de hoy, todas las miradas se centran en la prueba larga de 
     <li>Ana Junquera</li>
     <li>Silvia Álvarez</li>
     <li>Aroa Calvo</li>
+</ol>
+
+<h3>Campeonato de Asturias de Clubes</h3>
+
+<p>Pese a estar muy disputado, poca sorpresa en el Campeonato de Asturias de Clubes con todos los pronosticados ocupando la parte alta de la tabla. Durante el recorrido se veía una densidad alta e inusual de corredores entre las primeras decenas de clasificados ya que un puesto más o menos podía suponer una gran diferencia a nivel de equipo. Finalmente la peleada clasificación quedó así: </p>
+
+<h4>Masculina</h4>
+<ol>
+    <li>CM Camín Real</li>
+    <li>Club Avientu</li>
+    <li>Club Oriente Atletismo</li>
+</ol>
+
+<h4>Femenina</h4>
+<ol>
+    <li>Club Avientu</li>
+    <li>Club Oriente Atletismo</li>
+    <li>CDB Wolver Born to Run</li>
 </ol>
 
 <h3>Apartado popular</h3>
