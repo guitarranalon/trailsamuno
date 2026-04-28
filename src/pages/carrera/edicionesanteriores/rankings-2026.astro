@@ -1,0 +1,234 @@
+---
+import computePath from "../../../helpers/compute-path";
+import Layout from "../../../layouts/Layout.astro"
+
+const title = "2026";
+const h1 = "Información de la edición de 2026";
+---
+
+<Layout title={title} h1={h1}>
+	<div id="content-block">
+		<h2>Rankings 2026</h2>
+		<table>
+			<caption>Finishers de todas las ediciones (2026 inclusive)</caption>
+			<thead>
+				<tr>
+					<th>Atleta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Agustín González Bobes (9 TVS y 6 TVxS)</td>
+				</tr>
+				<tr>
+					<td>Cristian Menéndez Pérez (9 TVS y 4 TVxS)</td>
+				</tr>
+			</tbody>
+		</table>
+        
+		<table>
+			<caption>Corredores con más TVS (2026 inclusive)</caption>
+			<thead>
+				<tr>
+					<th><abbr title="Posición">Pos</abbr></th>
+					<th>Atleta</th>
+					<th>Nº veces terminada</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Agustín González Bobes</td>
+					<td>9</td>
+				</tr>				
+				<tr>
+					<td>1</td>
+					<td>Cristian Menéndez Pérez</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Miguel Ángel Menéndez Menéndez</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Francisco Javier Baños</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>David Blanco Iglesias</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Alberto Menéndez Regueiro</td>
+					<td>7</td>
+				</tr>								
+				<tr>
+					<td>5</td>
+					<td>César Jiménez Fernández</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Rubén Fernández López</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Jennifer Argüelles Mesa</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Adrián Mejido Fernández</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Meritxhell Nava Álvarez</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Paulo Rozada Camblor</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Silvia García Busto</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Fermín Blanco Iglesias</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Ángela Ruiz Fernández</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Javier Fernández García</td>
+					<td>6</td>
+				</tr>                
+				<tr>
+					<td>9</td>
+					<td>Isidro González Menéndez</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Jesús Ignacio Fanjul Alonso</td>
+					<td>6</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<caption>Corredores con más TVxS (2026 inclusive)</caption>
+			<thead>
+				<tr>
+					<th><abbr title="Posición">Pos</abbr></th>
+					<th>Atleta</th>
+					<th>Nº veces terminada</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Jennifer Argüelles Mesa</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Agustín González Bobes</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Noel García Meana</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Casiano García Fernández</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>José Manuel Gutiérrez Gancedo</td>
+					<td>6</td>
+				</tr> 				
+				<tr>
+					<td>6</td>
+					<td>Adrián Mejido Fernández</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Leticia Blanco Toledo</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Daniel Gómez Fernández</td>
+					<td>5</td>
+				</tr>				
+				<tr>
+					<td>6</td>
+					<td>Jorge Luis Andrés Menéndez</td>
+					<td>5</td>
+				</tr>          
+				<tr>
+					<td>6</td>
+					<td>Jose Suárez Morente</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Iván Fernández Alonso</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Rubén García Abreu</td>
+					<td>5</td>
+				</tr>                
+				<tr>
+					<td>6</td>
+					<td>David Martínez Cortes</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Antonio Ferrero Varas</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Pablo Fernández Ordiz</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Andrés Presno García</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Rodolfo Alperi Jove</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Javier Soriano Pérez</td>
+					<td>5</td>
+				</tr>
+			</tbody>
+		</table>               
+    </div>
+</Layout>
