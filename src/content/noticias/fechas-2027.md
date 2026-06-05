@@ -7,9 +7,9 @@ myslug: "fecha-2027"
 
 <p>¡Ya puedes marcar los días <b>17 y 18 de abril de 2027</b> en tu calendario de carreras por montaña! La nueva entrega del Trail Valle de Samuño ya tiene fecha confirmada y no es una cita cualquiera: ¡llegamos a nuestra <b>décima edición</b>! Las emblemáticas caleyas de nuestro valle asturiano volverán a vibrar con una edición especial que promete ser inolvidable.</p>
 
-<h2>Diez años de trail running en el corazón minero de Asturias</h2>
+<h2>Décima entrega de trail running en el corazón minero de Asturias</h2>
 
-<p>Mantenemos nuestro formato habitual de primavera a mediados de abril, pero con el aliciente de celebrar una décima edición que a buen seguro estará cargada de historia, esfuerzo, barro y pasión. Once años corriendo por la mina que queremos festejar junto a todos vosotros. Estamos trabajando a fondo para que este aniversario sea una auténtica fiesta del trail running en Langreo, con un ambiente aún más único y emotivo.</p>
+<p>Mantenemos nuestro formato habitual de primavera a mediados de abril, pero con el aliciente de celebrar una décima edición que a buen seguro estará cargada de historia, esfuerzo, barro y pasión. Diez convocatorias para correr por la mina que queremos festejar junto a todos vosotros. Estamos trabajando a fondo para que este aniversario sea una auténtica fiesta del trail running en Langreo, con un ambiente aún más único y emotivo.</p>
 
 <p>Durante los próximos meses iremos desvelando todos los detalles sobre los <a href="/carrera/recorrido" title="Recorridos y distancias Trail Valle de Samuño">recorridos oficiales</a>, las novedades en los servicios al corredor y, por supuesto, varias sorpresas exclusivas que estamos preparando para conmemorar esta décima edición.</p>
 
