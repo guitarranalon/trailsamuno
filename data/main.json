@@ -2,14 +2,14 @@
     "tvxs": {
       "name": "TVxS",
       "mainsponsor": "Clínica Dental González Gallego",
-      "sequence": "VII",
+      "sequence": "VIII",
       "distance": "13",
       "climb": "730",
       "abbrclimb": "730",
       "date": {
-        "day": 18,
+        "day": 17,
         "month": 4,
-        "year": 2026,
+        "year": 2027,
         "abbreviatedMonth": "abr",
         "monthtext": "abril"
       },
@@ -18,14 +18,14 @@
     "tvs": {
       "name": "TVS",
       "mainsponsor": "Clínica Dental González Gallego",
-      "sequence": "IX",
+      "sequence": "X",
       "distance": "22",
       "climb": "1.500",
       "abbrclimb": "1.5K",
       "date": {
-        "day": 19,
+        "day": 18,
         "month": 4,
-        "year": 2026,
+        "year": 2027,
         "abbreviatedMonth": "abr",
         "monthtext": "abril"
       },
@@ -34,14 +34,14 @@
     "gtvs": {
       "name": "GTVS",
       "mainsponsor": "Clínica Dental González Gallego",
-      "sequence": "VI",
+      "sequence": "VII",
       "distance": "35",
       "climb": "2.200",
       "abbrclimb": "2.2K",
       "date": {
-        "day": "18-19",
+        "day": "17-18",
         "month": 4,
-        "year": 2026,
+        "year": 2027,
         "abbreviatedMonth": "abr",
         "monthtext": "abril"
       },

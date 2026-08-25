@@ -1,6 +1,6 @@
 ---
 title: "Tenemos fecha para la décima: 17 y 18 de abril de 2027"
-date: 2026-06-05
+date: 2026-08-25
 image: "images/noticias/fechas-2027.avif"
 myslug: "fecha-2027"
 ---
