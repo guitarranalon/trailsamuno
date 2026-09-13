@@ -8,7 +8,7 @@ function prefixWithBaseUrlIfNecessary(route: string): string {
     return `${import.meta.env.BASE_URL}${route}`;
 }
 
-function normalizeRoute(route: string): string {
+export function normalizeRoute(route: string): string {
     let normalizedRoute = prefixWithBaseUrlIfNecessary(route);
     normalizedRoute = addTrailingSlashIfNotExist(normalizedRoute);
     return normalizedRoute;
