@@ -19,5 +19,5 @@ export function isSameRoute(route1: string, route2: string): boolean {
 }
 
 export function isBaseUrl(route: string): boolean {
-    return isSameRoute(route, import.meta.env.BASE_URL);
+    return normalizeRoute(route) === normalizeRoute("/");
 }
