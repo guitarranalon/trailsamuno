@@ -8,9 +8,12 @@ function prefixWithBaseUrlIfNecessary(route: string): string {
     return `${import.meta.env.BASE_URL}${route}`;
 }
 
-export function normalizeRoute(route: string): string {
+function normalizeRoute(route: string): string {
     let normalizedRoute = prefixWithBaseUrlIfNecessary(route);
+
+    normalizedRoute = normalizedRoute.replace(/\/index\.html\/?$/, "/");
     normalizedRoute = addTrailingSlashIfNotExist(normalizedRoute);
+
     return normalizedRoute;
 }
 
