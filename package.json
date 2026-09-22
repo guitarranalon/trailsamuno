@@ -13,8 +13,8 @@
     "build:pro": "npx rollup -c && npm run build:css-prod && npm run build"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.9",
-    "astro": "6.3.1",
+    "@astrojs/check": "0.9.10",
+    "astro": "7.3.3",
     "sass": "1.77.8",
     "typescript": "5.5.3"
   },
