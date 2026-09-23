@@ -1,24 +1,28 @@
+@use "base";
+@use "colores";
+@use "mixins";
+
 footer{
-	background: $fondoPie;
+	background: colores.$fondoPie;
 	clear: both;
-	color: $colorPie;
+	color: colores.$colorPie;
 	padding: 4em 0;
 	
 	a{
-		transition: (color $animacionMedia ease);
+		transition: (color base.$animacionMedia ease);
 		
-		color: $colorEnlacesPie;
+		color: colores.$colorEnlacesPie;
 		text-decoration: none;
 		
 		&:hover{
-			transition: (color $animacionRapida ease);
+			transition: (color base.$animacionRapida ease);
 			
-			color: $colorHoverEnlacesPie;
+			color: colores.$colorHoverEnlacesPie;
 		}
 	}	
 
 	.row{
-		@include mq($screen-sm-min){
+		@include mixins.mq(base.$screen-sm-min){
 			position: relative;
 		}
 	}
@@ -28,9 +32,9 @@ footer .cumbre{
 	margin-bottom: 2.5em;
 	text-align: center;
 
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		float: left;
-		height: sizeEM(68);
+		height: mixins.sizeEM(68);
 		margin-bottom: 0;
 		margin-right: 0;
 		width: 5.414012%;
@@ -46,31 +50,31 @@ footer .cumbre a{
 	.u.border,
 	.topDash-fill,
 	.topDash-border{
-		transition: (fill $animacionMedia ease, stroke $animacionMedia ease);
+		transition: (fill base.$animacionMedia ease, stroke base.$animacionMedia ease);
 	}
 
 	&:hover .u-fill{
-		transition: (fill $animacionRapida ease);
+		transition: (fill base.$animacionRapida ease);
 
 		fill: #aaa;
 	}
 
 	&:hover .u-border{
-		transition: (stroke $animacionRapida ease);
+		transition: (stroke base.$animacionRapida ease);
 
 		stroke: #aaa;
 	}
 
 	&:hover .topDash-fill{
-		transition: (fill $animacionRapida ease);
+		transition: (fill base.$animacionRapida ease);
 
-		fill: $colorTema;
+		fill: colores.$colorTema;
 	}
 
 	&:hover .topDash-border{
-		transition: (stroke $animacionRapida ease);
+		transition: (stroke base.$animacionRapida ease);
 
-		stroke: $colorTema;
+		stroke: colores.$colorTema;
 	}
 }
 
@@ -85,7 +89,7 @@ footer .contact{
 	padding-left: 0;
 	text-align: center;
 	
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		margin-left: 8.598726%;
 		text-align: left;
 		width: 22.611465%;
@@ -101,19 +105,19 @@ footer .contact{
 	}
 
 	.tvs{
-		@include font-size(16);
+		@include mixins.font-size(16);
 		
-		font-family: $fontFamily;
+		font-family: base.$fontFamily;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 }
 
 footer .social{
-	margin-bottom: sizeEM($lineHeightBasico*2);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico*2);
 	text-align: center;
 	
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		text-align: left;
 	}	
 }
@@ -139,17 +143,17 @@ footer .social > ul{
 	a .icon{
 		fill: #dfdfdf;
 		height: 20px;
-		transition: (fill $animacionMedia ease);
+		transition: (fill base.$animacionMedia ease);
 		width: 20px;
 
-		@include mq($screen-sm-min) {
+		@include mixins.mq(base.$screen-sm-min) {
 			fill: #959595;
 		}
 	}
 
 	a .icon:hover{
 		fill: #dfdfdf;
-		transition: (fill $animacionRapida ease);
+		transition: (fill base.$animacionRapida ease);
 	}
 }
 
@@ -161,19 +165,19 @@ footer .sellos{
 	> li {
 		margin-bottom: 1em;
 		
-		@include mq($screen-xs-min){
+		@include mixins.mq(base.$screen-xs-min){
 			display: inline-block;
 			margin-bottom: 0;
 		}
 	}
 	
 	> li + li {
-		@include mq($screen-xs-min){
+		@include mixins.mq(base.$screen-xs-min){
 			margin-left: 1.5em;
 		}
 	}
 
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		position: absolute;
 		right: 0;
 		top: -15px;	// Para alinear el texto del logo con el de la parte izquierda

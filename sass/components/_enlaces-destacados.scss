@@ -1,10 +1,13 @@
+@use "../base";
+@use "../colores";
+
 .enlaces-destacados {
     background-color: #ddd;
     padding: 2em 0;
     position: relative;
 
     &:after {
-        background-image: url(#{$img-root}/curvasNivel.svg);
+        background-image: url(#{base.$img-root}/curvasNivel.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: 200%;    
@@ -43,9 +46,9 @@
     }
 
     &__list a {
-        color: $colorFuente;
+        color: colores.$colorFuente;
         text-decoration: underline;
-        text-decoration-color: $colorFuente;
+        text-decoration-color: colores.$colorFuente;
         text-decoration-thickness: 2px;
 
         &:hover{

@@ -1,3 +1,6 @@
+@use "../base";
+@use "../mixins";
+
 .cookie-banner {
     background: rgba(0,0,0, 0.9);
     bottom: 0;
@@ -17,21 +20,21 @@
 
         font-size: 16px;
 
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             display: inline-block;
         }
     }
 }
 
 .cookie-actions {
-    @include mq($screen-sm-min) {
+    @include mixins.mq(base.$screen-sm-min) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
 
     button + button {
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             margin-right: 0.5rem;
         }
     }
@@ -40,7 +43,7 @@
 .cookie-preferences {
     margin-top: 1rem;
     
-    @include mq($screen-sm-min) {
+    @include mixins.mq(base.$screen-sm-min) {
         align-items: baseline;
         display: flex;
         flex-direction: row;
@@ -50,7 +53,7 @@
     button {
         margin-top: 12px;
 
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             width: auto;
         }
     }

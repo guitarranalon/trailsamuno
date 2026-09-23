@@ -1,19 +1,26 @@
-::selection {background:$fondoSeleccion;color:$colorSeleccion;}
-::-moz-selection {background:$fondoSeleccion;color:$colorSeleccion;}
+@use "base";
+@use "colores";
+@use "mixins";
+
+@use 'sass:color';
+@use "sass:math";
+
+::selection {background:colores.$fondoSeleccion;color:colores.$colorSeleccion;}
+::-moz-selection {background:colores.$fondoSeleccion;color:colores.$colorSeleccion;}
 
 html{
-	@include text-size-adjust(100%);
+	@include mixins.text-size-adjust(100%);
 	
-	font-size:$fontSizeBasico*1px;
+	font-size:base.$fontSizeBasico*1px;
 }
 
 html body{
 	margin:0 auto;
-	font-family:$fontFamilyLight;
-	font-size:$fontSizeBasico*1px;
-	line-height: math.div($lineHeightBasico, $fontSizeBasico)*1em;
-	color:$colorFuente;
-	background: $fondoPrincipal;
+	font-family:base.$fontFamilyLight;
+	font-size:base.$fontSizeBasico*1px;
+	line-height: math.div(base.$lineHeightBasico, base.$fontSizeBasico)*1em;
+	color:colores.$colorFuente;
+	background: colores.$fondoPrincipal;
 }
 
 .row{
@@ -31,7 +38,7 @@ body #contenedor{
 }
 
 #content p{
-	margin-bottom: math.div($lineHeightBasico, $fontSizeBasico)*1em;
+	margin-bottom: math.div(base.$lineHeightBasico, base.$fontSizeBasico)*1em;
 	margin-top: 0;
 }
 
@@ -45,7 +52,7 @@ body #contenedor{
 #content .h4,
 #content h5,
 #content .h5{
-	color:$colorFuente;
+	color:colores.$colorFuente;
 	font-weight:bold;
 	margin-top:0;
 }
@@ -54,7 +61,7 @@ body #contenedor{
 #content .h1{
 	margin-bottom:.75em;
 	line-height:1.1em;	
-	@include font-size(32);
+	@include mixins.font-size(32);
 }
 
 #content h2,
@@ -69,10 +76,10 @@ body #contenedor{
 
 #content h4,
 #content .h4{
-	@include font-size(24);
+	@include mixins.font-size(24);
 	
-	font-family: $fontFamilyLight;
-	margin-bottom:sizeEM(18, 24);
+	font-family: base.$fontFamilyLight;
+	margin-bottom:mixins.sizeEM(18, 24);
 	line-height:1.1em;
 	font-weight:normal;	
 	text-transform: uppercase;
@@ -80,23 +87,23 @@ body #contenedor{
 
 #content h5,
 #content .h5{
-	@include font-size(18);
+	@include mixins.font-size(18);
 	
-	font-family: $fontFamily;
-	margin-bottom: sizeEM(26, 18);
+	font-family: base.$fontFamily;
+	margin-bottom: mixins.sizeEM(26, 18);
 	line-height:1.1em;	
 }
 
 #content ul,
 #content ol{
-	line-height:sizeEM( $lineHeightBasico );
-	margin:0 0 sizeEM( $lineHeightBasico ) 1em;
+	line-height:mixins.sizeEM( base.$lineHeightBasico );
+	margin:0 0 mixins.sizeEM( base.$lineHeightBasico ) 1em;
 	padding-left: 0;
 }
 
 #content dl{
-	line-height:sizeEM( $lineHeightBasico );
-	margin:0 0 sizeEM( $lineHeightBasico );
+	line-height:mixins.sizeEM( base.$lineHeightBasico );
+	margin:0 0 mixins.sizeEM( base.$lineHeightBasico );
 	padding-left: 0;
 }
 
@@ -137,22 +144,22 @@ ol.listaLetras li{
 
 #miga a {
 	text-decoration:none;
-	color:$colorEnlaceMiga;
+	color:colores.$colorEnlaceMiga;
 	text-transform:capitalize;
 	
-	&:hover{color:$colorHoverEnlaceMiga;}
+	&:hover{color:colores.$colorHoverEnlaceMiga;}
 }
 
 #content a{
-	color:$colorEnlace;
+	color:colores.$colorEnlace;
 	&:hover{
-		color:$colorHoverEnlace;
+		color:colores.$colorHoverEnlace;
 		text-decoration: none;
 	}
 }
 
 #content b{
-	font-family: $fontFamilyBold;
+	font-family: base.$fontFamilyBold;
 	font-weight: normal;
 }
 
@@ -163,9 +170,9 @@ ol.listaLetras li{
 
 #content .fotoDerecha,
 #content .mapaDerecha{
-	margin-bottom: sizeEM($lineHeightBasico);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
 
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		float:right;
 		margin-left:3.184713%;		
 	}
@@ -173,9 +180,9 @@ ol.listaLetras li{
 
 #content .fotoIzquierda,
 #content .mapaIzquierda{
-	margin-bottom: sizeEM($lineHeightBasico);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
 
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		float:left;
 		margin-right:3.184713%;
 	}
@@ -185,27 +192,27 @@ ol.listaLetras li{
 #content .mapaCentro{
 	width:auto;
 	text-align:center;
-	margin-top:sizeEM($lineHeightBasico);
-	margin-bottom:sizeEM($lineHeightBasico);
+	margin-top:mixins.sizeEM(base.$lineHeightBasico);
+	margin-bottom:mixins.sizeEM(base.$lineHeightBasico);
 }
 
 #content .fotoIzquierda,
 #content .fotoDerecha{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		max-width: 31.1040339%;
 		height:auto;
 	}
 
 	&.estrecha{
-		@include mq($screen-sm-min){
-		max-width: anchoPorcentaje(213);
+		@include mixins.mq(base.$screen-sm-min){
+		max-width: mixins.anchoPorcentaje(213);
 		}
 	}
 }
 
 #content .fotoIzquierda.no-float,
 #content .fotoDerecha.no-float{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		float: none;
 	}
 }
@@ -213,7 +220,7 @@ ol.listaLetras li{
 #content .mapaIzquierda small a,
 #content .mapaDerecha small a,
 #content .mapaCentro small a{
-	color:$colorEnlace !important;
+	color:colores.$colorEnlace !important;
 }
 
 body .contenidoDestacado{
@@ -233,27 +240,27 @@ p.fecha{
 /* Tablas */
 #content table{
 	border-collapse:collapse;
-	margin-bottom: sizeEM($lineHeightBasico);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
 	width: 100%;
 }
 
 #content table caption,
 #content table th{
 	background:#fff;
-	color: $colorFuente;
-	font-family: $fontFamilyBold;
+	color: colores.$colorFuente;
+	font-family: base.$fontFamilyBold;
 	font-weight: normal; 
 	margin-bottom:0;
 }
 
 #content table caption{
 	padding: .25em 1em;
-	font-family: $fontFamilyLight;
+	font-family: base.$fontFamilyLight;
 	text-align: left;
 }
 
 #content table thead th{
-	border-bottom: 2px solid $colorTema;
+	border-bottom: 2px solid colores.$colorTema;
 	text-align: left;
 	vertical-align: bottom;
 }
@@ -302,20 +309,20 @@ a.enlaceBoton.alt{
 	}
 
 	legend{
-		@include font-size(16);
+		@include mixins.font-size(16);
 
 		border: 0; // normalizing
-		color: $colorFuente;		
+		color: colores.$colorFuente;		
 		display: block;		
 		font-weight: normal; // normalizing
-		margin-bottom: sizeEM($lineHeightBasico);		
+		margin-bottom: mixins.sizeEM(base.$lineHeightBasico);		
 		padding: 0; // normalizing
 		width: 100%;	
 	}
 
 	label{
 		display: inline-block;
-		margin-bottom: sizeEM($lineHeightBasico * 0.5);
+		margin-bottom: mixins.sizeEM(base.$lineHeightBasico * 0.5);
 	}
 	
 	input[type=text],
@@ -328,22 +335,22 @@ a.enlaceBoton.alt{
 	
 		width: 100%;
 		margin-bottom:1em;
-		font-family:$fontFamily;
+		font-family:base.$fontFamily;
 		padding:3px 4px;
 		position:relative;
 		top:-2px;
-		border:1px solid $colorBordeInputs;
+		border:1px solid colores.$colorBordeInputs;
 		
 		&:focus{
-			border:1px solid $colorFocusBordeInputs;
+			border:1px solid colores.$colorFocusBordeInputs;
 			transition: (all .15s linear);				
 		}
 
 		&[disabled]{
 			font-style:italic;
-			background:$colorFondoInputDisabled;
-			color:$colorInputDisabled;
-			border-color:$colorBordeInputDisabled;
+			background:colores.$colorFondoInputDisabled;
+			color:colores.$colorInputDisabled;
+			border-color:colores.$colorBordeInputDisabled;
 		}
 	}
 	
@@ -376,23 +383,23 @@ a.enlaceBoton.alt{
 // Estilos generales para los iframes
 iframe{
 	border: 0;
-	margin-bottom: sizeEM($lineHeightBasico);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
 	max-width: 100%;
 
 	+iframe{
-		margin-top: sizeEM(2*$lineHeightBasico);
+		margin-top: mixins.sizeEM(2*base.$lineHeightBasico);
 	}
 }
 
 // Estilos para contenido a 2 y 3 columnas
 .columnas2{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		column-count: (2);
 	}
 }
 
 .columnas3{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		column-count: (3);
 	}
 }
@@ -418,13 +425,13 @@ iframe{
 }
 
 #content blockquote{
-	border-left: 5px solid $colorFuente;
-	margin: 0 0 sizeEM($lineHeightBasico);
-	padding: sizeEM(10) sizeEM(20);
+	border-left: 5px solid colores.$colorFuente;
+	margin: 0 0 mixins.sizeEM(base.$lineHeightBasico);
+	padding: mixins.sizeEM(10) mixins.sizeEM(20);
 }
 
 .figure-caption{
-	color: adjust-color($colorFuente, $lightness: 30%);
+	color: color.adjust(colores.$colorFuente, $lightness: 30%);
 	font-size: 90%;
 }
 
@@ -434,7 +441,7 @@ iframe{
 
 .creditos > p,
 #content .creditos > p a{
-	@include font-size(12);
+	@include mixins.font-size(12);
 
 	color: #595959;
 	text-decoration: none;

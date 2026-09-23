@@ -1,3 +1,6 @@
+@use "base";
+@use "mixins";
+
 #patrocinadoresFooter,
 #colaboradoresFooter{
 	background: #eee;
@@ -16,8 +19,8 @@
 	}
 	
 	ul:after{
-		@include mq($screen-sm-min){
-			@include clearfixAfter;
+		@include mixins.mq(base.$screen-sm-min){
+			@include mixins.clearfixAfter;
 		}
 	}
 }

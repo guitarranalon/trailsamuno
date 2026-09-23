@@ -1,15 +1,19 @@
+@use "base";
+@use "colores";
+@use "mixins";
+
 #third-level-nav{
 	box-sizing: (border-box);
 
-	background: $colorTema;//adjust-color($colorTema, $saturation:-40, $lightness: 35);
+	background: colores.$colorTema;//adjust-color($colorTema, $saturation:-40, $lightness: 35);
 	padding: 1.5em;
-	margin-bottom: sizeEM($lineHeightBasico);
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
 
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		float: right;
 		position: sticky;
-		top: sizeEM(290);
-		width: anchoPorcentaje(213);
+		top: mixins.sizeEM(290);
+		width: mixins.anchoPorcentaje(213);
 	}
 	
 	ul{
@@ -21,7 +25,7 @@
 	}
 
 	ul a{
-		@include font-size(16);
+		@include mixins.font-size(16);
 
 		text-decoration: none;
 
@@ -31,15 +35,15 @@
 	}
 
 	ul .active span{
-		@include font-size(16);
+		@include mixins.font-size(16);
 		
-		font-family: $fontFamilyBold;		
+		font-family: base.$fontFamilyBold;		
 	}
 }
 
 #third-level-nav + #content-block,
 #third-level-nav + main > #content-block {
-	@include mq($screen-sm-min){
-		margin-right: anchoPorcentaje(213 + 30);
+	@include mixins.mq(base.$screen-sm-min){
+		margin-right: mixins.anchoPorcentaje(213 + 30);
 	}
 }

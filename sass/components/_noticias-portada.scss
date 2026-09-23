@@ -1,5 +1,9 @@
+@use "../base";
+@use "../colores";
+@use "../mixins";
+
 #content .noticias-portada {
-    margin-bottom: sizeEM(48);
+    margin-bottom: mixins.sizeEM(48);
 
     article {
         position: relative;
@@ -12,7 +16,7 @@
     }
 
     h3 {
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             bottom: 48px;
             color: #fff;
             left: 48px;
@@ -24,24 +28,24 @@
     }
 
     &__link-titular {
-        font-family: $fontFamilyBold;
+        font-family: base.$fontFamilyBold;
         text-transform: none;
         text-decoration: none;
 
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             color: #fff;
             
             &:hover {
                 color: #fff;
                 text-decoration: underline;
-                text-decoration-color: $colorTema;
+                text-decoration-color: colores.$colorTema;
                 text-decoration-thickness: 3px;
             }
         }
     }
 
     .button {
-        @include mq($screen-sm-min) {
+        @include mixins.mq(base.$screen-sm-min) {
             width: fit-content;
         }
     }

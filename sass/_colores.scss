@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $colorTema:#f9cb19;
 
 $fondoPrincipal:#fff;
@@ -8,13 +10,13 @@ $colorEnlace: $colorFuente;
 $colorHoverEnlace: $colorEnlace;
 
 $colorEnlaceMenu:$colorFuente;
-$colorHoverEnlaceMenu: mix($colorEnlaceMenu, $colorTema, 50%);
+$colorHoverEnlaceMenu: color.mix($colorEnlaceMenu, $colorTema, 50%);
 
 $colorEnlaceMiga:#333;
-$colorHoverEnlaceMiga:mix($colorEnlaceMiga,$fondoContenidos,75%);
+$colorHoverEnlaceMiga: color.mix($colorEnlaceMiga,$fondoContenidos,75%);
 
 $colorEnlacePie:#999;
-$colorHoverEnlacePie:mix($colorEnlacePie, #000, 50%);
+$colorHoverEnlacePie: color.mix($colorEnlacePie, #000, 50%);
 
 $colorSombra:rgba(#000,.4);
 
@@ -36,4 +38,4 @@ $colorBordeInputDisabled:#999;
 $fondoPie: #444;
 $colorPie: #ccc;
 $colorEnlacesPie: #ccc;
-$colorHoverEnlacesPie: mix($colorEnlacesPie, $fondoPie, 50%);
+$colorHoverEnlacesPie: color.mix($colorEnlacesPie, $fondoPie, 50%);

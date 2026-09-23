@@ -1,3 +1,7 @@
+@use "../base";
+@use "../colores";
+@use "../mixins";
+
 .noticias #content{
 	h1 {
 		@extend %tituloPrincipalContenido;
@@ -9,12 +13,12 @@
 }
 
 .detalle-noticia__fecha {
-	font-family: $fontFamilyBold;
+	font-family: base.$fontFamilyBold;
 }
 
 .listado-noticias {
 	&__fecha {
-		font-family: $fontFamilyLight;
+		font-family: base.$fontFamilyLight;
 		font-size: 18px;
 	}
 
@@ -31,7 +35,7 @@
 
 .noticias #content .listado-noticias,
 .noticias #content .mas-noticias .listado-noticias {
-    @include mq($screen-md-min) {
+    @include mixins.mq(base.$screen-md-min) {
         display: flex;
         flex-wrap: wrap;
         gap: 3rem;
@@ -39,18 +43,18 @@
     }
 
     &__noticia {
-        @include mq($screen-md-min) {
+        @include mixins.mq(base.$screen-md-min) {
             width: calc(33.33% - 3rem);
         }
     }    
 
     &__link-titular {
-        font-family: $fontFamilyBold;
+        font-family: base.$fontFamilyBold;
         text-decoration: none;
 
         &:hover {
             text-decoration: underline;
-            text-decoration-color: $colorTema;
+            text-decoration-color: colores.$colorTema;
             text-decoration-thickness: 3px;
         }
     }    
@@ -59,7 +63,7 @@
 .noticias #content .listado-noticias .listado-noticias__titular {
     margin: 0 0 1.75em;
 
-    @include mq($screen-md-min) {
+    @include mixins.mq(base.$screen-md-min) {
         margin: 0;
     }
 }
