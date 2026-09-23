@@ -1,57 +1,61 @@
+@use "base";
+@use "colores";
+@use "mixins";
+
 #header{
-	background: $colorTema;
+	background: colores.$colorTema;
 	left: 0;
-	margin-bottom: sizeEM(70);
-	padding-bottom: sizeEM(28);
+	margin-bottom: mixins.sizeEM(70);
+	padding-bottom: mixins.sizeEM(28);
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 10;
 
-	@include mq($screen-sm-plus-min){
-		height: sizeEM(75);
-		margin-bottom: sizeEM(230);
+	@include mixins.mq(base.$screen-sm-plus-min){
+		height: mixins.sizeEM(75);
+		margin-bottom: mixins.sizeEM(230);
 		padding-bottom: 0;
 	}	
 
 	.index &{
-		@include mq($screen-sm-plus-min){
-			margin-bottom: sizeEM(380); 
+		@include mixins.mq(base.$screen-sm-plus-min){
+			margin-bottom: mixins.sizeEM(380); 
 		}
 	}
 }
 
 #header:after{
-	@include mq($screen-sm-plus-min){
-		background-color: $colorTema;
-		background-image: url(#{$img-root}/fondoCabeceraPortada.avif);
+	@include mixins.mq(base.$screen-sm-plus-min){
+		background-color: colores.$colorTema;
+		background-image: url(#{base.$img-root}/fondoCabeceraPortada.avif);
 		background-repeat: no-repeat;
 		background-position: 50% 40%;
 		background-size: (cover);
 		content: ' ';
-		height: sizeEM(160);
+		height: mixins.sizeEM(160);
 		left: 0;
 		position: absolute;
 		right: 0;
-		top: sizeEM(75);
+		top: mixins.sizeEM(75);
 	}
 
 	[data-baseurl=\/trailsamuno] & {
-		@include mq($screen-sm-plus-min){
-			background-image: url(#{$gh-pages-baseurl}#{$img-root}/fondoCabeceraPortada.avif);
+		@include mixins.mq(base.$screen-sm-plus-min){
+			background-image: url(#{base.$gh-pages-baseurl}#{base.$img-root}/fondoCabeceraPortada.avif);
 		}		
 	}
 
 	.index &{
-		@include mq($screen-sm-plus-min){
-			height: sizeEM(380);
+		@include mixins.mq(base.$screen-sm-plus-min){
+			height: mixins.sizeEM(380);
 		}
 	}
 }
 
 .index #header {
 	&:after{
-		@include mq($screen-sm-plus-min){
+		@include mixins.mq(base.$screen-sm-plus-min){
 			background-size: (cover);
 			
 			background-position: 50% 50%;
@@ -64,8 +68,8 @@ header h1{
 	
 	padding-top: 10px;
 
-	@include mq($screen-sm-plus-min){
-		background: $colorFuente;
+	@include mixins.mq(base.$screen-sm-plus-min){
+		background: colores.$colorFuente;
 		padding-top: 0;
 		position: relative;
 		overflow: hidden;
@@ -77,22 +81,22 @@ header h1{
 		display: block;
 		margin-bottom: 12px;
 
-		@include mq($screen-sm-plus-min){
+		@include mixins.mq(base.$screen-sm-plus-min){
 			display: inline;
 		}
 	}
 
 	.icon{
-		transition: (transform $animacionMedia ease);
+		transition: (transform base.$animacionMedia ease);
 		
 		display: block;
-		fill: $colorFuente;
+		fill: colores.$colorFuente;
 		height: 86px;
 		margin: 0 auto;
 		width: 67px;
 
-		@include mq($screen-sm-plus-min){
-			fill: $colorTema;
+		@include mixins.mq(base.$screen-sm-plus-min){
+			fill: colores.$colorTema;
 			height: 142px;
 			margin: 0 auto;
 			padding-bottom: 36px;
@@ -103,48 +107,48 @@ header h1{
 
 header a:hover .icon.tvs-logo {
 	transform: scale(1.39) translate(0, 3px);
-	transition: (transform $animacionRapida ease);
+	transition: (transform base.$animacionRapida ease);
 }
 
 header .enlaceBoton{
 	@extend %altEnlaceBoton;
 
-	@include mq($screen-sm-plus-min){
-		@include font-size(15);
+	@include mixins.mq(base.$screen-sm-plus-min){
+		@include mixins.font-size(15);
 
 		padding-left: 0;
 		padding-right: 0;
 		position: absolute;
 		right: 0;
 		text-align: center;
-		top: sizeEM(18, 15);
-		width: anchoPorcentaje(132);	
+		top: mixins.sizeEM(18, 15);
+		width: mixins.anchoPorcentaje(132);	
 	}
 }
 
 #header .row{
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		position: relative;
 	}
 }
 
 #header .nombreCarrera{
-	@include font-size(24);
+	@include mixins.font-size(24);
 
-	font-family: $fontFamily;
+	font-family: base.$fontFamily;
 	font-weight: bold;
 	line-height: 1.1em;
-	margin-bottom: sizeEM(24, 24);
+	margin-bottom: mixins.sizeEM(24, 24);
 	text-align: center;
 
-	@include mq($screen-sm-plus-min){
-		@include font-size(32);
+	@include mixins.mq(base.$screen-sm-plus-min){
+		@include mixins.font-size(32);
 
 		color: #fff;
-		left: anchoPorcentaje(162);
+		left: mixins.anchoPorcentaje(162);
 		position: absolute;
 		text-align: left;
-		top: sizeEM(148, 32);
+		top: mixins.sizeEM(148, 32);
 		z-index: 1;
 	}
 }
@@ -152,7 +156,7 @@ header .enlaceBoton{
 .anuncio-permanente {
     background: #e44326e3;
     color: white;
-	font-family: $fontFamilyBold;
+	font-family: base.$fontFamilyBold;
     padding: 0 20px;
 	position: fixed;
     right: 10px;
@@ -160,7 +164,7 @@ header .enlaceBoton{
     top: 10px;
     z-index: 3000;
 	
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		font-size: 18px;
 		padding: 0 100px;
 		right: -100px;
@@ -173,7 +177,7 @@ header .enlaceBoton{
 	transition: padding-bottom 0.3s ease-in-out;
 
 	&:after {
-		@include mq($screen-sm-min) {
+		@include mixins.mq(base.$screen-sm-min) {
 			content: none;
 		}
 	}
@@ -191,7 +195,7 @@ header .enlaceBoton{
 	}
 	
 	.icon.tvs-logo {
-		@include mq($screen-sm-plus-min, max) {
+		@include mixins.mq(base.$screen-sm-plus-min, max) {
 			height: 60px;
 			transition: all 0.3s ease-in-out;
 			width: 45px;

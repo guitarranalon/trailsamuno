@@ -1,3 +1,7 @@
+@use "../base";
+@use "../colores";
+@use "../mixins";
+
 //
 // Progress bars
 // --------------------------------------------------
@@ -26,7 +30,7 @@
 .progress {
   overflow: hidden;
   height: 1.5em;
-  margin-bottom: sizeEM($lineHeightBasico);
+  margin-bottom: mixins.sizeEM(base.$lineHeightBasico);
   background-color: #eee;
   border-radius: 3px;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
@@ -37,10 +41,10 @@
   float: left;
   width: 0%;
   height: 100%;
-  line-height: sizeEM($lineHeightBasico);
-  color: $colorFuente;
+  line-height: mixins.sizeEM(base.$lineHeightBasico);
+  color: colores.$colorFuente;
   text-align: center;
-  background-color: $colorTema;
+  background-color: colores.$colorTema;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
   transition: (width .6s ease);
 }

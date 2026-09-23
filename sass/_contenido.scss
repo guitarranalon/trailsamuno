@@ -1,26 +1,31 @@
+@use "sass:color";
+@use "base";
+@use "colores";
+@use "mixins";
+
 #content{
-	margin-bottom: sizeEM(70);
+	margin-bottom: mixins.sizeEM(70);
 	margin-top: 290px;
 }
 
 .index #content {
 	margin-top: 200px;
 
-	@include mq($screen-sm-plus-min) {
+	@include mixins.mq(base.$screen-sm-plus-min) {
 		margin-top: 504px;
 	}
 }
 
 #content .excerpt{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		min-height: 40em;
 		overflow: hidden;
 	}
 
 	.row{
-		padding: sizeEM(87) 0;
+		padding: mixins.sizeEM(87) 0;
 
-		@include mq($screen-sm-min){
+		@include mixins.mq(base.$screen-sm-min){
 			position: relative;
 		}
 	}
@@ -38,14 +43,14 @@
 }
 
 #content .excerpt.alt{
-	background-color: $colorTema;
-	background-image: url(#{$img-root}/curvasNivel.svg);
+	background-color: colores.$colorTema;
+	background-image: url(#{base.$img-root}/curvasNivel.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: (cover);
 
 	[data-baseurl=\/trailsamuno] & {
-		background-image: url(#{$gh-pages-baseurl}#{$img-root}/curvasNivel.svg);
+		background-image: url(#{base.$gh-pages-baseurl}#{base.$img-root}/curvasNivel.svg);
 	}
 
 	a.button{
@@ -55,58 +60,58 @@
 	}
 
 	h2:after{
-		background: $colorFuente;
+		background: colores.$colorFuente;
 	}
 }
 
 #content .excerpt a.button{
-	@include mq($screen-sm-min){
-		margin-left: anchoPorcentaje(486);
-		width: anchoPorcentaje(294);
+	@include mixins.mq(base.$screen-sm-min){
+		margin-left: mixins.anchoPorcentaje(486);
+		width: mixins.anchoPorcentaje(294);
 	}
 
-	@include mq($breakpoint-botones-portada){
-		width: anchoPorcentaje(213);
+	@include mixins.mq(base.$breakpoint-botones-portada){
+		width: mixins.anchoPorcentaje(213);
 	}
 }
 
 #content .excerpt.alt a.button{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		margin-left: 0;
-		width: anchoPorcentaje(294);		
+		width: mixins.anchoPorcentaje(294);		
 	}
 
-	@include mq($breakpoint-botones-portada){
-		width: anchoPorcentaje(213);
+	@include mixins.mq(base.$breakpoint-botones-portada){
+		width: mixins.anchoPorcentaje(213);
 	}	
 }
 
 #content .excerpt img{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		left: 0;
 		position: absolute;
 		top: 0;
-		width: anchoPorcentaje(375);		
+		width: mixins.anchoPorcentaje(375);		
 	}
 }
 
 #content .excerpt p,
 #content .excerpt h2{
-	@include mq($screen-sm-min){
-		margin-left: anchoPorcentaje(486);
-		width: anchoPorcentaje(456);
+	@include mixins.mq(base.$screen-sm-min){
+		margin-left: mixins.anchoPorcentaje(486);
+		width: mixins.anchoPorcentaje(456);
 	}
 }
 
 #content .excerpt:first-child h2{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		margin-left: 0;
 		width: 100%;
 	}
 }
 
 #content .excerpt.alt img{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		left: auto;
 		right: 0;
 	}
@@ -114,22 +119,22 @@
 
 #content .excerpt.alt p,
 #content .excerpt.alt h2{
-	@include mq($screen-sm-min){
+	@include mixins.mq(base.$screen-sm-min){
 		margin-left: 0;
-		width: anchoPorcentaje(456);
+		width: mixins.anchoPorcentaje(456);
 	}
 }
 
 // Contacto
 .contacto #content{
 	ul > li{
-		margin-bottom: sizeEM($lineHeightBasico * 0.5);
+		margin-bottom: mixins.sizeEM(base.$lineHeightBasico * 0.5);
 	}
 
 	.icon{
-		fill: $colorFuente;
-		height: sizeEM(16);
-		margin-right: sizeEM(5);
+		fill: colores.$colorFuente;
+		height: mixins.sizeEM(16);
+		margin-right: mixins.sizeEM(5);
 		position: relative;
 		top: 3px;
 	}
@@ -142,11 +147,11 @@
 
 // Map marker
 #content .icon.marker{
-	fill: $colorFuente;
-	margin-right: sizeEM(5);
+	fill: colores.$colorFuente;
+	margin-right: mixins.sizeEM(5);
 	position: relative;
 	top: 3px;
-	width: sizeEM(17);
+	width: mixins.sizeEM(17);
 }
 
 // Patrocinadores
@@ -155,18 +160,18 @@
 }
 
 #content .patrocinadores:after{
-	@include mq($screen-sm-min){
-		@include clearfixAfter;
+	@include mixins.mq(base.$screen-sm-min){
+		@include mixins.clearfixAfter;
 	}
 }
 
 .patrocinadores_colabora ol > li::marker {
-	font-size: sizeEM(24);
+	font-size: mixins.sizeEM(24);
 }
 
 // Roadbook
 #content .svg-container{
-	background: $colorTema;
+	background: colores.$colorTema;
 	display: flex;
 	justify-content: center;
 
@@ -177,7 +182,7 @@
 
 .carrera_roadbook #content{
 	form{
-		@include mq($screen-sm-min, max, width){
+		@include mixins.mq(base.$screen-sm-min, max, width){
 			position: sticky;
 			position: -webkit-sticky;
 			top: 5px;
@@ -185,7 +190,7 @@
 	}
 
 	#info {
-		@include mq($screen-sm-min, max, width){
+		@include mixins.mq(base.$screen-sm-min, max, width){
 			position: sticky;
 			position: -webkit-sticky;
 			top: 50px;
@@ -205,17 +210,17 @@
 	position: absolute;
 	right: 0;
 
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		box-sizing: (border-box);
 
 		padding: 1em;
-		width: anchoPorcentaje(294);
+		width: mixins.anchoPorcentaje(294);
 	}
 }
 
 #content form #draw{
-	@include mq($screen-sm-plus-min){
-		width: anchoPorcentaje(213);
+	@include mixins.mq(base.$screen-sm-plus-min){
+		width: mixins.anchoPorcentaje(213);
 	}
 }
 // FIN Roadbook
@@ -223,13 +228,13 @@
 // Reglamento
 .carrera_reglamento ol > li::marker{
     font-size: 2rem;
-    font-family: $fontFamily;
+    font-family: base.$fontFamily;
 	font-weight: bold;
 }
 // FIN Reglamento
 
 .bloque-destacado {
-	background-color: color.adjust($colorTema, $lightness: 40%, $saturation: -16%);
+	background-color: color.adjust(colores.$colorTema, $lightness: 40%, $saturation: -16%);
 	padding: 16px;
 }
 

@@ -1,23 +1,27 @@
+@use "base";
+@use "colores";
+@use "mixins";
+
 #main-nav{
-	@include font-size(15);
+	@include mixins.font-size(15);
 	
-	color: $colorFuente;
+	color: colores.$colorFuente;
 	display: none;
-	font-family: $fontFamilyLight;
+	font-family: base.$fontFamilyLight;
 	padding-top: 2.5em;
 
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		display: block;
-		left: anchoPorcentaje(323);
-		padding-top: sizeEM(25,15);
+		left: mixins.anchoPorcentaje(323);
+		padding-top: mixins.sizeEM(25,15);
 		position: absolute;
 		top: 0;
-		width: anchoPorcentaje(456);		
+		width: mixins.anchoPorcentaje(456);		
 	}
 }
 
 #main-nav a{
-	color: $colorEnlaceMenu;
+	color: colores.$colorEnlaceMenu;
 	text-decoration: none;
 }
 
@@ -28,17 +32,17 @@
 }
 
 #main-nav > ul{
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		display: flex;
 		justify-content: space-between;
 	}
 }
 
 #main-nav > ul > li{
-	font-family: $fontFamily;
-	margin-bottom: sizeEM($lineHeightBasico * 1.75);
+	font-family: base.$fontFamily;
+	margin-bottom: mixins.sizeEM(base.$lineHeightBasico * 1.75);
 
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		float: left;
 	}
 
@@ -48,8 +52,8 @@
 		&:after{
 			@extend %separadorAfter;
 
-			@include mq($screen-sm-plus-min){
-				bottom: sizeEM(-24, 15);
+			@include mixins.mq(base.$screen-sm-plus-min){
+				bottom: mixins.sizeEM(-24, 15);
 			}
 		}
 
@@ -65,21 +69,21 @@
 			@extend %separadorAfter;
 			@extend %separadorHoverAfter;
 
-			bottom: sizeEM(-24, 15);
+			bottom: mixins.sizeEM(-24, 15);
 		}
 	}
 
 	li{
-		@include font-size(16);
-		font-family: $fontFamilyLight;
+		@include mixins.font-size(16);
+		font-family: base.$fontFamilyLight;
 	}
 
 	li > a{
 		display: inline-block;
 		white-space: nowrap;
 
-		@include mq($screen-sm-plus-min){
-			color: $colorTema;
+		@include mixins.mq(base.$screen-sm-plus-min){
+			color: colores.$colorTema;
 			padding: .25em 2em;
 		}
 
@@ -90,8 +94,8 @@
 			position: static;
 			width: 0;
 
-			@include mq($screen-sm-plus-min){
-				background: $colorTema;
+			@include mixins.mq(base.$screen-sm-plus-min){
+				background: colores.$colorTema;
 			}
 		}
 
@@ -104,8 +108,8 @@
 #main-nav ul ul{
 	line-height: 1.6em;
 
-	@include mq($screen-sm-plus-min){
-		background: $colorFuente;
+	@include mixins.mq(base.$screen-sm-plus-min){
+		background: colores.$colorFuente;
 		display: none;
 		padding: 1.5em 0;
 		position: absolute;
@@ -114,34 +118,34 @@
 	}
 
 	> li.active > span{
-		@include mq($screen-sm-plus-min){
-			color: $colorTema !important;
+		@include mixins.mq(base.$screen-sm-plus-min){
+			color: colores.$colorTema !important;
 			padding: .25em 2em;
 		}	
 	}
 }
 
 .active > span{
-	font-family: $fontFamily;
+	font-family: base.$fontFamily;
 	font-weight: bold;
 	white-space: nowrap;	
 }
 
 // ---- Mobile menu
 #mobileMenu{
-	background: $colorTema;
+	background: colores.$colorTema;
 	left: 0;
 	position: absolute;
 	right: 0;
 	top: 0;
 
-	@include mq($screen-sm-plus-min){
+	@include mixins.mq(base.$screen-sm-plus-min){
 		display: none;
 	}
 }
 
 #mobileMenu .openCloseButton{
-	background: $colorTema;
+	background: colores.$colorTema;
 	border: 0;
 	left: 2em;
 	padding-left: 0;
@@ -151,25 +155,25 @@
 	z-index: 101;
 
 	b{
-		color: $colorFuente;
+		color: colores.$colorFuente;
 		font-weight: normal;
 		display: block;
 		margin-top: 8px;
 	}
 
 	.icon{
-		transition: (background $animacionMedia ease);
+		transition: (background base.$animacionMedia ease);
 
-		background: $colorFuente;
+		background: colores.$colorFuente;
 		height: 3px;
 		width: 40px;
 
 		&:before,
 		&:after{
 			transform: translateY(-10px);
-			transition: (transform $animacionMedia ease);
+			transition: (transform base.$animacionMedia ease);
 
-			background: $colorFuente;
+			background: colores.$colorFuente;
 			content: '';
 			display: block;
 			height: 3px;
@@ -184,17 +188,17 @@
 
 #mobileMenu.openedMenu .icon:before{
 	transform: (translateY(0) rotate(45deg));
-	transition: (transform $animacionRapida ease);
+	transition: (transform base.$animacionRapida ease);
 }
 
 #mobileMenu.openedMenu .icon{
-	transition: (background $animacionRapida ease);
-	background: rgba($colorFuente, 0);
+	transition: (background base.$animacionRapida ease);
+	background: rgba(colores.$colorFuente, 0);
 }
 
 #mobileMenu.openedMenu .icon:after{
 	transform: (translateY(-3px) rotate(-45deg));
-	transition: (transform $animacionRapida ease);
+	transition: (transform base.$animacionRapida ease);
 }
 
 
@@ -207,7 +211,7 @@
 
 #mobileMenu .clonedMenu{
 	box-shadow: 0 0 12px rgba(#000, .25);
-	background: $colorTema;
+	background: colores.$colorTema;
 	padding: 6em 2em 2em;
 	position: relative;
 	z-index: 100;
@@ -224,7 +228,7 @@
     width: 100%;
     height: 5em;
     position: fixed;
-    background: $colorTema;
+    background: colores.$colorTema;
     top: 0;
 	z-index: 10;
 }

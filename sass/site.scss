@@ -6,48 +6,48 @@
 @use "sass:math";
 @use "sass:color";
 
-@import "normalize";
-@import "fonts";
-@import "base";
+@use "normalize";
+@use "fonts";
+@use "base";
 
 // imports de base
 //Colores
-@import "colores";
+@use "colores";
 
 //Mixins
-@import "mixins";
+@use "mixins";
 
 // FIN imports de base
 
-@import "general";
+@use "general";
 
-@import "cabecera";
+@use "cabecera";
 
-@import "menu";
+@use "menu";
 
-@import "menuTercerNivel";
+@use "menuTercerNivel";
 
-@import "contenido";
+@use "contenido";
 
-@import "patrocinadoresPie";
+@use "patrocinadoresPie";
 
-@import "pie";
+@use "pie";
 
 // Plugins
-@import "plugins/_scrollUp.scss";
-@import "plugins/_featherlight.scss";
-@import "plugins/_featherlight.gallery.scss";
-@import "plugins/_animate.min.scss";
+@use "plugins/_scrollUp.scss";
+@use "plugins/_featherlight.scss";
+@use "plugins/_featherlight.gallery.scss" as featherlight2;
+@use "plugins/_animate.min.scss";
 
 // Components
-@import "components/_badge.scss";
-@import "components/_progressBars.scss";
-@import "components/raceCard";
-@import "components/noticias.scss";
-@import "components/noticias-portada.scss";
-@import "components/warning-block.scss";
-@import "components/cookie-banner.scss";
-@import "components/enlaces-destacados.scss";
+@use "components/_badge.scss";
+@use "components/_progressBars.scss";
+@use "components/raceCard";
+@use "components/noticias.scss";
+@use "components/noticias-portada.scss";
+@use "components/warning-block.scss";
+@use "components/cookie-banner.scss";
+@use "components/enlaces-destacados.scss";
 
 // Others
-@import "_galeria.scss";
+@use "_galeria.scss";

@@ -1,5 +1,9 @@
+@use "sass:math";
+@use "base";
+@use "colores";
+
 %subtle-shadow{
-	box-shadow: 2px 2px 6px $colorSombra;
+	box-shadow: 2px 2px 6px colores.$colorSombra;
 } 
 
 %clearfixAfter{
@@ -41,25 +45,25 @@
 	display:block;	
 }
 
-@mixin font-size($pixels: $fontSizeBasico){
+@mixin font-size($pixels: base.$fontSizeBasico){
 	font-size:$pixels*1px;
-	font-size:math.div($pixels, $fontSizeBasico)*1rem;
+	font-size:math.div($pixels, base.$fontSizeBasico)*1rem;
 }
 
-@function anchoPorcentaje($pix, $totalWidth:$anchoTotalPX){
+@function anchoPorcentaje($pix, $totalWidth:base.$anchoTotalPX){
 	@return math.div($pix*100, $totalWidth)*1%;
 }
 
-@function sizeEM($pix, $fontSize:$fontSizeBasico){
+@function sizeEM($pix, $fontSize:base.$fontSizeBasico){
 	@return math.div($pix, $fontSize)*1em;
 }
 
 @mixin margenMenu{
 	@if $floatMenu == left {
-		margin:0 0 0 (($anchoTotalPX*$porcentajeMargenContenidosParaMenu)/$fontSizeBasico)*1em;
+		margin:0 0 0 ((base.$anchoTotalPX*$porcentajeMargenContenidosParaMenu)/base.$fontSizeBasico)*1em;
 	}
 	@else if $floatMenu == right{
-  		margin:0 ((($anchoTotalPX*$porcentajeMargenContenidosParaMenu)/$fontSizeBasico)*1em) 0 0;
+  		margin:0 (((base.$anchoTotalPX*$porcentajeMargenContenidosParaMenu)/base.$fontSizeBasico)*1em) 0 0;
   	}
 	@else{
 		margin:0;
@@ -68,7 +72,7 @@
 
 /* Sombra para inputs text, textareas y combos */
 %inputs{
-	border:1px solid $colorBordeInputs;
+	border:1px solid colores.$colorBordeInputs;
 	background:#f4f4f4;
 	outline:none;
 	
@@ -90,7 +94,7 @@
 */
 
 @mixin mq($point, $query1: min, $query2: width) {
-	@media screen and (#{$query1}-#{$query2}: (math.div($point, $fontSizeBasicoMQ)+em)) {
+	@media screen and (#{$query1}-#{$query2}: (math.div($point, base.$fontSizeBasicoMQ)+em)) {
 		@content;
 	}
 }
@@ -100,11 +104,11 @@
 $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx)";
 
 @mixin retinize($file, $type, $width, $height) {
-  background-image: url($img-root + '/' + $file + '.' + $type);
+  background-image: url(base.$img-root + '/' + $file + '.' + $type);
  
   @media #{$is-hidpi} {
     & {
-      background-image: url($img-root + '/' + $file + '-2x.' + $type);
+      background-image: url(base.$img-root + '/' + $file + '-2x.' + $type);
       background-size: ($width $height);
     }
   }
@@ -131,7 +135,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 %row{
 	margin: 0 2em;
 
-	@include mq($screen-md-min){
+	@include mq(base.$screen-md-min){
 		margin: 0 auto;
 		width: sizeEM(942);
 	}
@@ -139,8 +143,8 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 
 // ------------- Mixins menú
 %separadorAfter{
-	transition: (width $animacionMedia ease);
-	background: $colorFuente;
+	transition: (width base.$animacionMedia ease);
+	background: colores.$colorFuente;
 	bottom: -1em;
 	content: "";
 	display: block;
@@ -148,13 +152,13 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	position: relative;
 	width: 30px;
 
-	@include mq($screen-sm-plus-min){
+	@include mq(base.$screen-sm-plus-min){
 		width: 0;
 	}
 }
 
 %separadorHoverAfter{
-	transition: (width $animacionRapida ease);
+	transition: (width base.$animacionRapida ease);
 
 	width: 100%;	
 }
@@ -183,38 +187,38 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 %enlaceBoton{
 	border-radius: (4px);
 	box-sizing: (border-box);
-	transition: (background-color $animacionMedia ease, color $animacionMedia ease, box-shadow $animacionMedia ease);
+	transition: (background-color base.$animacionMedia ease, color base.$animacionMedia ease, box-shadow base.$animacionMedia ease);
 	appearance: (none);
 
-	background: $colorTema;
+	background: colores.$colorTema;
 	border:0;	
-	color: $colorFuente;
+	color: colores.$colorFuente;
 	display: block;
-	font-family:$fontFamilyLight;	
-	font-size:$fontSizeBotones;	
+	font-family:base.$fontFamilyLight;	
+	font-size:base.$fontSizeBotones;	
 	font-weight:normal;
-	line-height: sizeEM($lineHeightBasico);
-	margin-bottom: sizeEM($lineHeightBasico);
+	line-height: sizeEM(base.$lineHeightBasico);
+	margin-bottom: sizeEM(base.$lineHeightBasico);
 	padding: sizeEM(9, 18) sizeEM(30, 18);
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
 	
-	@include mq($screen-sm-min){
+	@include mq(base.$screen-sm-min){
 		width: auto;
 	}
 
 	&:hover{
-		transition: (background-color $animacionRapida ease, color $animacionRapida ease);
+		transition: (background-color base.$animacionRapida ease, color base.$animacionRapida ease);
 
 		cursor:pointer;
-		background: $colorFuente;
-		color: $colorTema;
+		background: colores.$colorFuente;
+		color: colores.$colorTema;
 	}
 	
 	&:active{
 		box-shadow: inset 0 3px 5px rgba(#000, .25);
-		transition: (background-color $animacionRapida ease, color $animacionRapida ease, box-shadow $animacionRapida ease);
+		transition: (background-color base.$animacionRapida ease, color base.$animacionRapida ease, box-shadow base.$animacionRapida ease);
 	}
 
 	&[disabled]{
@@ -226,8 +230,8 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	}
 
 	&[disabled]:hover{
-		background:$colorTema;
-		color: $colorFuente;
+		background:colores.$colorTema;
+		color: colores.$colorFuente;
 		cursor:default;
 	}
 
@@ -238,29 +242,29 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	}
 
 	.icon{
-		transition: (fill $animacionMedia ease);
+		transition: (fill base.$animacionMedia ease);
 
-		fill: $colorFuente;
+		fill: colores.$colorFuente;
 	}
 
 	&:hover .icon{
-		transition: (fill $animacionRapida ease);
+		transition: (fill base.$animacionRapida ease);
 
-		fill: $colorTema;
+		fill: colores.$colorTema;
 	}
 }
 
 %altEnlaceBoton{
 	@extend %enlaceBoton;
 
-	background: $colorFuente;
-	border: 2px solid $colorFuente;
-	color: $colorTema;
+	background: colores.$colorFuente;
+	border: 2px solid colores.$colorFuente;
+	color: colores.$colorTema;
 	padding: sizeEM(5, 18) sizeEM(26, 18);
 
 	&:hover{
-		background: $colorTema;
-		color: $colorFuente;
+		background: colores.$colorTema;
+		color: colores.$colorFuente;
 	}
 
 	&:active{
@@ -268,16 +272,16 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	}
 
 	&[disabled]:hover{
-		background:$colorFuente;
-		color: $colorTema;
+		background:colores.$colorFuente;
+		color: colores.$colorTema;
 	}
 
 	.icon{
-		fill: $colorTema;
+		fill: colores.$colorTema;
 	}
 
 	&:hover .icon{
-		fill: $colorFuente;
+		fill: colores.$colorFuente;
 	}	
 }
 
@@ -289,10 +293,10 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	padding-bottom: 1em;
 	text-transform: uppercase;
 
-	@include mq($screen-sm-plus-min){
+	@include mq(base.$screen-sm-plus-min){
 		@include font-size(15);
 
-		font-family: $fontFamilyLight;
+		font-family: base.$fontFamilyLight;
 		text-transform: none;
 	}
 }
@@ -302,14 +306,14 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	margin-left: 0;
 	
 	> li{
-		margin-bottom: sizeEM($lineHeightBasico * 1.5);
+		margin-bottom: sizeEM(base.$lineHeightBasico * 1.5);
 
-		@include mq($screen-xs-min){
-			margin: 0 auto sizeEM($lineHeightBasico * 2);
+		@include mq(base.$screen-xs-min){
+			margin: 0 auto sizeEM(base.$lineHeightBasico * 2);
 			width: sizeEM(213);
 		}
 
-		@include mq($screen-sm-min){
+		@include mq(base.$screen-sm-min){
 			float: left;
 			margin-left: anchoPorcentaje(30);
 			width: anchoPorcentaje(213);
@@ -317,7 +321,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 	}
 
 	>li:nth-of-type(4n+1){
-		@include mq($screen-sm-min){
+		@include mq(base.$screen-sm-min){
 			margin-left: 0;
 		}
 	}
@@ -329,14 +333,14 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 
 	> li > a > img,
 	> li > span > img{
-		transition: (opacity $animacionRapida ease);
+		transition: (opacity base.$animacionRapida ease);
 
 		max-width: 100%;
 		vertical-align: top;
 	}
 
 	> li > a:hover > img{
-		transition: (opacity $animacionMedia ease);
+		transition: (opacity base.$animacionMedia ease);
 
 		opacity: 0.5;
 	}	
@@ -345,16 +349,16 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 %tituloPrincipalContenido {
 	@include font-size(48);	
 	
-	font-family: $fontFamilyBold;
+	font-family: base.$fontFamilyBold;
 	line-height : 1.1em;
 	font-weight: normal;
-	color: $colorFuente;
+	color: colores.$colorFuente;
 	margin-bottom: sizeEM(40, 48);
 	padding-bottom: sizeEM(24, 48);
 	position: relative;
 
 	&:after{
-		background: $colorTema;
+		background: colores.$colorTema;
 		content: " ";
 		display: block;
 		height: 4px;
@@ -367,7 +371,7 @@ $is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio:
 %tituloSecundarioContenido {
 	@include font-size(28);
 	
-	font-family: $fontFamily;
+	font-family: base.$fontFamily;
 	font-weight: bold;
 	margin-bottom:sizeEM(12, 28);
 	padding-bottom: 0;

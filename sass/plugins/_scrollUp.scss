@@ -1,17 +1,21 @@
+@use "../base";
+@use "../colores";
+@use "../mixins";
+
 #scrollUp{
 	box-shadow: 0 8px 9px rgba(0,0,0,.2);
-	@include font-size(0);
-	transition: (background-color $animacionMedia ease, color $animacionMedia ease);
+	@include mixins.font-size(0);
+	transition: (background-color base.$animacionMedia ease, color base.$animacionMedia ease);
 
-	background-color: $colorTema;
-	background-image: url(#{$img-root}/up.svg);
+	background-color: colores.$colorTema;
+	background-image: url(#{base.$img-root}/up.svg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: (17px, 17px);
 
 	bottom: 28px;
 	right: 28px;
-	background-color: $colorTema;
+	background-color: colores.$colorTema;
 	color: #272727;
 	display: block;
 	border-radius: 50%;
@@ -22,20 +26,20 @@
 	padding: 10px 6px 2px;
 
 	[data-baseurl=\/trailsamuno] & {
-		background-image: url(#{$gh-pages-baseurl}#{$img-root}/up.svg);
+		background-image: url(#{base.$gh-pages-baseurl}#{base.$img-root}/up.svg);
 	}	
 
 	&:hover,
 	&:focus:hover{
-		transition: (background-color $animacionMedia ease);	
+		transition: (background-color base.$animacionMedia ease);	
 
-		background-color: $colorTema;
+		background-color: colores.$colorTema;
 	}
 
 	&:focus{
-		transition: (background-color $animacionMedia ease);
+		transition: (background-color base.$animacionMedia ease);
 
-		background-color: $colorTema;
-		background-color: rgba($colorTema, .75); // Para navegadores cool	
+		background-color: colores.$colorTema;
+		background-color: rgba(colores.$colorTema, .75); // Para navegadores cool	
 	}
 }
