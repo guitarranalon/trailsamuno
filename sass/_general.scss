@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use "sass:math";
+
 ::selection {background:$fondoSeleccion;color:$colorSeleccion;}
 ::-moz-selection {background:$fondoSeleccion;color:$colorSeleccion;}
 
@@ -424,7 +427,7 @@ iframe{
 }
 
 .figure-caption{
-	color: adjust-color($colorFuente, $lightness: 30%);
+	color: color.adjust($colorFuente, $lightness: 30%);
 	font-size: 90%;
 }
 
