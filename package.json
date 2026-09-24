@@ -16,7 +16,7 @@
     "@astrojs/check": "0.9.10",
     "astro": "7.3.3",
     "sass": "1.105.0",
-    "typescript": "5.5.3"
+    "typescript": "6.0.3"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "0.4.4",
